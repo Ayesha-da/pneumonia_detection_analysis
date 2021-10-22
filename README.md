@@ -1,1 +1,3 @@
-# pneumonia_detection_analysis
+# Machine Learning
+## Model Choice
+We choose 
