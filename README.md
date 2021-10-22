@@ -1,3 +1,5 @@
-# Machine Learning
+# Machine Learning	
 ## Model Choice
+
+
 We choose 
