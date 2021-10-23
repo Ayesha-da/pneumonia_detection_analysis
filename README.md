@@ -12,7 +12,7 @@ We will be hosting our data on AWS through the use of the S3 Buckets and the a p
     - Normal: s3://pneumonia-detection-analysis/train/NORMAL/
     - Pneumonia: s3://pneumonia-detection-analysis/train/PNEUMONIA/
 
--Val: s3://pneumonia-detection-analysis/val/
+- Val: s3://pneumonia-detection-analysis/val/
     - Normal: s3://pneumonia-detection-analysis/val/NORMAL/
     - Pneumonia: s3://pneumonia-detection-analysis/val/PNEUMONIA/
 
