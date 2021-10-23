@@ -3,13 +3,14 @@ A project by: Ayesha Shaheen, Chelsea Langford, Matthew Breitner, Nidhi Pandya, 
 
 ## Project Overview
 ### Selected Topic
-Our project will use neural networks and deep learning to interpret chest x-ray images and classify them as pneumonia vs. not pneumonia.
+Our project will use neural networks and deep learning to interpret chest x-ray images and classify them as pneumonia, not pneumonia, or other.
 ### Project Use Case
 - The use case for generating this model is to develop a process to objectively analyze and interpret x-ray images with a rate of accuracy that is potentially better than the human eye.
 - This model could be a valuable resource for doctors and students as another tool for interpreting x-ray images and validating/invalidating their personal diagnoses.
-- Additionally, this model could be futher applied to chest x-rays with diagnoses outside of pneumonia and be adapted to interpret the x-rays of patients with other symptoms such as those suffering with long-term effects from COVID-19. 
+- Additionally, this model could be futher applied to chest x-rays with diagnoses outside of pneumonia and be adapted to interpret the x-rays of patients with an array of diagnoses. Our goal is to generate a model that can predict the nuances between pneumonia, normal, or other to account that there are many potential diagnoses besides pneumonia to consider.
+ 
 ### Questions to Answer
-- Can a machine learning model find distinct differences in chest x-ray images and accurately classify them as pneumonia vs. not pneumonia?
+- Can a machine learning model find distinct differences in chest x-ray images and accurately classify them as pneumonia, normal, or other?
 - What level of accuracy can be achieved by this model? Can it be considered a reliable resource for individuals who are diagnosing patients?
 - Long term, how can this model be applied to classifying other diagnoses based on x-ray image analysis?
 - Can this model be generated without introducing bias? 
@@ -30,7 +31,7 @@ Our primary dataset is an image library sourced from this [Kaggle dataset](https
 ### Machine Learning Technologies
 - Google Collab for machine learning model generation
 - cv2 package for image analysis and preparation
-- tensorflow package for machine learning model generation
+- TensorFlow package for machine learning model generation
 ### Visualization Technologies
 - hvplot/plotly for visualizing the outputs of our classification model and results of our model
 - Tableau Public for additional visualization support
