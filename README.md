@@ -50,13 +50,35 @@ This dataset incorporates potential other lung issues and categorizes them based
 
 https://www.kaggle.com/tawsifurrahman/covid19-radiography-database
 
-#### B. Source Format: Files are split into 4 folders labeled as either COVID, Lung_Opacity, Normal, or Viral Pneumonia. Individual files also contain these labels in the filename. 
+#### B. Source Format: 
+
+Files are split into 4 folders labeled as either COVID, Lung_Opacity, Normal, or Viral Pneumonia. Individual files also contain these labels in the filename. 
 
 #### C: Source Details: 
+
 “A team of researchers from Qatar University, Doha, Qatar, and the University of Dhaka, Bangladesh along with their collaborators from Pakistan and Malaysia in collaboration with medical doctors have created a database of chest X-ray images for COVID-19 positive cases along with Normal and Viral Pneumonia images. This COVID-19, normal, and other lung infection dataset is released in stages. In the first release, we have released 219 COVID-19, 1341 normal, and 1345 viral pneumonia chest X-ray (CXR) images. In the first update, we have increased the COVID-19 class to 1200 CXR images. In the 2nd update, we have increased the database to 3616 COVID-19 positive cases along with 10,192 Normal, 6012 Lung Opacity (Non-COVID lung infection), and 1345 Viral Pneumonia images. We will continue to update this database as soon as we have new x-ray images for COVID-19 pneumonia patients.”  
 
 #### D. Notes
 
 Caveat for this data is that the “Viral Pneumonia” folder contains images taken exclusively from our original dataset so it can be ignored. The remaining files will just need to be formatted to fit whatever identifiers we determine we are going to use. 
+
+### 4. NIH Chest X-rays
+
+#### A. Source Link:
+
+https://www.kaggle.com/nih-chest-xrays/data
+
+#### B. Source Format: Files are divided into 12 different folders with no differentiators in the folder or image names. There is a csv file which contains the labels for the images. 
+
+
+#### C. Source Details:
+
+“This NIH Chest X-ray Dataset is comprised of 112,120 X-ray images with disease labels from 30,805 unique patients. To create these labels, the authors used Natural Language Processing to text-mine disease classifications from the associated radiological reports. The labels are expected to be >90% accurate and suitable for weakly-supervised learning. The original radiology reports are not publicly available but you can find more details on the labeling process in this Open Access paper: "ChestX-ray8: Hospital-scale Chest X-ray Database and Benchmarks on Weakly-Supervised Classification and Localization of Common Thorax Diseases." (Wang et al.)”
+
+#### D. Notes:
+
+This is the largest of the datasets that we have so far and it also has the most varied assortment of lung images, classifying 14 different diseases. Once we determine how we are building the buckets for our model, we’ll need to format the files accordingly. The other concern with this dataset is that unlike the other sets, it was put together using their own NLP program that claims only a 90% accuracy, so while the original files are verified by radiologists, there is a larger margin of error due to the additional step of data mining. 
+
+
 
 
