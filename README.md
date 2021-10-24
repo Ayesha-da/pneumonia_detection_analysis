@@ -145,6 +145,6 @@ Our final dashboard will include a Google Slides presentation supplemented with 
 #### Dashboard Technologies Used
 - Google Slides
 - Tableau Public
-- Heroku for webstie hosting
+- Heroku for website hosting
 - VS Code for HTML and JavaScript editing 
 - Flask for website development
