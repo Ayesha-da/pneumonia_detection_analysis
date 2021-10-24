@@ -18,7 +18,7 @@ Chelsea Langford (Tableau, JavaScript, GitHub project overview)
 
 Matthew Breitner (Tableau)
 
-Ayeesha Shaheen (HTML)
+Ayesha Shaheen (HTML)
 
 ## Project Overview
 ### Selected Topic
