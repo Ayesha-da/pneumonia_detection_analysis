@@ -135,6 +135,25 @@ Our project is to detection pneumonia using chest x-ray images. We use Kaggle [d
 ### Database ERD 
 ![img2](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/data_ETL/data_ETL/Resources/images/ER_diagram.PNG)
 
+We are using two datasets with a possibility of using more in the future.
+
+1.[Dataset1](https://s3.console.aws.amazon.com/s3/buckets/pneumonia-detection-analysis) - source from [Kaggle](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia)
+
+This is a clean dataset with a folder structure:
+ * train
+   * Pneumonia
+   * Normal
+ * test
+   * Pneumonia
+   * Normal
+  
+2.[Dataset2](https://www.kaggle.com/ingusterbets/nih-chest-x-rays-analysis) 
+
+This is not a clean dataset. Using [GetImages_fun](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/data_ETL/GetImages_Fun.ipynb) code, we are getting images that mimic Dataset1's folder structure. We decided to use 3 buckets (Pneumonia, Normal and Others) in dataset2, the code needs to be updated in the file to get the third bucket.(In progress)
+
+#### Data Extraction and Trasformation: 
+
+we started to extract the data from our s3 bucket and did some trasformation in the Dataset1 images using [project_sample](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/data_ETL/project_sample.ipynb) code.
 
 ## Machine Learning
 ![Conventional-machine-learning-vs-deep-learning](https://user-images.githubusercontent.com/84524153/138568406-ea33abaa-3e03-4d22-90e8-64034431f6df.png)
