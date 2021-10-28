@@ -117,12 +117,14 @@ We will be hosting our data on AWS through the use of the S3 Buckets and the a p
 - Test: https://s3.console.aws.amazon.com/s3/buckets/pneumonia-detection-analysis?region=us-east-1&prefix=test/&showversions=false
     - Normal: https://s3.console.aws.amazon.com/s3/buckets/pneumonia-detection-analysis?region=us-east-1&prefix=test/NORMAL/&showversions=false
     - Pneumonia: https://s3.console.aws.amazon.com/s3/buckets/pneumonia-detection-analysis?region=us-east-1&prefix=test/PNEUMONIA/&showversions=false
+    - Other: https://s3.console.aws.amazon.com/s3/buckets/pneumonia-detection-analysis?region=us-east-1&prefix=test/Other/&showversions=false
 
 - Train: https://s3.console.aws.amazon.com/s3/buckets/pneumonia-detection-analysis?region=us-east-1&prefix=train/&showversions=false
     - Normal: https://s3.console.aws.amazon.com/s3/buckets/pneumonia-detection-analysis?region=us-east-1&prefix=train/NORMAL/&showversions=false
     - Pneumonia: https://s3.console.aws.amazon.com/s3/buckets/pneumonia-detection-analysis?region=us-east-1&prefix=train/PNEUMONIA/&showversions=false
+    - Other: https://s3.console.aws.amazon.com/s3/buckets/pneumonia-detection-analysis?region=us-east-1&prefix=train/Other/&showversions=false
 
-- Val: https://s3.console.aws.amazon.com/s3/buckets/pneumonia-detection-analysis?region=us-east-1&prefix=val/&showversions=false
+- Val: https://s3.console.aws.amazon.com/s3/buckets/pneumonia-detection-analysis?prefix=val/&region=us-east-1
     - Normal: https://s3.console.aws.amazon.com/s3/buckets/pneumonia-detection-analysis?region=us-east-1&prefix=val/NORMAL/&showversions=false
     - Pneumonia: https://s3.console.aws.amazon.com/s3/buckets/pneumonia-detection-analysis?region=us-east-1&prefix=val/PNEUMONIA/&showversions=false
 
