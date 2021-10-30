@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head style="text-align:center">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pneumonia Detection Analysis</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    
+</head>
+<body style="background-color:#FFFFFF">
+    <img src="https://media3.giphy.com/media/7HeN31sikXE76/giphy.gif?cid=ecf05e47tu7gf40bzhwz37vkb4gy17jkgcbyh0fae7nuxe6i&rid=giphy.gif&ct=g" style="padding-left: 20px;padding-right: 20px;float: left;height:240px;" />
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+            <a class="navbar-brand" href="index.html" style="color:white;font:kontrapunkt miki regular;"><h1>Pneumonia Detection Analysis</h1></a>
+        </nav> 
+        
+          
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+    
+                <h3 style="color:black;font:kontrapunkt miki regular;">The Misdiagnosis Problem</h3>
+                <p style="color:black;font-size:12;font:kontrapunkt miki regular;">
+                According to <a href=https://www.sciencedaily.com/releases/2010/10/101022123749.htm>this article</a> in ScienceDaily, patients are often "misdiagnosed with pneumonia at an alarming rate," leading to an overuse of antibiotics and an increase in healthcare costs.
+                <br><br>
+                Pneumonia is second only to congestive heart failure "as the reason for readmission within 30 days of a previous hospitalization," according to researchers led by Henry Ford Infectious Diseases physicians Hiren Pokharna, M.D., and Norman Markowitz, M.D.
+                This study found that "72 percent of patients were misdiagnosed with pneumonia upon readmission to the same hospital." Most of these misdiagnoses happened in the emergency department.
+                <br><br>
+                Dr. Pokharna noted that this analysis <b>"points to the importance of using X-ray for ruling out pneumonia."</b>
+                </p>
+            </p>
+    </section>
+    <section>
+        <br>
+        <h3 style="color:black;font:kontrapunkt miki regular;">Machine Learning: A Solution for Improving Diagnosis Rates</h3>
+        <p style="color:black;font-size:12;font:kontrapunkt miki regular;">
+            <br>
+
+            Imagine a pneumonia prediction tool more accurate than the human eye.
+           <br>
+           <br> 
+        
+            A fast and accurate resource for analyzing x-rays has the potential to drastically reduce the rates of pneumonia misdiagnosis, especially in emergency departments. Machine learning provides a solution to this problem. A deep learning model is capable of reading x-ray images and classifying them as pneumonia or not pneumonia. Even better, the accuracy rate of the model can be measured and improved before releasing it for public use.
+        </p>
+    </section>
+    
+    <section>
+        <br>
+        <h3 style="color:black;font:kontrapunkt miki regular;">The Pneumonia Detection Model in Action</h3>
+        <p style="color:black;font-size:12;font:kontrapunkt miki regular;">
+            <br>
+            <intro>Step 1: Upload your x-ray image file.</intro>
+            <br>
+            <br>
+            <input type="file" name="file" id="file">
+            <button style="background-color: teal; color: white; padding: 0.5rem; font:kontrapunkt miki regular; border-radius: 0.3rem; cursor: pointer; margin-top: 1rem;" onclick="doupload()" name="submit"><b>UPLOAD FILE ></b></button>
+        <br>
+        <p style="color:black;font-size:12;font:kontrapunkt miki regular;">
+            <intro>Step 2: Run the model to receive a diagnosis prediction.</intro>
+            <br>
+            <button style="background-color: teal;color: white;padding: 0.5rem; font:kontrapunkt miki regular; border-radius: 0.3rem; cursor: pointer; margin-top: 1rem;" type="button">
+                <b>PREDICT ></b>
+            </button>
+
+            
+            
+        </p>
+    </section>
+ <!-- Custom JS - this is the JS file that we created ourselves -->
+ <script type="text/javascript" charset="utf8" src="../static/js/indexlogic.js"></script>
+
+</body>
+</html>
