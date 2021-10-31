@@ -16,7 +16,7 @@ Created on Fri Oct 29 12:03:07 2021
 from keras.preprocessing.image import ImageDataGenerator
 
 from keras.models import Sequential
-from keras.layers import Conv2D, Activation, MaxPooling2D, Flatten, Dense, Dropout
+from keras.layers import Conv2D, Activation, MaxPooling2D, Flatten, Dense, Dropout,BatchNormalization
 import tensorflow as tf
 from tensorflow.keras import backend as K
 
@@ -26,10 +26,10 @@ IMG_WIDTH, IMG_HEIGHT = 150,150
 #Set the constants
 TRAIN_DATA_DIR = 'Resources/chest_xray/train'
 VALIDATION_DATA_DIR = 'Resources/chest_xray/test'
-NB_TRAIN_SAMPLES = 78   #Must match number of files
-NB_VALIDATION_SAMPLES = 70
+NB_TRAIN_SAMPLES = 5659   #Must match number of files
+NB_VALIDATION_SAMPLES = 824
 
-EPOCHS = 50 #Higher for more time training model... diminishing returns
+EPOCHS = 100 #Higher for more time training model... diminishing returns
 BATCH_SIZE = 5
 
 # Machine Learning Model Filename
@@ -41,18 +41,22 @@ def build_model():
         input_shape = (3, IMG_WIDTH, IMG_HEIGHT)
     else:
         input_shape = (IMG_WIDTH, IMG_HEIGHT, 3)
-
+        
+        
     model = Sequential()
     model.add(Conv2D(32, (3, 3), input_shape=input_shape))
     model.add(Activation('relu'))
+ #   model.add(BatchNormalization())
     model.add(MaxPooling2D(pool_size=(2, 2)))
     
     model.add(Conv2D(32, (3, 3)))
     model.add(Activation('relu'))
+ #   model.add(BatchNormalization())
     model.add(MaxPooling2D(pool_size=(2, 2)))
     
     model.add(Conv2D(64, (3, 3)))
     model.add(Activation('relu'))
+ #   model.add(BatchNormalization())
     model.add(MaxPooling2D(pool_size=(2, 2)))
     
     model.add(Flatten())
@@ -66,6 +70,7 @@ def build_model():
               optimizer='rmsprop',
               metrics=['accuracy'])
 
+    
     return model
 
 
