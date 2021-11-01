@@ -9,7 +9,7 @@ app = Flask(__name__)
 # This route renders the homepage
 @app.route("/")
 def index():
-    return render_template("index.html")
+    return render_template("index-poc.html")
 
 # You need this - this allows you to actually run the app
 if __name__ == "__main__":
