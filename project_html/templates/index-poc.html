@@ -80,9 +80,6 @@
               <a class="nav-link" href="#solution" data-target="#solution"><span>The Solution</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#model" data-target="#model"><span>The Model in Action</span></a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="#gallery" data-target="#gallery"><span>The Gallery</span></a>
             </li>
           </ul>
@@ -110,10 +107,42 @@
               <div class="row">
                 <h1>Pneumonia Detection Analysis</h1>
                 <p>This project explores the potential of machine learning as a solution for medical image analysis.</p>
-                <p>X-ray images of pneumonia-infected lungs as well as non-pneumonia infected lungs were used for
+                <p>X-ray images of pneumonia-infected lungs as well as non-pneumonia-infected lungs were used for
                   training our model to explore the potential of this machine learning solution.</p>
-                <p><b>Explore the details of our project below.</b></p>
-                <p></p>
+                </div>
+                <div style="row">
+                  <h3><b>Pneumonia or not pneumonia?</b></h3>
+                </div>
+                <div style="row"></div>
+                  <p><b>Upload your x-ray image below to see our model in action.</b></p>
+                </div>
+                <div class="col-12 col-lg-10" style="border-style: solid; background-color: #f7f7f7;border-radius: 5px; padding: 20px 0px 40px 80px;">
+                  <div class="article-style">
+                    <div class="row">
+              
+                      Step 1: Upload your x-ray image file.
+                    </div>
+                    <div class="row col-12 col-lg-6">
+                      <input type="file" name="file" id="file">
+                    </div>
+                    <div class="row col-12 col-lg-6">
+                      <button
+                        style="background-color: teal;color: white;padding: 0.5rem; font:kontrapunkt miki regular; border-radius: 0.3rem; cursor: pointer; margin-top: 1rem;"
+                        onclick="doupload()" name="submit"><b>UPLOAD FILE ></b></button>
+                    </div>
+                  </div>
+                  <div class="row"style="padding-top: 20px;">
+                    Step 2: Run the model to receive a diagnosis prediction.
+                  </div>
+                  <div class="row col-12 col-lg-6">
+      
+                    <button
+                        style="background-color: teal;color: white;padding: 0.5rem; font:kontrapunkt miki regular; border-radius: 0.3rem; cursor: pointer;"
+                        type="button">
+                        <b>PREDICT ></b>
+                      </button>
+                  </div>
+                </div>
               </div>
             </div>
     </section>
@@ -166,45 +195,6 @@
                   before releasing it for public use.</p>
               </div>
             </div>
-    </section>
-
-
-    <section id="model" class="home-section wg-model">
-      <div class="home-section-bg">
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-lg-2">
-          </div>
-          <div class="col-12 col-lg-10">
-            <div class="article-style">
-              <div class="row">
-                <h1>The Pneumonia Detection Model in Action</h1>
-                Step 1: Upload your x-ray image file.
-              </div>
-              <div class="row col-12 col-lg-6">
-                <input type="file" name="file" id="file">
-              </div>
-              <div class="row col-12 col-lg-6">
-                <button
-                  style="background-color: teal;color: white;padding: 0.5rem; font:kontrapunkt miki regular; border-radius: 0.3rem; cursor: pointer; margin-top: 1rem;"
-                  onclick="doupload()" name="submit"><b>UPLOAD FILE ></b></button>
-              </div>
-            </div>
-            <div class="row">
-              Step 2: Run the model to receive a diagnosis prediction.
-            </div>
-            <div class="row col-12 col-lg-6">
-
-              <p><button
-                  style="background-color: teal;color: white;padding: 0.5rem; font:kontrapunkt miki regular; border-radius: 0.3rem; cursor: pointer; margin-top: 1rem;"
-                  type="button">
-                  <b>PREDICT ></b>
-                </button>
-              </p>
-            </div>
-          </div>
-        </div>
     </section>
 
     
