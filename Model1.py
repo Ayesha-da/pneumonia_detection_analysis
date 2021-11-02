@@ -30,13 +30,12 @@ from tensorflow.keras import Sequential
 from tensorflow.keras import layers
 from tensorflow.keras.callbacks import EarlyStopping
 
-#There are two categories in three sets:
+#There are two categories in two sets:
 categories = ["Normal", "Other"]
 datasets = ["Train", "Test"]
 
-# Let's compute the average size of the images among all categories and all datasets:
+#Compute the average size of the images among all categories and all datasets:
 
-#%%time
 
 widths = []
 heights = []
@@ -52,16 +51,14 @@ images_size = pd.DataFrame({"widths": widths, "heights": heights})
 print("Average image width: " + f'{images_size["widths"].mean():.2f}')
 print("Average image height: " + f'{images_size["heights"].mean():.2f}')
 
-#And now we divide the mean width and mean height of the images by 10:
+#divide the mean width and mean height of the images by 10:
 
 im_width = int(images_size["widths"].mean()/10)
 im_height = int(images_size["heights"].mean()/10)
 print("image width: " + str(im_width))
 print("image height: " + str(im_height))
 
-#Now we load all the images from the three sets in one single dataframe and before that, we resize images by the lengths described above.
-
-#%%time
+#Resize images by the lengths described above, then load all the images from the two sets in one single dataframe.
 
 data = []
 target = []
@@ -74,16 +71,14 @@ for set_ in datasets:
 #
 data_array = np.stack(data, axis=0)
 
-#So we have 5856 tensor images of width 132 and height 97, each pixel being defined by Black (0) or white (255).
 
-print(data_array.shape)
+print("data array shape: " + str(data_array.shape))
 
-#The dataset is a bit unbalanced, we have 73% of classPNEUMONIA and 27% of class NORMAL.
 
 pd.concat([pd.DataFrame(pd.DataFrame({"target" : target}).value_counts()).rename(columns={0:"count"}),
            pd.DataFrame(pd.DataFrame(target).value_counts()*100/len(target)).applymap(round).rename(columns={0:"%"})], axis=1)
 
-#Let's have a look at several random images and associated label of our dataset:
+#Review several random images and associated label of our dataset:
 
 fig = plt.figure(figsize=(20,15))
 gs = fig.add_gridspec(4, 4)
@@ -96,30 +91,32 @@ for line in range(0, 3):
         ax.set_title(target[num_image])
         ax.imshow(data_array[num_image]);
         
-#We separate dataset into two sets, one for training and another one for testing and evaluate model. The test set consists in 20% of the dataset and the remaining is for the train set. The class repartition is kept by setting the parameter stratify to target.
+#Separate dataset into two sets. Test set consists in 20% of the dataset and the remaining is for the train set. The class repartition is kept by setting the parameter stratify to target.
 
 X_train, X_test, y_train, y_test = train_test_split(data_array, np.array(target), random_state=43, test_size=0.2, stratify=target)
-print(X_train.shape)
-print(X_test.shape)
-print(y_train.shape)
-print(y_test.shape)
+print("X_train.shape: " + str(X_train.shape))
+print("X_test.shape: " + str(X_test.shape))
+print("y_train.shape: " + str(y_train.shape))
+print("y_test.shape: " + str(y_test.shape))
 
 pd.DataFrame(y_train).value_counts()/len(y_train)
 
 pd.DataFrame(y_test).value_counts()/len(y_test)
 
-#To ease the convergence of the algorithm, it is usefull to normalize the data. See here what are the maximum and minimum values in the data, and normalize it accordingly (the resulting image intensities should be between 0 and 1).
+#normalize the data. 
+#Check the maximum and minimum values in the data
 
-print(X_train.max())
-print(X_train.min())
+print("X train max: " + str(X_train.max()))
+print("X train min: " + str(X_train.min()))
 
+#Normalize accordingly (Resulting image intensities should be between 0 and 1).
 X_test_norm = np.round((X_test/255), 3).copy()
 X_train_norm = np.round((X_train/255), 3).copy()
 
-print(X_train_norm.max())
-print(X_train_norm.min())
+print("X_train_norm.max: " + str(X_train_norm.max()))
+print("X_train_norm.min: " + str(X_train_norm.min()))
 
-#Here again, we can check the normalised pictures randomly:
+#Check the normalised pictures randomly:
     
 fig = plt.figure(figsize=(20,15))
 gs = fig.add_gridspec(4, 4)
@@ -134,47 +131,38 @@ for line in range(0, 3):
         
 #Here we convert targets from string to numerical values, each category becoming an integer - 0 or 1 - for NORMAL or PNEUMONIA: 
 
-display(np.array(y_train).shape)
-display(np.unique(y_train))
-display(np.array(y_test).shape)
-display(np.unique(y_test))
+#display(np.array(y_train).shape)
+#display(np.unique(y_train))
+#display(np.array(y_test).shape)
+#display(np.unique(y_test))
 
     
 #Fitting the encoder on train set:
     
 encoder = LabelEncoder().fit(y_train)
 
-#Applying on train, test and validation sets:
+#Applying on train and test sets:
 
 y_train_cat = encoder.transform(y_train)
 y_test_cat = encoder.transform(y_test)
 
- #Expanding dimension for the correct model intput dim
-#The deep learning model needs a 4 dimensions tensor to work with. Here we have grayscale pictures with no channel. It means the matrices of our black and white pictures are of shape 3. We need to add an extra dimension so algorithm can accept it.
 
+#model needs a 4 dimensions tensor to work
+#current images are grayscale pictures with no channel: the matrices of our black and white pictures are of shape 3. 
+#We need to add an extra dimension so algorithm can accept it.
+#Identify the current shape:
 X_train_norm.shape
-print (X_train_norm.shape)
+print ("X train Norm Shape: " + str(X_train_norm.shape))
+
+#take the 2nd and 3rd variables above and plug them into spots 2 and 3 respectively below:
 X_train_norm = X_train_norm.reshape(-1, 94, 130, 1)
 X_test_norm = X_test_norm.reshape(-1, 94, 130, 1)
 X_train_norm.shape
 
 X_test_norm.shape
 
-#Now, let's define the Convolutional Neural Network.
-#
-#The CNN that is composed of:
-#
-#◼️ Conv2D layer with 32 filters, a kernel size of (3, 3), the relu activation function, a padding equal to same and the correct input_shape
-#◼️ MaxPooling2D layer with a pool size of (2, 2)
-#◼️ Conv2D layer with 64 filters, a kernel size of (3, 3), the relu activation function, and a padding equal to same
-#◼️ MaxPooling2D layer with a pool size of (2, 2)
-#◼️ Conv2D layer with 128 filters, a kernel size of (3, 3), the relu activation function, and a padding equal to same
-#◼️ MaxPooling2D layer with a pool size of (3, 3)
-#◼️ Flatten layer
-#◼️ dense function with 120 neurons with the relu activation function
-#◼️ dense function with 60 neurons with the relu activation function
-#◼️ dropout layer (with a rate of 0.5), to regularize the network
-#◼️ dense function related to the task: binary classification > sigmoid 
+#define the Convolutional Neural Network.
+
 
 def initialize_model():
     model = Sequential()
@@ -201,18 +189,21 @@ def compile_model(model):
                   metrics="accuracy")
     return model
 
-#Here I set an early stopping after 15 epochs and set the parameter restore_best_weights to True so that the weights of best score on monitored metric - here val_accuracy (accuracy on test set) - are restored when training stops. This way the model has the best accuracy possible on unseen data.
+
+
+#set an early stopping after 15 epochs and set the parameter restore_best_weights to True so that the weights of best score on monitored metric - here val_accuracy (accuracy on test set) - are restored when training stops. This way the model has the best accuracy possible on unseen data.
 
 model = initialize_model()
 model = compile_model(model)
 es = EarlyStopping(patience=15, monitor='val_accuracy', restore_best_weights=True)
-
+#
 history = model.fit(X_train_norm, y_train_cat,
                     batch_size=8,
                     epochs=20,
                     validation_split=0.3,
                     callbacks=[es])
 
+model.save("Model1.h5")
 #Results & Evaluation
 
 def plot_history(history, title='', axs=None, exp_name=""):
@@ -220,7 +211,7 @@ def plot_history(history, title='', axs=None, exp_name=""):
         ax1, ax2 = axs
     else:
         f, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 4))
-    
+   
     if len(exp_name) > 0 and exp_name[0] != '_':
         exp_name = '_' + exp_name
     ax1.plot(history.history['loss'], label='train' + exp_name)
@@ -235,15 +226,14 @@ def plot_history(history, title='', axs=None, exp_name=""):
     ax2.set_title('Accuracy')
     ax2.legend()
     return (ax1, ax2)
-
 plot_history(history, title='', axs=None, exp_name="");
 
 model.evaluate(X_test_norm, y_test_cat, verbose=0)
 
-#So we have an accuracy on unseen data of almost 97% which is very good.
-#Let's plot some random chest-x-ray picture alongside with true label and predicted label to check everything is ok:
-    
-predictions = model.predict(X_test_norm)  
+
+#plot random chest-x-ray picture alongside with true label and predicted label to check everything is ok:
+#    
+predictions = model.predict(X_test_norm)  #
 
 fig = plt.figure(figsize=(20,25))
 gs = fig.add_gridspec(8, 4)
@@ -256,6 +246,6 @@ for row in range(0, 8):
         ax.set_title("Predicted: " + categories[int(np.round(predictions)[num_image][0])] + " /\n True value: " + categories[y_test_cat[num_image]])
         ax.imshow(X_test_norm[num_image]);
 fig.suptitle("Predicted label VS True label \n for the displayed chest X Ray pictures", fontsize=25, x=0.42);
-#plt.tight_layout;
+plt.tight_layout;
 
  
