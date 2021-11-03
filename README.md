@@ -1,5 +1,5 @@
 
-## Adding a copy of the main brain to preserve the resources folder
+## Adding a copy of the main branch to preserve the resources folder
 # Pneumonia Detection Analysis
 A project by: Ayesha Shaheen, Chelsea Langford, Matthew Breitner, Nidhi Pandya, and William Johnson
 
