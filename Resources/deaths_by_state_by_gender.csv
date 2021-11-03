@@ -1,0 +1,103 @@
+﻿State,State Code,Gender,Gender Code,Deaths,Population,Crude Rate
+Alabama,1,Female,F,451,2533668,17.8
+Alabama,1,Male,M,491,2369517,20.7
+Alaska,2,Female,F,15,350127,
+Alaska,2,Male,M,14,381418,
+Arizona,4,Female,F,398,3661420,10.9
+Arizona,4,Male,M,469,3617297,13
+Arkansas,5,Female,F,254,1536188,16.5
+Arkansas,5,Male,M,276,1481616,18.6
+California,6,Female,F,2534,19867369,12.8
+California,6,Male,M,2570,19644854,13.1
+Colorado,8,Female,F,179,2857388,6.3
+Colorado,8,Male,M,178,2901348,6.1
+Connecticut,9,Female,F,270,1825870,14.8
+Connecticut,9,Male,M,213,1739417,12.2
+Delaware,10,Female,F,57,502971,11.3
+Delaware,10,Male,M,58,470793,12.3
+District of Columbia,11,Female,F,38,371038,10.2
+District of Columbia,11,Male,M,32,334711,9.6
+Florida,12,Female,F,1185,10980681,10.8
+Florida,12,Male,M,1243,10497056,11.8
+Georgia,13,Female,F,575,5456999,10.5
+Georgia,13,Male,M,606,5160424,11.7
+Hawaii,15,Female,F,171,707832,24.2
+Hawaii,15,Male,M,161,708040,22.7
+Idaho,16,Female,F,84,891137,9.4
+Idaho,16,Male,M,90,895928,10
+Illinois,17,Female,F,1000,6445263,15.5
+Illinois,17,Male,M,948,6226558,15.2
+Indiana,18,Female,F,402,3411859,11.8
+Indiana,18,Male,M,385,3320360,11.6
+Iowa,19,Female,F,277,1583995,17.5
+Iowa,19,Male,M,217,1571075,13.8
+Kansas,20,Female,F,245,1461617,16.8
+Kansas,20,Male,M,203,1451697,14
+Kentucky,21,Female,F,358,2266644,15.8
+Kentucky,21,Male,M,367,2201029,16.7
+Louisiana,22,Female,F,315,2381744,13.2
+Louisiana,22,Male,M,280,2267050,12.4
+Maine,23,Female,F,119,686100,17.3
+Maine,23,Male,M,140,658112,21.3
+Maryland,24,Female,F,396,3116815,12.7
+Maryland,24,Male,M,346,2928865,11.8
+Massachusetts,25,Female,F,575,3546935,16.2
+Massachusetts,25,Male,M,509,3345568,15.2
+Michigan,26,Female,F,737,5068329,14.5
+Michigan,26,Male,M,736,4918528,15
+Minnesota,27,Female,F,232,2829821,8.2
+Minnesota,27,Male,M,220,2809811,7.8
+Mississippi,28,Female,F,380,1533857,24.8
+Mississippi,28,Male,M,370,1442292,25.7
+Missouri,29,Female,F,486,3124766,15.6
+Missouri,29,Male,M,442,3012662,14.7
+Montana,30,Female,F,57,530712,10.7
+Montana,30,Male,M,66,538066,12.3
+Nebraska,31,Female,F,130,967959,13.4
+Nebraska,31,Male,M,161,966449,16.7
+Nevada,32,Female,F,185,1535329,12
+Nevada,32,Male,M,228,1544827,14.8
+New Hampshire,33,Female,F,80,685918,11.7
+New Hampshire,33,Male,M,79,673793,11.7
+New Jersey,34,Female,F,594,4541603,13.1
+New Jersey,34,Male,M,547,4340587,12.6
+New Mexico,35,Female,F,136,1059397,12.8
+New Mexico,35,Male,M,157,1037432,15.1
+New York,36,Female,F,1921,10005715,19.2
+New York,36,Male,M,2029,9447846,21.5
+North Carolina,37,Female,F,813,5387820,15.1
+North Carolina,37,Male,M,690,5100264,13.5
+North Dakota,38,Female,F,65,372030,17.5
+North Dakota,38,Male,M,60,390032,15.4
+Ohio,39,Female,F,937,5958538,15.7
+Ohio,39,Male,M,777,5730562,13.6
+Oklahoma,40,Female,F,268,1996313,13.4
+Oklahoma,40,Male,M,289,1960658,14.7
+Oregon,41,Female,F,160,2127010,7.5
+Oregon,41,Male,M,172,2090727,8.2
+Pennsylvania,42,Female,F,1123,6527628,17.2
+Pennsylvania,42,Male,M,1084,6274361,17.3
+Rhode Island,44,Female,F,89,543686,16.4
+Rhode Island,44,Male,M,58,515675,11.2
+South Carolina,45,Female,F,287,2655575,10.8
+South Carolina,45,Male,M,301,2493139,12.1
+South Dakota,46,Female,F,79,437902,18
+South Dakota,46,Male,M,79,446757,17.7
+Tennessee,47,Female,F,595,3496935,17
+Tennessee,47,Male,M,576,3332239,17.3
+Texas,48,Female,F,1322,14593179,9.1
+Texas,48,Male,M,1440,14402702,10
+Utah,49,Female,F,138,1591041,8.7
+Utah,49,Male,M,108,1614917,6.7
+Vermont,50,Female,F,13,315673,
+Vermont,50,Male,M,12,308316,
+Virginia,51,Female,F,479,4335262,11
+Virginia,51,Male,M,468,4200257,11.1
+Washington,53,Female,F,326,3802910,8.6
+Washington,53,Male,M,316,3811983,8.3
+West Virginia,54,Female,F,175,904377,19.4
+West Virginia,54,Male,M,180,887770,20.3
+Wisconsin,55,Female,F,318,2925225,10.9
+Wisconsin,55,Male,M,337,2897209,11.6
+Wyoming,56,Female,F,43,284029,15.1
+Wyoming,56,Male,M,37,294730,12.6

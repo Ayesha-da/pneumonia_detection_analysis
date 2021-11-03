@@ -1,0 +1,513 @@
+﻿Notes,State,State Code,Five-Year Age Groups,Five-Year Age Groups Code,Deaths,Population,Crude Rate
+,Alabama,1,45-49 years,45-49,19,308951,Unreliable
+,Alabama,1,50-54 years,50-54,28,307665,9.1
+,Alabama,1,55-59 years,55-59,54,336320,16.1
+,Alabama,1,60-64 years ,60-64,78,321347,24.3
+,Alabama,1,65-69 years,65-69,96,275448,34.9
+,Alabama,1,70-74 years,70-74,105,225999,46.5
+,Alabama,1,75-79 years,75-79,121,155814,77.7
+,Alabama,1,80-84 years,80-84,123,101033,121.7
+,Alabama,1,85-89 years,85-89,143,Not Applicable,Not Applicable
+,Alabama,1,90-94 years,90-94,103,Not Applicable,Not Applicable
+,Alabama,1,95-99 years,95-99,32,Not Applicable,Not Applicable
+,Arizona,4,40-44 years,40-44,10,429046,Unreliable
+,Arizona,4,45-49 years,45-49,22,433343,5.1
+,Arizona,4,50-54 years,50-54,22,418747,5.3
+,Arizona,4,55-59 years,55-59,41,446731,9.2
+,Arizona,4,60-64 years ,60-64,56,434063,12.9
+,Arizona,4,65-69 years,65-69,71,398499,17.8
+,Arizona,4,70-74 years,70-74,115,353200,32.6
+,Arizona,4,75-79 years,75-79,107,252667,42.3
+,Arizona,4,80-84 years,80-84,134,158530,84.5
+,Arizona,4,85-89 years,85-89,106,Not Applicable,Not Applicable
+,Arizona,4,90-94 years,90-94,107,Not Applicable,Not Applicable
+,Arizona,4,95-99 years,95-99,47,Not Applicable,Not Applicable
+,Arizona,4,100+ years,100+,10,Not Applicable,Not Applicable
+,Arkansas,5,50-54 years,50-54,14,179318,Unreliable
+,Arkansas,5,55-59 years,55-59,18,198021,Unreliable
+,Arkansas,5,60-64 years ,60-64,38,187973,20.2
+,Arkansas,5,65-69 years,65-69,50,164960,30.3
+,Arkansas,5,70-74 years,70-74,58,137869,42.1
+,Arkansas,5,75-79 years,75-79,74,98087,75.4
+,Arkansas,5,80-84 years,80-84,80,63054,126.9
+,Arkansas,5,85-89 years,85-89,70,Not Applicable,Not Applicable
+,Arkansas,5,90-94 years,90-94,55,Not Applicable,Not Applicable
+,Arkansas,5,95-99 years,95-99,30,Not Applicable,Not Applicable
+,Arkansas,5,100+ years,100+,12,Not Applicable,Not Applicable
+,California,6,< 1 year,1,13,462589,Unreliable
+,California,6,20-24 years,20-24,10,2647279,Unreliable
+,California,6,30-34 years,30-34,14,2957974,Unreliable
+,California,6,35-39 years,35-39,30,2780574,1.1
+,California,6,40-44 years,40-44,28,2501526,1.1
+,California,6,45-49 years,45-49,57,2515419,2.3
+,California,6,50-54 years,50-54,87,2464326,3.5
+,California,6,55-59 years,55-59,157,2508777,6.3
+,California,6,60-64 years ,60-64,298,2277858,13.1
+,California,6,65-69 years,65-69,379,1889872,20.1
+,California,6,70-74 years,70-74,462,1496798,30.9
+,California,6,75-79 years,75-79,591,1017681,58.1
+,California,6,80-84 years,80-84,727,683918,106.3
+,California,6,85-89 years,85-89,862,Not Applicable,Not Applicable
+,California,6,90-94 years,90-94,806,Not Applicable,Not Applicable
+,California,6,95-99 years,95-99,444,Not Applicable,Not Applicable
+,California,6,100+ years,100+,119,Not Applicable,Not Applicable
+,Colorado,8,50-54 years,50-54,12,340915,Unreliable
+,Colorado,8,55-59 years,55-59,24,364977,6.6
+,Colorado,8,60-64 years ,60-64,17,348036,Unreliable
+,Colorado,8,65-69 years,65-69,26,296296,8.8
+,Colorado,8,70-74 years,70-74,25,225835,11.1
+,Colorado,8,75-79 years,75-79,34,141798,24
+,Colorado,8,80-84 years,80-84,56,88562,63.2
+,Colorado,8,85-89 years,85-89,49,Not Applicable,Not Applicable
+,Colorado,8,90-94 years,90-94,49,Not Applicable,Not Applicable
+,Colorado,8,95-99 years,95-99,29,Not Applicable,Not Applicable
+,Connecticut,9,55-59 years,55-59,11,267967,Unreliable
+,Connecticut,9,60-64 years ,60-64,22,245488,9
+,Connecticut,9,65-69 years,65-69,23,195083,11.8
+,Connecticut,9,70-74 years,70-74,32,157736,20.3
+,Connecticut,9,75-79 years,75-79,52,112284,46.3
+,Connecticut,9,80-84 years,80-84,53,73811,71.8
+,Connecticut,9,85-89 years,85-89,78,Not Applicable,Not Applicable
+,Connecticut,9,90-94 years,90-94,116,Not Applicable,Not Applicable
+,Connecticut,9,95-99 years,95-99,64,Not Applicable,Not Applicable
+,Connecticut,9,100+ years,100+,13,Not Applicable,Not Applicable
+,Delaware,10,75-79 years,75-79,20,34652,57.7
+,Delaware,10,80-84 years,80-84,16,21142,Unreliable
+,Delaware,10,85-89 years,85-89,16,Not Applicable,Not Applicable
+,Delaware,10,90-94 years,90-94,20,Not Applicable,Not Applicable
+,District of Columbia,11,90-94 years,90-94,10,Not Applicable,Not Applicable
+,Florida,12,< 1 year,1,10,221463,Unreliable
+,Florida,12,30-34 years,30-34,10,1379606,Unreliable
+,Florida,12,35-39 years,35-39,24,1336741,1.8
+,Florida,12,40-44 years,40-44,21,1263790,1.7
+,Florida,12,45-49 years,45-49,35,1340417,2.6
+,Florida,12,50-54 years,50-54,53,1368978,3.9
+,Florida,12,55-59 years,55-59,92,1489510,6.2
+,Florida,12,60-64 years ,60-64,132,1408845,9.4
+,Florida,12,65-69 years,65-69,174,1295884,13.4
+,Florida,12,70-74 years,70-74,258,1169485,22.1
+,Florida,12,75-79 years,75-79,278,870367,31.9
+,Florida,12,80-84 years,80-84,361,580147,62.2
+,Florida,12,85-89 years,85-89,414,Not Applicable,Not Applicable
+,Florida,12,90-94 years,90-94,328,Not Applicable,Not Applicable
+,Florida,12,95-99 years,95-99,160,Not Applicable,Not Applicable
+,Florida,12,100+ years,100+,62,Not Applicable,Not Applicable
+,Georgia,13,35-39 years,35-39,12,709018,Unreliable
+,Georgia,13,45-49 years,45-49,33,712696,4.6
+,Georgia,13,50-54 years,50-54,28,686956,4.1
+,Georgia,13,55-59 years,55-59,65,691407,9.4
+,Georgia,13,60-64 years ,60-64,96,616126,15.6
+,Georgia,13,65-69 years,65-69,115,511367,22.5
+,Georgia,13,70-74 years,70-74,107,414634,25.8
+,Georgia,13,75-79 years,75-79,143,273561,52.3
+,Georgia,13,80-84 years,80-84,184,166323,110.6
+,Georgia,13,85-89 years,85-89,160,Not Applicable,Not Applicable
+,Georgia,13,90-94 years,90-94,129,Not Applicable,Not Applicable
+,Georgia,13,95-99 years,95-99,71,Not Applicable,Not Applicable
+,Hawaii,15,60-64 years ,60-64,13,89179,Unreliable
+,Hawaii,15,65-69 years,65-69,11,83038,Unreliable
+,Hawaii,15,70-74 years,70-74,25,69054,36.2
+,Hawaii,15,75-79 years,75-79,28,45499,61.5
+,Hawaii,15,80-84 years,80-84,36,29189,123.3
+,Hawaii,15,85-89 years,85-89,68,Not Applicable,Not Applicable
+,Hawaii,15,90-94 years,90-94,79,Not Applicable,Not Applicable
+,Hawaii,15,95-99 years,95-99,36,Not Applicable,Not Applicable
+,Hawaii,15,100+ years,100+,12,Not Applicable,Not Applicable
+,Idaho,16,60-64 years ,60-64,15,108819,Unreliable
+,Idaho,16,70-74 years,70-74,18,77982,Unreliable
+,Idaho,16,75-79 years,75-79,18,52941,Unreliable
+,Idaho,16,80-84 years,80-84,33,32089,102.8
+,Idaho,16,85-89 years,85-89,32,Not Applicable,Not Applicable
+,Idaho,16,90-94 years,90-94,18,Not Applicable,Not Applicable
+,Idaho,16,95-99 years,95-99,11,Not Applicable,Not Applicable
+,Illinois,17,35-39 years,35-39,14,849955,Unreliable
+,Illinois,17,40-44 years,40-44,17,787180,Unreliable
+,Illinois,17,45-49 years,45-49,38,799928,4.8
+,Illinois,17,50-54 years,50-54,37,799861,4.6
+,Illinois,17,55-59 years,55-59,83,854601,9.7
+,Illinois,17,60-64 years ,60-64,97,803682,12.1
+,Illinois,17,65-69 years,65-69,138,662179,20.8
+,Illinois,17,70-74 years,70-74,164,513854,31.9
+,Illinois,17,75-79 years,75-79,211,359028,58.8
+,Illinois,17,80-84 years,80-84,275,241202,114
+,Illinois,17,85-89 years,85-89,325,Not Applicable,Not Applicable
+,Illinois,17,90-94 years,90-94,323,Not Applicable,Not Applicable
+,Illinois,17,95-99 years,95-99,157,Not Applicable,Not Applicable
+,Illinois,17,100+ years,100+,37,Not Applicable,Not Applicable
+,Indiana,18,40-44 years,40-44,13,401694,Unreliable
+,Indiana,18,50-54 years,50-54,19,410140,Unreliable
+,Indiana,18,55-59 years,55-59,37,448666,8.2
+,Indiana,18,60-64 years ,60-64,40,426416,9.4
+,Indiana,18,65-69 years,65-69,71,358410,19.8
+,Indiana,18,70-74 years,70-74,86,278327,30.9
+,Indiana,18,75-79 years,75-79,96,191682,50.1
+,Indiana,18,80-84 years,80-84,97,126255,76.8
+,Indiana,18,85-89 years,85-89,127,Not Applicable,Not Applicable
+,Indiana,18,90-94 years,90-94,111,Not Applicable,Not Applicable
+,Indiana,18,95-99 years,95-99,45,Not Applicable,Not Applicable
+,Indiana,18,100+ years,100+,14,Not Applicable,Not Applicable
+,Iowa,19,55-59 years,55-59,12,210834,Unreliable
+,Iowa,19,60-64 years ,60-64,12,204862,Unreliable
+,Iowa,19,65-69 years,65-69,26,176886,14.7
+,Iowa,19,70-74 years,70-74,41,134561,30.5
+,Iowa,19,75-79 years,75-79,46,94817,48.5
+,Iowa,19,80-84 years,80-84,53,68016,77.9
+,Iowa,19,85-89 years,85-89,77,Not Applicable,Not Applicable
+,Iowa,19,90-94 years,90-94,104,Not Applicable,Not Applicable
+,Iowa,19,95-99 years,95-99,79,Not Applicable,Not Applicable
+,Iowa,19,100+ years,100+,24,Not Applicable,Not Applicable
+,Kansas,20,55-59 years,55-59,22,188632,11.7
+,Kansas,20,60-64 years ,60-64,17,182873,Unreliable
+,Kansas,20,65-69 years,65-69,32,154491,20.7
+,Kansas,20,70-74 years,70-74,40,117745,34
+,Kansas,20,75-79 years,75-79,44,81312,54.1
+,Kansas,20,80-84 years,80-84,45,56261,80
+,Kansas,20,85-89 years,85-89,65,Not Applicable,Not Applicable
+,Kansas,20,90-94 years,90-94,91,Not Applicable,Not Applicable
+,Kansas,20,95-99 years,95-99,54,Not Applicable,Not Applicable
+,Kansas,20,100+ years,100+,14,Not Applicable,Not Applicable
+,Kentucky,21,45-49 years,45-49,16,280688,Unreliable
+,Kentucky,21,50-54 years,50-54,20,282974,7.1
+,Kentucky,21,55-59 years,55-59,33,307003,10.7
+,Kentucky,21,60-64 years ,60-64,46,291286,15.8
+,Kentucky,21,65-69 years,65-69,58,248803,23.3
+,Kentucky,21,70-74 years,70-74,99,199073,49.7
+,Kentucky,21,75-79 years,75-79,94,134492,69.9
+,Kentucky,21,80-84 years,80-84,102,86328,118.2
+,Kentucky,21,85-89 years,85-89,95,Not Applicable,Not Applicable
+,Kentucky,21,90-94 years,90-94,87,Not Applicable,Not Applicable
+,Kentucky,21,95-99 years,95-99,42,Not Applicable,Not Applicable
+,Louisiana,22,50-54 years,50-54,17,278851,Unreliable
+,Louisiana,22,55-59 years,55-59,30,308346,9.7
+,Louisiana,22,60-64 years ,60-64,50,296324,16.9
+,Louisiana,22,65-69 years,65-69,54,248923,21.7
+,Louisiana,22,70-74 years,70-74,54,193611,27.9
+,Louisiana,22,75-79 years,75-79,64,131141,48.8
+,Louisiana,22,80-84 years,80-84,68,85290,79.7
+,Louisiana,22,85-89 years,85-89,108,Not Applicable,Not Applicable
+,Louisiana,22,90-94 years,90-94,75,Not Applicable,Not Applicable
+,Louisiana,22,95-99 years,95-99,29,Not Applicable,Not Applicable
+,Maine,23,60-64 years ,60-64,15,105643,Unreliable
+,Maine,23,65-69 years,65-69,26,93770,27.7
+,Maine,23,70-74 years,70-74,22,75309,29.2
+,Maine,23,75-79 years,75-79,33,50062,65.9
+,Maine,23,80-84 years,80-84,37,32324,114.5
+,Maine,23,85-89 years,85-89,40,Not Applicable,Not Applicable
+,Maine,23,90-94 years,90-94,46,Not Applicable,Not Applicable
+,Maine,23,95-99 years,95-99,20,Not Applicable,Not Applicable
+,Maryland,24,45-49 years,45-49,14,385774,Unreliable
+,Maryland,24,50-54 years,50-54,20,409693,4.9
+,Maryland,24,55-59 years,55-59,33,431688,7.6
+,Maryland,24,60-64 years ,60-64,36,386831,9.3
+,Maryland,24,65-69 years,65-69,46,312521,14.7
+,Maryland,24,70-74 years,70-74,70,249061,28.1
+,Maryland,24,75-79 years,75-79,80,169952,47.1
+,Maryland,24,80-84 years,80-84,99,108469,91.3
+,Maryland,24,85-89 years,85-89,136,Not Applicable,Not Applicable
+,Maryland,24,90-94 years,90-94,106,Not Applicable,Not Applicable
+,Maryland,24,95-99 years,95-99,54,Not Applicable,Not Applicable
+,Maryland,24,100+ years,100+,17,Not Applicable,Not Applicable
+,Massachusetts,25,50-54 years,50-54,21,464577,4.5
+,Massachusetts,25,55-59 years,55-59,26,490961,5.3
+,Massachusetts,25,60-64 years ,60-64,48,452229,10.6
+,Massachusetts,25,65-69 years,65-69,71,373728,19
+,Massachusetts,25,70-74 years,70-74,85,299577,28.4
+,Massachusetts,25,75-79 years,75-79,116,202003,57.4
+,Massachusetts,25,80-84 years,80-84,134,134501,99.6
+,Massachusetts,25,85-89 years,85-89,207,Not Applicable,Not Applicable
+,Massachusetts,25,90-94 years,90-94,187,Not Applicable,Not Applicable
+,Massachusetts,25,95-99 years,95-99,126,Not Applicable,Not Applicable
+,Massachusetts,25,100+ years,100+,40,Not Applicable,Not Applicable
+,Michigan,26,30-34 years,30-34,11,613803,Unreliable
+,Michigan,26,40-44 years,40-44,15,566844,Unreliable
+,Michigan,26,45-49 years,45-49,13,612531,Unreliable
+,Michigan,26,50-54 years,50-54,39,642148,6.1
+,Michigan,26,55-59 years,55-59,69,708151,9.7
+,Michigan,26,60-64 years ,60-64,114,691384,16.5
+,Michigan,26,65-69 years,65-69,117,584379,20
+,Michigan,26,70-74 years,70-74,119,453201,26.3
+,Michigan,26,75-79 years,75-79,163,313609,52
+,Michigan,26,80-84 years,80-84,189,201076,94
+,Michigan,26,85-89 years,85-89,261,Not Applicable,Not Applicable
+,Michigan,26,90-94 years,90-94,222,Not Applicable,Not Applicable
+,Michigan,26,95-99 years,95-99,87,Not Applicable,Not Applicable
+,Michigan,26,100+ years,100+,27,Not Applicable,Not Applicable
+,Minnesota,27,50-54 years,50-54,11,344518,Unreliable
+,Minnesota,27,55-59 years,55-59,18,390965,Unreliable
+,Minnesota,27,60-64 years ,60-64,36,365456,9.9
+,Minnesota,27,65-69 years,65-69,26,303676,8.6
+,Minnesota,27,70-74 years,70-74,35,227383,15.4
+,Minnesota,27,75-79 years,75-79,43,158811,27.1
+,Minnesota,27,80-84 years,80-84,53,107902,49.1
+,Minnesota,27,85-89 years,85-89,66,Not Applicable,Not Applicable
+,Minnesota,27,90-94 years,90-94,79,Not Applicable,Not Applicable
+,Minnesota,27,95-99 years,95-99,50,Not Applicable,Not Applicable
+,Minnesota,27,100+ years,100+,18,Not Applicable,Not Applicable
+,Mississippi,28,45-49 years,45-49,13,181833,Unreliable
+,Mississippi,28,50-54 years,50-54,23,180207,12.8
+,Mississippi,28,55-59 years,55-59,28,197314,14.2
+,Mississippi,28,60-64 years ,60-64,45,188597,23.9
+,Mississippi,28,65-69 years,65-69,66,160611,41.1
+,Mississippi,28,70-74 years,70-74,87,128344,67.8
+,Mississippi,28,75-79 years,75-79,128,87629,146.1
+,Mississippi,28,80-84 years,80-84,100,57811,173
+,Mississippi,28,85-89 years,85-89,112,Not Applicable,Not Applicable
+,Mississippi,28,90-94 years,90-94,78,Not Applicable,Not Applicable
+,Mississippi,28,95-99 years,95-99,37,Not Applicable,Not Applicable
+,Mississippi,28,100+ years,100+,10,Not Applicable,Not Applicable
+,Missouri,29,40-44 years,40-44,13,356694,Unreliable
+,Missouri,29,45-49 years,45-49,17,363465,Unreliable
+,Missouri,29,50-54 years,50-54,22,369479,6
+,Missouri,29,55-59 years,55-59,30,426445,7
+,Missouri,29,60-64 years ,60-64,50,404287,12.4
+,Missouri,29,65-69 years,65-69,65,339706,19.1
+,Missouri,29,70-74 years,70-74,98,270459,36.2
+,Missouri,29,75-79 years,75-79,103,192141,53.6
+,Missouri,29,80-84 years,80-84,124,126200,98.3
+,Missouri,29,85-89 years,85-89,153,Not Applicable,Not Applicable
+,Missouri,29,90-94 years,90-94,152,Not Applicable,Not Applicable
+,Missouri,29,95-99 years,95-99,62,Not Applicable,Not Applicable
+,Missouri,29,100+ years,100+,18,Not Applicable,Not Applicable
+,Montana,30,65-69 years,65-69,10,70670,Unreliable
+,Montana,30,70-74 years,70-74,11,53961,Unreliable
+,Montana,30,75-79 years,75-79,11,36265,Unreliable
+,Montana,30,80-84 years,80-84,18,22686,Unreliable
+,Montana,30,85-89 years,85-89,28,Not Applicable,Not Applicable
+,Montana,30,90-94 years,90-94,16,Not Applicable,Not Applicable
+,Montana,30,95-99 years,95-99,10,Not Applicable,Not Applicable
+,Nebraska,31,60-64 years ,60-64,13,118704,Unreliable
+,Nebraska,31,65-69 years,65-69,18,101570,Unreliable
+,Nebraska,31,70-74 years,70-74,28,77338,36.2
+,Nebraska,31,75-79 years,75-79,25,53146,47
+,Nebraska,31,80-84 years,80-84,37,37346,99.1
+,Nebraska,31,85-89 years,85-89,47,Not Applicable,Not Applicable
+,Nebraska,31,90-94 years,90-94,58,Not Applicable,Not Applicable
+,Nebraska,31,95-99 years,95-99,29,Not Applicable,Not Applicable
+,Nebraska,31,100+ years,100+,11,Not Applicable,Not Applicable
+,Nevada,32,45-49 years,45-49,10,200161,Unreliable
+,Nevada,32,50-54 years,50-54,13,194067,Unreliable
+,Nevada,32,55-59 years,55-59,29,197938,14.7
+,Nevada,32,60-64 years ,60-64,31,185538,16.7
+,Nevada,32,65-69 years,65-69,31,164209,18.9
+,Nevada,32,70-74 years,70-74,60,139154,43.1
+,Nevada,32,75-79 years,75-79,54,93275,57.9
+,Nevada,32,80-84 years,80-84,62,54518,113.7
+,Nevada,32,85-89 years,85-89,50,Not Applicable,Not Applicable
+,Nevada,32,90-94 years,90-94,39,Not Applicable,Not Applicable
+,Nevada,32,95-99 years,95-99,12,Not Applicable,Not Applicable
+,New Hampshire,33,70-74 years,70-74,20,67532,29.6
+,New Hampshire,33,75-79 years,75-79,18,43777,Unreliable
+,New Hampshire,33,80-84 years,80-84,22,27177,81
+,New Hampshire,33,85-89 years,85-89,34,Not Applicable,Not Applicable
+,New Hampshire,33,90-94 years,90-94,28,Not Applicable,Not Applicable
+,New Hampshire,33,95-99 years,95-99,14,Not Applicable,Not Applicable
+,New Jersey,34,45-49 years,45-49,12,584884,Unreliable
+,New Jersey,34,50-54 years,50-54,24,615939,3.9
+,New Jersey,34,55-59 years,55-59,39,642602,6.1
+,New Jersey,34,60-64 years ,60-64,55,581047,9.5
+,New Jersey,34,65-69 years,65-69,82,461456,17.8
+,New Jersey,34,70-74 years,70-74,85,371410,22.9
+,New Jersey,34,75-79 years,75-79,132,262580,50.3
+,New Jersey,34,80-84 years,80-84,165,176985,93.2
+,New Jersey,34,85-89 years,85-89,190,Not Applicable,Not Applicable
+,New Jersey,34,90-94 years,90-94,203,Not Applicable,Not Applicable
+,New Jersey,34,95-99 years,95-99,107,Not Applicable,Not Applicable
+,New Jersey,34,100+ years,100+,23,Not Applicable,Not Applicable
+,New Mexico,35,55-59 years,55-59,20,137530,14.5
+,New Mexico,35,60-64 years ,60-64,20,135391,14.8
+,New Mexico,35,65-69 years,65-69,32,123189,26
+,New Mexico,35,70-74 years,70-74,23,101294,22.7
+,New Mexico,35,75-79 years,75-79,31,67613,45.8
+,New Mexico,35,80-84 years,80-84,42,44101,95.2
+,New Mexico,35,85-89 years,85-89,46,Not Applicable,Not Applicable
+,New Mexico,35,90-94 years,90-94,36,Not Applicable,Not Applicable
+,New Mexico,35,95-99 years,95-99,14,Not Applicable,Not Applicable
+,New York,36,25-29 years,25-29,11,1465003,Unreliable
+,New York,36,30-34 years,30-34,10,1402648,Unreliable
+,New York,36,35-39 years,35-39,18,1271005,Unreliable
+,New York,36,40-44 years,40-44,36,1158956,3.1
+,New York,36,45-49 years,45-49,39,1196751,3.3
+,New York,36,50-54 years,50-54,84,1275053,6.6
+,New York,36,55-59 years,55-59,132,1348846,9.8
+,New York,36,60-64 years ,60-64,210,1248310,16.8
+,New York,36,65-69 years,65-69,247,1032146,23.9
+,New York,36,70-74 years,70-74,345,827776,41.7
+,New York,36,75-79 years,75-79,455,578106,78.7
+,New York,36,80-84 years,80-84,558,398117,140.2
+,New York,36,85-89 years,85-89,694,Not Applicable,Not Applicable
+,New York,36,90-94 years,90-94,649,Not Applicable,Not Applicable
+,New York,36,95-99 years,95-99,355,Not Applicable,Not Applicable
+,New York,36,100+ years,100+,89,Not Applicable,Not Applicable
+,North Carolina,37,45-49 years,45-49,23,688599,3.3
+,North Carolina,37,50-54 years,50-54,35,675468,5.2
+,North Carolina,37,55-59 years,55-59,61,703294,8.7
+,North Carolina,37,60-64 years ,60-64,90,658831,13.7
+,North Carolina,37,65-69 years,65-69,106,573844,18.5
+,North Carolina,37,70-74 years,70-74,151,472664,31.9
+,North Carolina,37,75-79 years,75-79,181,316306,57.2
+,North Carolina,37,80-84 years,80-84,247,198886,124.2
+,North Carolina,37,85-89 years,85-89,238,Not Applicable,Not Applicable
+,North Carolina,37,90-94 years,90-94,222,Not Applicable,Not Applicable
+,North Carolina,37,95-99 years,95-99,83,Not Applicable,Not Applicable
+,North Carolina,37,100+ years,100+,24,Not Applicable,Not Applicable
+,North Dakota,38,70-74 years,70-74,12,28215,Unreliable
+,North Dakota,38,75-79 years,75-79,16,19589,Unreliable
+,North Dakota,38,80-84 years,80-84,17,14779,Unreliable
+,North Dakota,38,85-89 years,85-89,20,Not Applicable,Not Applicable
+,North Dakota,38,90-94 years,90-94,21,Not Applicable,Not Applicable
+,North Dakota,38,95-99 years,95-99,12,Not Applicable,Not Applicable
+,Ohio,39,35-39 years,35-39,13,724341,Unreliable
+,Ohio,39,40-44 years,40-44,15,673467,Unreliable
+,Ohio,39,45-49 years,45-49,26,713719,3.6
+,Ohio,39,50-54 years,50-54,36,733862,4.9
+,Ohio,39,55-59 years,55-59,81,808229,10
+,Ohio,39,60-64 years ,60-64,100,796454,12.6
+,Ohio,39,65-69 years,65-69,142,666858,21.3
+,Ohio,39,70-74 years,70-74,167,522385,32
+,Ohio,39,75-79 years,75-79,201,357587,56.2
+,Ohio,39,80-84 years,80-84,257,243218,105.7
+,Ohio,39,85-89 years,85-89,258,Not Applicable,Not Applicable
+,Ohio,39,90-94 years,90-94,252,Not Applicable,Not Applicable
+,Ohio,39,95-99 years,95-99,120,Not Applicable,Not Applicable
+,Ohio,39,100+ years,100+,25,Not Applicable,Not Applicable
+,Oklahoma,40,40-44 years,40-44,10,233131,Unreliable
+,Oklahoma,40,45-49 years,45-49,13,230394,Unreliable
+,Oklahoma,40,50-54 years,50-54,13,223142,Unreliable
+,Oklahoma,40,55-59 years,55-59,17,252949,Unreliable
+,Oklahoma,40,60-64 years ,60-64,45,240745,18.7
+,Oklahoma,40,65-69 years,65-69,59,204145,28.9
+,Oklahoma,40,70-74 years,70-74,59,163905,36
+,Oklahoma,40,75-79 years,75-79,81,116437,69.6
+,Oklahoma,40,80-84 years,80-84,70,76482,91.5
+,Oklahoma,40,85-89 years,85-89,72,Not Applicable,Not Applicable
+,Oklahoma,40,90-94 years,90-94,68,Not Applicable,Not Applicable
+,Oklahoma,40,95-99 years,95-99,28,Not Applicable,Not Applicable
+,Oregon,41,50-54 years,50-54,10,248249,Unreliable
+,Oregon,41,55-59 years,55-59,22,266713,8.2
+,Oregon,41,60-64 years ,60-64,22,272237,8.1
+,Oregon,41,65-69 years,65-69,29,258569,11.2
+,Oregon,41,70-74 years,70-74,28,206029,13.6
+,Oregon,41,75-79 years,75-79,32,135035,23.7
+,Oregon,41,80-84 years,80-84,34,81909,41.5
+,Oregon,41,85-89 years,85-89,55,Not Applicable,Not Applicable
+,Oregon,41,90-94 years,90-94,60,Not Applicable,Not Applicable
+,Oregon,41,95-99 years,95-99,24,Not Applicable,Not Applicable
+,Pennsylvania,42,30-34 years,30-34,11,847764,Unreliable
+,Pennsylvania,42,35-39 years,35-39,13,791515,Unreliable
+,Pennsylvania,42,40-44 years,40-44,13,722224,Unreliable
+,Pennsylvania,42,45-49 years,45-49,20,773596,2.6
+,Pennsylvania,42,50-54 years,50-54,43,830501,5.2
+,Pennsylvania,42,55-59 years,55-59,76,909697,8.4
+,Pennsylvania,42,60-64 years ,60-64,89,895186,9.9
+,Pennsylvania,42,65-69 years,65-69,137,755303,18.1
+,Pennsylvania,42,70-74 years,70-74,195,598790,32.6
+,Pennsylvania,42,75-79 years,75-79,242,419523,57.7
+,Pennsylvania,42,80-84 years,80-84,318,287634,110.6
+,Pennsylvania,42,85-89 years,85-89,357,Not Applicable,Not Applicable
+,Pennsylvania,42,90-94 years,90-94,430,Not Applicable,Not Applicable
+,Pennsylvania,42,95-99 years,95-99,200,Not Applicable,Not Applicable
+,Pennsylvania,42,100+ years,100+,38,Not Applicable,Not Applicable
+,Rhode Island,44,60-64 years ,60-64,10,73060,Unreliable
+,Rhode Island,44,70-74 years,70-74,12,46799,Unreliable
+,Rhode Island,44,75-79 years,75-79,13,32019,Unreliable
+,Rhode Island,44,80-84 years,80-84,16,21356,Unreliable
+,Rhode Island,44,85-89 years,85-89,37,Not Applicable,Not Applicable
+,Rhode Island,44,90-94 years,90-94,20,Not Applicable,Not Applicable
+,Rhode Island,44,95-99 years,95-99,18,Not Applicable,Not Applicable
+,South Carolina,45,50-54 years,50-54,15,322412,Unreliable
+,South Carolina,45,55-59 years,55-59,28,349976,8
+,South Carolina,45,60-64 years ,60-64,37,339168,10.9
+,South Carolina,45,65-69 years,65-69,45,309207,14.6
+,South Carolina,45,70-74 years,70-74,73,261393,27.9
+,South Carolina,45,75-79 years,75-79,73,173014,42.2
+,South Carolina,45,80-84 years,80-84,72,101999,70.6
+,South Carolina,45,85-89 years,85-89,96,Not Applicable,Not Applicable
+,South Carolina,45,90-94 years,90-94,78,Not Applicable,Not Applicable
+,South Carolina,45,95-99 years,95-99,30,Not Applicable,Not Applicable
+,South Dakota,46,75-79 years,75-79,17,24442,Unreliable
+,South Dakota,46,80-84 years,80-84,16,17228,Unreliable
+,South Dakota,46,85-89 years,85-89,36,Not Applicable,Not Applicable
+,South Dakota,46,90-94 years,90-94,28,Not Applicable,Not Applicable
+,South Dakota,46,95-99 years,95-99,24,Not Applicable,Not Applicable
+,Tennessee,47,40-44 years,40-44,13,412130,Unreliable
+,Tennessee,47,45-49 years,45-49,36,437995,8.2
+,Tennessee,47,50-54 years,50-54,25,433284,5.8
+,Tennessee,47,55-59 years,55-59,57,460294,12.4
+,Tennessee,47,60-64 years ,60-64,81,434403,18.6
+,Tennessee,47,65-69 years,65-69,112,373761,30
+,Tennessee,47,70-74 years,70-74,139,307635,45.2
+,Tennessee,47,75-79 years,75-79,154,209230,73.6
+,Tennessee,47,80-84 years,80-84,156,130998,119.1
+,Tennessee,47,85-89 years,85-89,164,Not Applicable,Not Applicable
+,Tennessee,47,90-94 years,90-94,139,Not Applicable,Not Applicable
+,Tennessee,47,95-99 years,95-99,62,Not Applicable,Not Applicable
+,Texas,48,< 1 year,1,14,377806,Unreliable
+,Texas,48,30-34 years,30-34,14,2104466,Unreliable
+,Texas,48,35-39 years,35-39,28,2064852,1.4
+,Texas,48,40-44 years,40-44,37,1877587,2
+,Texas,48,45-49 years,45-49,62,1853407,3.3
+,Texas,48,50-54 years,50-54,80,1700691,4.7
+,Texas,48,55-59 years,55-59,131,1721845,7.6
+,Texas,48,60-64 years ,60-64,192,1553397,12.4
+,Texas,48,65-69 years,65-69,248,1261142,19.7
+,Texas,48,70-74 years,70-74,270,983886,27.4
+,Texas,48,75-79 years,75-79,340,659344,51.6
+,Texas,48,80-84 years,80-84,365,421398,86.6
+,Texas,48,85-89 years,85-89,409,Not Applicable,Not Applicable
+,Texas,48,90-94 years,90-94,333,Not Applicable,Not Applicable
+,Texas,48,95-99 years,95-99,165,Not Applicable,Not Applicable
+,Texas,48,100+ years,100+,39,Not Applicable,Not Applicable
+,Utah,49,60-64 years ,60-64,12,147626,Unreliable
+,Utah,49,65-69 years,65-69,15,124183,Unreliable
+,Utah,49,70-74 years,70-74,19,95283,Unreliable
+,Utah,49,75-79 years,75-79,31,65645,47.2
+,Utah,49,80-84 years,80-84,27,42187,64
+,Utah,49,85-89 years,85-89,42,Not Applicable,Not Applicable
+,Utah,49,90-94 years,90-94,36,Not Applicable,Not Applicable
+,Utah,49,95-99 years,95-99,25,Not Applicable,Not Applicable
+,Virginia,51,45-49 years,45-49,14,547506,Unreliable
+,Virginia,51,50-54 years,50-54,21,552768,3.8
+,Virginia,51,55-59 years,55-59,37,584373,6.3
+,Virginia,51,60-64 years ,60-64,59,530044,11.1
+,Virginia,51,65-69 years,65-69,72,440858,16.3
+,Virginia,51,70-74 years,70-74,96,361433,26.6
+,Virginia,51,75-79 years,75-79,126,246799,51.1
+,Virginia,51,80-84 years,80-84,121,155331,77.9
+,Virginia,51,85-89 years,85-89,144,Not Applicable,Not Applicable
+,Virginia,51,90-94 years,90-94,142,Not Applicable,Not Applicable
+,Virginia,51,95-99 years,95-99,69,Not Applicable,Not Applicable
+,Virginia,51,100+ years,100+,14,Not Applicable,Not Applicable
+,Washington,53,40-44 years,40-44,10,478031,Unreliable
+,Washington,53,50-54 years,50-54,10,456224,Unreliable
+,Washington,53,55-59 years,55-59,32,488428,6.6
+,Washington,53,60-64 years ,60-64,34,471180,7.2
+,Washington,53,65-69 years,65-69,51,411965,12.4
+,Washington,53,70-74 years,70-74,69,323559,21.3
+,Washington,53,75-79 years,75-79,71,210934,33.7
+,Washington,53,80-84 years,80-84,68,128687,52.8
+,Washington,53,85-89 years,85-89,101,Not Applicable,Not Applicable
+,Washington,53,90-94 years,90-94,91,Not Applicable,Not Applicable
+,Washington,53,95-99 years,95-99,55,Not Applicable,Not Applicable
+,Washington,53,100+ years,100+,15,Not Applicable,Not Applicable
+,West Virginia,54,50-54 years,50-54,15,115086,Unreliable
+,West Virginia,54,60-64 years ,60-64,22,129699,17
+,West Virginia,54,65-69 years,65-69,30,119185,25.2
+,West Virginia,54,70-74 years,70-74,31,98138,31.6
+,West Virginia,54,75-79 years,75-79,60,65706,91.3
+,West Virginia,54,80-84 years,80-84,55,43846,125.4
+,West Virginia,54,85-89 years,85-89,56,Not Applicable,Not Applicable
+,West Virginia,54,90-94 years,90-94,39,Not Applicable,Not Applicable
+,West Virginia,54,95-99 years,95-99,20,Not Applicable,Not Applicable
+,Wisconsin,55,50-54 years,50-54,16,372225,Unreliable
+,Wisconsin,55,55-59 years,55-59,23,422240,5.4
+,Wisconsin,55,60-64 years ,60-64,34,400778,8.5
+,Wisconsin,55,65-69 years,65-69,46,338616,13.6
+,Wisconsin,55,70-74 years,70-74,51,256132,19.9
+,Wisconsin,55,75-79 years,75-79,65,175288,37.1
+,Wisconsin,55,80-84 years,80-84,83,118898,69.8
+,Wisconsin,55,85-89 years,85-89,96,Not Applicable,Not Applicable
+,Wisconsin,55,90-94 years,90-94,133,Not Applicable,Not Applicable
+,Wisconsin,55,95-99 years,95-99,65,Not Applicable,Not Applicable
+,Wisconsin,55,100+ years,100+,17,Not Applicable,Not Applicable
+,Wyoming,56,85-89 years,85-89,18,Not Applicable,Not Applicable
+,Wyoming,56,90-94 years,90-94,16,Not Applicable,Not Applicable
