@@ -13,12 +13,12 @@ Created on Fri Oct 29 12:09:09 2021
 """
 
 # My two categories
-X = "Not_Pneumonia"
+X = "Normal"
 Y = "Pneumonia"
 
 # Two example images for the website, they are in the static directory next 
 # where this file is and must match the filenames here
-sampleX='static/Not_Pneumonia.jpeg'
+sampleX='static/Normal.jpeg'
 sampleY='static/pneumonia.jpeg'
 
 # Where I will keep user uploads

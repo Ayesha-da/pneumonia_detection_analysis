@@ -26,10 +26,10 @@ IMG_WIDTH, IMG_HEIGHT = 150,150
 #Set the constants
 TRAIN_DATA_DIR = 'Resources/chest_xray/train'
 VALIDATION_DATA_DIR = 'Resources/chest_xray/test'
-NB_TRAIN_SAMPLES = 5659   #Must match number of files
-NB_VALIDATION_SAMPLES = 824
+NB_TRAIN_SAMPLES = 200  #Must match number of files
+NB_VALIDATION_SAMPLES = 200
 
-EPOCHS = 100 #Higher for more time training model... diminishing returns
+EPOCHS = 50 #Higher for more time training model... diminishing returns
 BATCH_SIZE = 5
 
 # Machine Learning Model Filename
@@ -42,35 +42,46 @@ def build_model():
     else:
         input_shape = (IMG_WIDTH, IMG_HEIGHT, 3)
         
-        
+    
     model = Sequential()
     model.add(Conv2D(32, (3, 3), input_shape=input_shape))
     model.add(Activation('relu'))
- #   model.add(BatchNormalization())
-    model.add(MaxPooling2D(pool_size=(2, 2)))
-    
-    model.add(Conv2D(32, (3, 3)))
-    model.add(Activation('relu'))
- #   model.add(BatchNormalization())
+    model.add( BatchNormalization())
     model.add(MaxPooling2D(pool_size=(2, 2)))
     
     model.add(Conv2D(64, (3, 3)))
     model.add(Activation('relu'))
- #   model.add(BatchNormalization())
+    model.add(Dropout(0.1))
+    model.add( BatchNormalization())
+    model.add(MaxPooling2D(pool_size=(2, 2)))
+    
+    model.add(Conv2D(64, (3, 3)))
+    model.add(Activation('relu'))
+    model.add( BatchNormalization())
+    model.add(MaxPooling2D(pool_size=(2, 2)))
+    
+    model.add(Conv2D(128, (3, 3)))
+    model.add(Activation('relu'))
+    model.add(Dropout(0.2))
+    model.add( BatchNormalization())
+    model.add(MaxPooling2D(pool_size=(2, 2)))
+    
+    model.add(Conv2D(256, (3, 3)))
+    model.add(Activation('relu'))
+    model.add(Dropout(0.2))
+    model.add( BatchNormalization())
     model.add(MaxPooling2D(pool_size=(2, 2)))
     
     model.add(Flatten())
     model.add(Dense(64))
     model.add(Activation('relu'))
-    model.add(Dropout(0.5))
+    model.add(Dropout(0.2))
     model.add(Dense(1))
     model.add(Activation('sigmoid'))
     
-    model.compile(loss='binary_crossentropy',
-              optimizer='rmsprop',
-              metrics=['accuracy'])
+   
 
-    
+    model.compile(optimizer = "rmsprop", loss = "binary_crossentropy", metrics = ["accuracy"])
     return model
 
 
