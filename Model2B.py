@@ -5,9 +5,9 @@ Created on Tue Nov  2 15:23:10 2021
 """
 
 
-#This is model1 which tests Pneumonia vs everything (except Normal). In version B (this version) it assumes the image folder structure is:
-#   Model_1B_Images
-#       Normal
+#This is model2 which tests Pneumonia vs everything (except Normal). In version B (this version) it assumes the image folder structure is:
+#   Model_2B_Images
+#       Pneumonia
 #       Other
           
 #
@@ -47,7 +47,7 @@ heights = []
 
 #for set_ in datasets:
 for cat in categories:
-    filelist = glob.glob('./Model_2B_Images/' + cat + '/*.jpeg')
+    filelist = glob.glob('./Model_2B_Images/' + cat + '/*')
     widths.extend([Image.open(fname).size[0] for fname in filelist])
     heights.extend([Image.open(fname).size[1] for fname in filelist])
 
@@ -71,7 +71,7 @@ filename = []
 
 #for set_ in datasets:
 for cat in categories:
-    filelist = glob.glob('./Model_2B_Images/' + cat + '/*.jpeg')
+    filelist = glob.glob('./Model_2B_Images/' + cat + '/*')
     target.extend([cat for _ in filelist])
     data.extend([np.array(Image.open(fname).convert('L').resize((im_width, im_height))) for fname in filelist])
     filename.extend([fname for fname in filelist])
@@ -95,7 +95,8 @@ for line in range(0, 3):
         num_image = random.randint(0, data_array.shape[0])
         ax = fig.add_subplot(gs[line, row])
         ax.axis('off');
-        ax.set_title(target[num_image])
+#        ax.set_title(target[num_image])
+        ax.set_title("file: " + filename[num_image].split("/")[-1] + "/\n" + target[num_image])
         ax.imshow(data_array[num_image]);
 
 #######THIS IS WHERE IT APPEARS TO BREAK (files don't match the "True Value" based on file names)###################################        
@@ -134,7 +135,8 @@ for line in range(0, 3):
         num_image = random.randint(0, X_train_norm.shape[0])
         ax = fig.add_subplot(gs[line, row])
         ax.axis('off');
-        ax.set_title(y_train[num_image])
+#        ax.set_title(y_train[num_image])
+        ax.set_title("file: " + filename[num_image].split("/")[-1] + "/\n" + target[num_image])
         ax.imshow(X_train_norm[num_image]);
         
 #Here we convert targets from string to numerical values, each category becoming an integer - 0 or 1 - for NORMAL or PNEUMONIA: 
@@ -211,7 +213,7 @@ history = model.fit(X_train_norm, y_train_cat,
                     validation_split=0.3,
                     callbacks=[es])
 
-model.save("Model1B.h5")
+model.save("Model2B.h5")
 #Results & Evaluation
 
 def plot_history(history, title='', axs=None, exp_name=""):
