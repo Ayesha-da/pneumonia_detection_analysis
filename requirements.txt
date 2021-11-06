@@ -6,10 +6,10 @@ gunicorn==20.1.0
 Jinja2==3.0.2
 MarkupSafe==2.0.1
 SQLAlchemy==1.4.26
-numpy==1.19
+numpy
 werkzeug==2.0.1
 keras==2.7.0
 matplotlib==3.4.3
 opencv-python==4.5.4.58
 boto3==1.19.12
-tensorflow==2.6.0
+tensorflow
