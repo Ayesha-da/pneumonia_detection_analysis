@@ -7,7 +7,7 @@ Jinja2==3.0.2
 MarkupSafe==2.0.1
 SQLAlchemy==1.4.26
 numpy==1.21.3
-werkzeug.utils==2.0.1
+werkzeug==2.0.1
 keras==2.7.0
 matplotlib.pyplot==3.4.3
 cv2==4.5.4
