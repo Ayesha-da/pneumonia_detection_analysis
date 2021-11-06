@@ -1,27 +1,12 @@
-
-""" Flask application that runs the API and renders the html page(s) """
-from flask import Flask, render_template, jsonify
-# from flask_sqlalchemy import SQLAlchemy
-
-# Spin up flask app
-app = Flask(__name__)
-
-# This route renders the homepage
-@app.route("/")
-def index():
-    return render_template("index-poc.html")
-
-# You need this - this allows you to actually run the app
-if __name__ == "__main__":
-    app.run(debug=True)
-
-
 # -*- coding: utf-8 -*-
 """
 Created on Sat Oct 30 23:17:34 2021
 
 @author: Nidhi
 """
+
+""" Flask application that runs the API and renders the html page(s) """
+
 import os
 
 from flask import render_template
@@ -41,6 +26,9 @@ from tensorflow.compat.v1.keras.backend import set_session
 import tensorflow as tf
 import cv2
 import boto3
+
+# Spin up flask app
+app = Flask(__name__)
 
 # my two cat
 X="Normal"
@@ -149,3 +137,7 @@ def main():
 
 #Launch everything
 main()
+
+# You need this - this allows you to actually run the app
+#if __name__ == "__main__":
+    #app.run(debug=True)
