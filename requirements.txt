@@ -13,7 +13,3 @@ matplotlib==3.4.3
 opencv-python==4.5.4.58
 boto3==1.19.12
 tensorflow==2.6.0
-tensorflow.keras.preprocessing==2.3.0
-tensorflow.keras.models==2.3.0
-tensorflow.keras.preprocessing.image==2.3.0
-tensorflow.compat.v1.keras.backend==2.3.0
