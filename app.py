@@ -39,8 +39,9 @@ app = Flask(__name__)
 def load_model_from_file():
     mySession = tf.compat.v1.Session()
     set_session(mySession)
-    myModal = load_model('saved_model1.h5')
-    myGraph = tf.get_default_graph()
+    myModal = load_model('saved_model.h5')
+    #myGraph = tf.get_default_graph()
+    myGraph = tf.compat.v1.get_default_graph()
     return (mySession, myModal, myGraph)
 
 def allowed_file(filename):
