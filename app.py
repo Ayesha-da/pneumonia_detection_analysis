@@ -4,13 +4,9 @@ Created on Sat Oct 30 23:17:34 2021
 
 @author: Nidhi
 """
-
-""" Flask application that runs the API and renders the html page(s) """
-
 import os
 
-from flask import render_template
-from flask import Flask, flash, request, redirect, url_for
+from flask import Flask, render_template, flash, request, redirect, url_for
 from werkzeug.utils import secure_filename
 
 import numpy as np
@@ -26,9 +22,6 @@ from tensorflow.compat.v1.keras.backend import set_session
 import tensorflow as tf
 import cv2
 import boto3
-
-# Spin up flask app
-app = Flask(__name__)
 
 # my two cat
 X="Normal"
