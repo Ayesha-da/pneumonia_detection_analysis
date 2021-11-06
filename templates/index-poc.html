@@ -120,27 +120,23 @@
                   <div class="article-style">
                     <div class="row">
               
-                      Step 1: Upload your x-ray image file.
+                    Upload your x-ray image file.
                     </div>
                     <div class="row col-12 col-lg-6">
                       <input type="file" name="file" id="file">
                     </div>
                     <div class="row col-12 col-lg-6">
-                      <button
-                        style="background-color: teal;color: white;padding: 0.5rem; font:kontrapunkt miki regular; border-radius: 0.3rem; cursor: pointer; margin-top: 1rem;"
-                        onclick="doupload()" name="submit"><b>UPLOAD FILE ></b></button>
-                    </div>
-                  </div>
-                  <div class="row"style="padding-top: 20px;">
-                    Step 2: Run the model to receive a diagnosis prediction.
-                  </div>
-                  <div class="row col-12 col-lg-6">
-      
-                    <button
-                        style="background-color: teal;color: white;padding: 0.5rem; font:kontrapunkt miki regular; border-radius: 0.3rem; cursor: pointer;"
-                        type="button">
-                        <b>PREDICT ></b>
-                      </button>
+                      <form action="/" method=post enctype="multipart/form-data">
+                        <input type="file" name="file" style="background-color: teal;color: white;padding: 0.5rem; font:kontrapunkt miki regular; border-radius: 0.3rem; cursor: pointer; margin-top: 1rem;"/>
+                        <input type="submit" value="Uploads" style="background-color: teal;color: white;padding: 0.5rem; font:kontrapunkt miki regular; border-radius: 0.3rem; cursor: pointer; margin-top: 1rem;"/>
+                    </form>
+                </div> 
+            </div>
+            <div class="row">
+            {{filename}} <br/>
+            {{result}}
+            </div>
+
                   </div>
                 </div>
               </div>
