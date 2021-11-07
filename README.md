@@ -166,7 +166,7 @@ The [code](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/t
  
 ![preprocessing](https://user-images.githubusercontent.com/84524153/140662909-526848c1-2732-4d86-a31b-3fd976cebf4b.png)
    
-- preliminary feature engineering and preliminary feature selection
+- preliminary feature engineering
 
    We also reshaped the X_train, X_test arrays and y_train, y_test arrays in order to use in Convolutional Neural Network Layers.
    
