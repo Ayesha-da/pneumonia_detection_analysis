@@ -13,10 +13,12 @@ Nidhi Pandya
 
 #### Machine Learning Model
 Ayesha Shaheen
+
 William Johnson
 
 #### JavaScript File
 Nidhi Pandya 
+
 Ayesha Shaheen
 
 #### Visualizations and Presentation Development
