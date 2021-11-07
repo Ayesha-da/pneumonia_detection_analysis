@@ -151,11 +151,9 @@ In Conventional Programming, decision making is based on IF-ELSE conditions. T
 
 In deep learning, we will be using a convolutional neural network (CNN/ConvNet), a class of deep neural networks, most commonly applied to analyze visual imagery.We are primarily working with images and we need CNN model to take in these images, process them and give us the desired output by classifying them correctly as “Normal” or “Pneumonia”.
 The [code](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/trainmodel.py) for machine learning is complete.
+
 ## Dashboard
 Our final dashboard will include a Google Slides presentation supplemented with images created in Tableau. Our interactive element will be a Heroku website that users can interact with to view visuals and information about our model and our model's output. 
-
-#### Presentation Roadmap
-<img width="601" alt="Screen Shot 2021-10-24 at 4 01 31 PM" src="https://user-images.githubusercontent.com/84487620/138610782-797cbffc-2e8e-4e52-a964-d33ecfd240a4.png">
 
 #### Presentation
 Google slides link:
