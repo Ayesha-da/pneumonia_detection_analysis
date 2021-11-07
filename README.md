@@ -162,7 +162,7 @@ In deep learning, we will be using a convolutional neural network (CNN/ConvNet),
 The [code](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/trainmodel.py) for machine learning is complete.
 - preliminary data preprocessing
 
- The image is read using cv2 and grayscale and is resized to 150,150 for easy processing.
+  The image is read using cv2 and grayscale and is resized to 150,150 for easy processing.
  
 ![preprocessing](https://user-images.githubusercontent.com/84524153/140662909-526848c1-2732-4d86-a31b-3fd976cebf4b.png)
    
