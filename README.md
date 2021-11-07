@@ -129,7 +129,60 @@ We will be hosting our data on AWS through the use of the S3 Buckets and the a p
 
 ## Data ETL
 Our project is to detection pneumonia using chest x-ray images. We use Kaggle [dataset](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia). There are 5000+ x-ray images with 2 categories(Pneumonia/Noraml)
+
 ![imag1](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/data_ETL/data_ETL/Resources/images/dataprocessing_concept02.png)
+We are using two datasets with the possibility of using more in the future.
+
+1. Dataset1 - source from [Kaggle](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia)
+
+This is a clean dataset with a folder structure:
+ * train
+   * Pneumonia
+   * Normal
+ * test
+   * Pneumonia
+   * Normal
+  
+2. Dataset2  - source from [Kaggle](https://www.kaggle.com/ingusterbets/nih-chest-x-rays-analysis) 
+
+This is not a clean dataset. Using [GetImages_fun](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/data_ETL/GetImages_Fun.ipynb) code, we are getting images that mimic Dataset1's folder structure. We decided to use 3 buckets (Pneumonia, Normal and Others) in dataset2, the code needs to be updated in the file to get the third bucket.(In progress)
+
+we got the 3 buckets (Pneumonia, Normal and Others) from Dataset 2 and we used it in our Machine Learning model.
+
+#### Data Extraction and Trasformation: 
+
+we started to extract the data from our s3 bucket and did some trasformation in the Dataset1 images using [project_sample](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/data_ETL/project_sample.ipynb) code.
+
+The Dataset's size is bigger and if all members of the team used the cloud images from the S3 bucket, the team would incur possible charges from AWS.  To avoid this, we decided to store the images on our local machines in order to train and test the ML model.
+
+Once we got our trained model we created a Flask application and connected it with the model using [app.py](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/app.py) file. In this application when the user uploads an image it will store on [s3 bucket](https://s3.console.aws.amazon.com/s3/buckets/pneumoniadataset) and then it will be used for Prediction.
+
+#### Visualization
+For the visualization we used different data for analysis. The two datasets that we used were US Pneumonia dataset and Global Pneumonia dataset.
+
+##### US Pneumonia dataset
+
+![ERD for US](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/data_ETL/Presentation_ERD/ERDiagram.PNG)
+
+we uploaded this data on AWS RDS using pgAdmin dataengine.
+To create the database we used the [sql query](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/data_ETL/Presentation_ERD/presentation_createTable.sql)
+
+This data was then used in tableu for analysis
+
+* [Deaths_by_age_group](https://public.tableau.com/app/profile/matthew.breitner/viz/PneumoniaDeathsbyAgeGroup/DeathsbyAgeGroup)
+
+* [Deaths_by_gender](https://public.tableau.com/app/profile/matthew.breitner/viz/PneumoniaDeathsbyGender/DeathsbyGender)
+
+* [Deaths_by_month](https://public.tableau.com/app/profile/matthew.breitner/viz/PneumoniaDeathsbyMonth/DeathsbyMonth)
+ 
+* [Deaths_by_race](https://public.tableau.com/app/profile/matthew.breitner/viz/PneumoniaDeathsbyRace/DeathsbyRace)
+ 
+* [Deaths_by_state_by_age_group](https://public.tableau.com/app/profile/matthew.breitner/viz/PneumoniaDeathsbyStatebyAgeGroup/DeathsbyStatebyAgeGroup)
+
+* [Deaths_by_state_by_gender](https://public.tableau.com/app/profile/matthew.breitner/viz/PneumoniaDeathsbyStatebyGender/DeathsbyStatebyGender)
+
+* [Deaths_by_state_by_race](https://public.tableau.com/app/profile/matthew.breitner/viz/PneumoniaDeathsbyStatebyRace/DeathbyStatebyRace)
+
 
 ## Visualizations
 Looking at data collected by the CDC, NIH, WHO, and other medical research organizations, we have determined that although Pneumonia is a treatable disease, it is still a major problem throughout much of the world and even the United States. 
@@ -170,25 +223,6 @@ For our pneumonia US and global statistics we will be hosting the data in postgr
 
 https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/data_ETL/ERD/global_statistics_table_queries.sql
 
-We are using two datasets with a possibility of using more in the future.
-
-1.[Dataset1](https://s3.console.aws.amazon.com/s3/buckets/pneumonia-detection-analysis) - source from [Kaggle](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia)
-
-This is a clean dataset with a folder structure:
- * train
-   * Pneumonia
-   * Normal
- * test
-   * Pneumonia
-   * Normal
-  
-2.[Dataset2](https://www.kaggle.com/ingusterbets/nih-chest-x-rays-analysis) 
-
-This is not a clean dataset. Using [GetImages_fun](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/data_ETL/GetImages_Fun.ipynb) code, we are getting images that mimic Dataset1's folder structure. We decided to use 3 buckets (Pneumonia, Normal and Others) in dataset2, the code needs to be updated in the file to get the third bucket.(In progress)
-
-#### Data Extraction and Trasformation: 
-
-we started to extract the data from our s3 bucket and did some trasformation in the Dataset1 images using [project_sample](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/data_ETL/project_sample.ipynb) code.
 
 ## Machine Learning
 ![Conventional-machine-learning-vs-deep-learning](https://user-images.githubusercontent.com/84524153/138568406-ea33abaa-3e03-4d22-90e8-64034431f6df.png)
