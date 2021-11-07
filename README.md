@@ -1,4 +1,3 @@
-
 # Pneumonia Detection Analysis
 A project by: Ayesha Shaheen, Chelsea Langford, Matthew Breitner, Nidhi Pandya, and William Johnson
 
