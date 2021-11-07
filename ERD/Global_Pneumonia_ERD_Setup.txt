@@ -1,0 +1,53 @@
+Deaths_by_GDP
+-
+country
+country_code pk
+year
+deaths
+GDP
+Population
+
+Deaths_over_70_risk_factors
+-
+country FK >- Deaths_by_GDP.country
+country_code pk
+year FK >- Deaths_by_GDP.year
+no_access_to_handwashing
+secondhand_smoke
+smoking
+pollution
+
+Global_Child_Mortality_by_Country
+-
+country FK >- Deaths_over_70_risk_factors.country
+country_code pk FK >- Deaths_over_70_risk_factors.country_code
+year
+deaths
+
+Pneumonia_Mortality_by_Age
+-
+country
+country_code pk
+year
+<5
+14-49 FK >- Deaths_by_GDP.country
+50-69 FK >- Deaths_by_GDP.country_code
+70+
+
+Child_Deaths_Risk_Factors
+-
+country FK >- Pneumonia_Mortality_by_Age.country
+country_code pk FK >- Pneumonia_Mortality_by_Age.country_code
+year
+ambient_particle_matter_polution
+child_underweight
+household_pollution
+handwasing
+secondhand_smoke
+vitamin_A_Deficiency
+zinc_deficiency
+short_gestation_for_birth_weight
+non_exclusive_breastfeeding
+low_birth_weight
+child_wasting
+child_stunting
