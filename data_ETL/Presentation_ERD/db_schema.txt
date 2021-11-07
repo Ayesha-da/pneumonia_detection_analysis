@@ -15,7 +15,8 @@ crude_rate float
 Deaths_by_State_by_Race
 -
 state varchar
-state_code int PK
+state_code int
+race varchar, 
 race_code varchar FK >- Deaths_by_Race.race_code
 deaths int
 
@@ -30,22 +31,23 @@ crude_rate float
 Deaths_by_State_by_Gender
 -
 state varchar
-state_code int FK >- Deaths_by_State_by_Race.state_code
+state_code int
 gender varchar 
 gender_code varchar FK >- Gender_Deaths.gender_code
+deaths int,
 population int
 crude_rate float
 
 Deaths_by_Age_Group
 -
 five_year_age_groups varchar
-five_year_age_groups_code int PK
+five_year_age_groups_code varchar PK
 deaths int
 
 Deaths_by_State_by_Age_Group
 -
 state varchar
-state_code int FK >- Deaths_by_State_by_Race.state_code
+state_code int 
 five_year_age_groups varchar 
-five_year_age_groups_code int FK >- Deaths_by_Age_Group.five_year_age_groups_code
+five_year_age_groups_code varchar FK >- Deaths_by_Age_Group.five_year_age_groups_code
 deaths int
