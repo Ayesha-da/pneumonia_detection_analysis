@@ -1,4 +1,4 @@
-Country,Country Code,Year,<5,14-May,15-49,50-69,70+
+Country,Country Code,Year,less than five,five to fifteen,fifteen to fourty nine,fifty to sixty nine,seventy or greater
 Afghanistan,AFG,1990,1207.641443,12.64529448,10.41321867,67.43560466,459.9862863
 Afghanistan,AFG,1991,1098.113588,12.22622704,10.08076504,67.68045005,459.243946
 Afghanistan,AFG,1992,901.6549954,11.90075894,9.392176948,67.98432804,460.4798697

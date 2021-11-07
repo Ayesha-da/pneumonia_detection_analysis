@@ -1,4 +1,4 @@
-Country,Country Code,Year,Ambient particulate matter pollution,Child underweight,Household air pollution from solid fuels, No access to handwashing facility),Secondhand smoke,Vitamin A deficiency, Zinc deficiency,Short gestation for birth weight,Non-exclusive breastfeeding,Low birth weight for gestation,Child wasting, Child stunting
+Country,Country Code,Year,Ambient particulate matter pollution,Child underweight,Household Pollution, No access to handwashing,Secondhand smoke,Vitamin A deficiency, Zinc deficiency,Short gestation for birth weight,Non-exclusive breastfeeding,Low birth weight for gestation,Child wasting, Child stunting
 Afghanistan,AFG,1990,1582.15,3315.63,9302,2059.43,1495.55,1748.91,298.09,3046.31,1481.66,976.73,10971.88,4718.6
 Afghanistan,AFG,1991,1564.69,3197.27,9008.65,2007.54,1457.1,1682.48,309.6,3059.27,1449.09,989.52,10584.17,4527.71
 Afghanistan,AFG,1992,1623.34,3278.23,9349.08,2089.19,1517.54,1737.67,327.27,3294.08,1530.87,1071.62,10880.24,4625.2
