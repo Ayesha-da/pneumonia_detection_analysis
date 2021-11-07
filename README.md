@@ -164,6 +164,12 @@ https://docs.google.com/presentation/d/1M43-xKBi9P2WS048Qo2mI5STj0Y7WPSW0KZxXJep
 #### Heroku
 Heroku Link: https://pneumonia-detection-analysis.herokuapp.com/
 
+Interactive elements:
+- Interact with our model! Upload file to receive a prediction of pneumonia vs. normal
+- Filter Tableau visualizations 
+- View popups on visualizations for more details on data
+- Select specific sections of the website to view based on homepage directory
+
 #### Dashboard Technologies Used
 - Google Slides
 - Tableau Public
