@@ -1,0 +1,52 @@
+Gender_Deaths
+-
+gender varchar
+gender_code varchar
+deaths int
+population int
+crude_rate float
+
+Deaths_by_Month
+-
+month varchar
+month_code date
+deaths int
+
+Deaths_by_Race
+-
+race int
+race_code varchar
+deaths int
+population int
+crude_rate float
+
+Deaths_by_State_by_Age_Group
+-
+state varchar
+state_code int
+five_year_age_groups varchar
+five_year_age_groups_code int  
+deaths int
+
+Deaths_by_State_by_Gender
+-
+state varchar FK >- Deaths_by_State_by_Race.state
+state_code int FK >- Deaths_by_State_by_Age_Group.state_code
+gender varchar FK >- Gender_Deaths.gender
+gender_code varchar FK >- Gender_Deaths.gender_code
+population int
+crude_rate float
+
+Deaths_by_Age_Group
+-
+five_year_age_groups varchar FK >- Deaths_by_State_by_Age_Group.five_year_age_groups
+five_year_age_groups_code int FK >- Deaths_by_State_by_Age_Group.five_year_age_groups_code
+deaths int
+
+Deaths_by_State_by_Race
+-
+state varchar FK >- Deaths_by_State_by_Age_Group.state
+state_code int
+race varchar FK >- Deaths_by_Race.race
+race_code varchar FK >- Deaths_by_Race.race_code
+deaths int

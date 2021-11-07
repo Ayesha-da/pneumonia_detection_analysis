@@ -1,0 +1,141 @@
+State,State Code,Race,Race Code,Deaths
+Alabama,1,Black or African American,2054-5,186
+Alabama,1,White,2106-3,752
+Alaska,2,American Indian or Alaska Native,1002-5,11
+Alaska,2,White,2106-3,18
+Arizona,4,American Indian or Alaska Native,1002-5,49
+Arizona,4,Asian or Pacific Islander,A-PI,22
+Arizona,4,Black or African American,2054-5,33
+Arizona,4,White,2106-3,763
+Arkansas,5,Black or African American,2054-5,72
+Arkansas,5,White,2106-3,455
+California,6,American Indian or Alaska Native,1002-5,29
+California,6,Asian or Pacific Islander,A-PI,790
+California,6,Black or African American,2054-5,386
+California,6,White,2106-3,3899
+Colorado,8,Black or African American,2054-5,20
+Colorado,8,White,2106-3,331
+Connecticut,9,Black or African American,2054-5,17
+Connecticut,9,White,2106-3,460
+Delaware,10,Black or African American,2054-5,22
+Delaware,10,White,2106-3,92
+District of Columbia,11,Black or African American,2054-5,55
+District of Columbia,11,White,2106-3,15
+Florida,12,Asian or Pacific Islander,A-PI,23
+Florida,12,Black or African American,2054-5,275
+Florida,12,White,2106-3,2124
+Georgia,13,Asian or Pacific Islander,A-PI,15
+Georgia,13,Black or African American,2054-5,286
+Georgia,13,White,2106-3,880
+Hawaii,15,Asian or Pacific Islander,A-PI,256
+Hawaii,15,White,2106-3,72
+Idaho,16,White,2106-3,171
+Illinois,17,Asian or Pacific Islander,A-PI,42
+Illinois,17,Black or African American,2054-5,273
+Illinois,17,White,2106-3,1630
+Indiana,18,Black or African American,2054-5,58
+Indiana,18,White,2106-3,724
+Iowa,19,White,2106-3,485
+Kansas,20,Black or African American,2054-5,11
+Kansas,20,White,2106-3,432
+Kentucky,21,Black or African American,2054-5,48
+Kentucky,21,White,2106-3,674
+Louisiana,22,Black or African American,2054-5,167
+Louisiana,22,White,2106-3,421
+Maine,23,White,2106-3,257
+Maryland,24,Asian or Pacific Islander,A-PI,26
+Maryland,24,Black or African American,2054-5,184
+Maryland,24,White,2106-3,531
+Massachusetts,25,Asian or Pacific Islander,A-PI,21
+Massachusetts,25,Black or African American,2054-5,35
+Massachusetts,25,White,2106-3,1028
+Michigan,26,American Indian or Alaska Native,1002-5,10
+Michigan,26,Asian or Pacific Islander,A-PI,10
+Michigan,26,Black or African American,2054-5,216
+Michigan,26,White,2106-3,1237
+Minnesota,27,American Indian or Alaska Native,1002-5,12
+Minnesota,27,Black or African American,2054-5,12
+Minnesota,27,White,2106-3,421
+Mississippi,28,Black or African American,2054-5,219
+Mississippi,28,White,2106-3,528
+Missouri,29,Black or African American,2054-5,75
+Missouri,29,White,2106-3,846
+Montana,30,American Indian or Alaska Native,1002-5,14
+Montana,30,White,2106-3,109
+Nebraska,31,White,2106-3,278
+Nevada,32,Asian or Pacific Islander,A-PI,30
+Nevada,32,Black or African American,2054-5,52
+Nevada,32,White,2106-3,326
+New Hampshire,33,White,2106-3,156
+New Jersey,34,Asian or Pacific Islander,A-PI,48
+New Jersey,34,Black or African American,2054-5,174
+New Jersey,34,White,2106-3,917
+New Mexico,35,American Indian or Alaska Native,1002-5,39
+New Mexico,35,White,2106-3,247
+New York,36,Asian or Pacific Islander,A-PI,187
+New York,36,Black or African American,2054-5,587
+New York,36,White,2106-3,3171
+North Carolina,37,American Indian or Alaska Native,1002-5,19
+North Carolina,37,Black or African American,2054-5,260
+North Carolina,37,White,2106-3,1217
+North Dakota,38,White,2106-3,117
+Ohio,39,Asian or Pacific Islander,A-PI,11
+Ohio,39,Black or African American,2054-5,179
+Ohio,39,White,2106-3,1522
+Oklahoma,40,American Indian or Alaska Native,1002-5,47
+Oklahoma,40,Black or African American,2054-5,26
+Oklahoma,40,White,2106-3,481
+Oregon,41,White,2106-3,311
+Pennsylvania,42,Asian or Pacific Islander,A-PI,19
+Pennsylvania,42,Black or African American,2054-5,160
+Pennsylvania,42,White,2106-3,2027
+Rhode Island,44,White,2106-3,141
+South Carolina,45,Black or African American,2054-5,157
+South Carolina,45,White,2106-3,430
+South Dakota,46,American Indian or Alaska Native,1002-5,13
+South Dakota,46,White,2106-3,143
+Tennessee,47,Black or African American,2054-5,131
+Tennessee,47,White,2106-3,1034
+Texas,48,Asian or Pacific Islander,A-PI,74
+Texas,48,Black or African American,2054-5,346
+Texas,48,White,2106-3,2339
+Utah,49,White,2106-3,240
+Vermont,50,White,2106-3,25
+Virginia,51,Asian or Pacific Islander,A-PI,25
+Virginia,51,Black or African American,2054-5,134
+Virginia,51,White,2106-3,787
+Washington,53,American Indian or Alaska Native,1002-5,12
+Washington,53,Asian or Pacific Islander,A-PI,38
+Washington,53,Black or African American,2054-5,13
+Washington,53,White,2106-3,579
+West Virginia,54,White,2106-3,347
+Wisconsin,55,Black or African American,2054-5,31
+Wisconsin,55,White,2106-3,617
+Wyoming,56,White,2106-3,79
+Arizona,4,Hispanic or Latino,2135-2,116
+California,6,Hispanic or Latino,2135-2,1037
+Colorado,8,Hispanic or Latino,2135-2,48
+Connecticut,9,Hispanic or Latino,2135-2,29
+Florida,12,Hispanic or Latino,2135-2,309
+Georgia,13,Hispanic or Latino,2135-2,19
+Hawaii,15,Hispanic or Latino,2135-2,10
+Idaho,16,Hispanic or Latino,2135-2,10
+Illinois,17,Hispanic or Latino,2135-2,100
+Kansas,20,Hispanic or Latino,2135-2,10
+Louisiana,22,Hispanic or Latino,2135-2,13
+Maryland,24,Hispanic or Latino,2135-2,25
+Massachusetts,25,Hispanic or Latino,2135-2,31
+Michigan,26,Hispanic or Latino,2135-2,28
+Nevada,32,Hispanic or Latino,2135-2,34
+New Jersey,34,Hispanic or Latino,2135-2,96
+New Mexico,35,Hispanic or Latino,2135-2,91
+New York,36,Hispanic or Latino,2135-2,380
+North Carolina,37,Hispanic or Latino,2135-2,14
+Ohio,39,Hispanic or Latino,2135-2,12
+Oregon,41,Hispanic or Latino,2135-2,10
+Pennsylvania,42,Hispanic or Latino,2135-2,35
+Texas,48,Hispanic or Latino,2135-2,618
+Utah,49,Hispanic or Latino,2135-2,12
+Virginia,51,Hispanic or Latino,2135-2,13
+Washington,53,Hispanic or Latino,2135-2,19
+Wisconsin,55,Hispanic or Latino,2135-2,11
