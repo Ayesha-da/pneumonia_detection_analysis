@@ -152,6 +152,8 @@ In Conventional Programming, decision making is based on IF-ELSE conditions. T
 In deep learning, we will be using a convolutional neural network (CNN/ConvNet), a class of deep neural networks, most commonly applied to analyze visual imagery.We are primarily working with images and we need CNN model to take in these images, process them and give us the desired output by classifying them correctly as “Normal” or “Pneumonia”.
 The [code](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/trainmodel.py) for machine learning is complete.
 - preliminary data preprocessing
+
+
 - preliminary feature engineering and preliminary feature selection
 - Description of how data was split into training and testing sets 
 - Explanation of model choice, limitations and benefits
