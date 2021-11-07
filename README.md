@@ -73,7 +73,7 @@ Files are divided into 12 different folders with no differentiators in the folde
 #### D. Notes:
 This is the largest of the datasets that we have so far and it also has the most varied assortment of lung images, classifying 14 different diseases. Once we determine how we are building the buckets for our model, we'll need to format the files accordingly. The other concern with this dataset is that unlike the other sets, it was put together using their own NLP program that claims only a 90% accuracy, so while the original files are verified by radiologists, there is a larger margin of error due to the additional step of data mining. 
 
-## Other Datasets considered by not used
+## Other Image Datasets considered but not used
 
 ### RSNA Pneumonia Detection Challenge
 #### A. Source Link: 
@@ -87,7 +87,7 @@ To improve the efficiency and reach of diagnostic services, the Radiological Soc
 The RSNA is an international society of radiologists, medical physicists and other medical professionals with more than 54,000 members from 146 countries across the globe. They see the potential for ML to automate initial detection (imaging screening) of potential pneumonia cases in order to prioritize and expedite their review."
 
 
-### 3. Novel COVID-19 Chestxray Repository  
+### Novel COVID-19 Chestxray Repository  
 #### Source Link: 
 https://www.kaggle.com/tawsifurrahman/covid19-radiography-database
 
@@ -157,11 +157,10 @@ Our final dashboard will include a Google Slides presentation supplemented with 
 <img width="601" alt="Screen Shot 2021-10-24 at 4 01 31 PM" src="https://user-images.githubusercontent.com/84487620/138610782-797cbffc-2e8e-4e52-a964-d33ecfd240a4.png">
 
 #### Presentation
-Google slide link:
+Google slides link:
 
-https://docs.google.com/presentation/d/1M43-xKBi9P2WS048Qo2mI5STj0Y7WPSW0KZxXJepePU/edit#slide=id.g10091034950_2_125
+https://docs.google.com/presentation/d/1M43-xKBi9P2WS048Qo2mI5STj0Y7WPSW0KZxXJepePU/edit?usp=sharing
 
-File is also included as a powerpoint on github here:
 
 
 #### Dashboard Technologies Used
