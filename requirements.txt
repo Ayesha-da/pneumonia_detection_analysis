@@ -1,11 +1,8 @@
-certifi==2021.10.8
 click==8.0.3
 Flask==2.0.2
-Flask-SQLAlchemy==2.5.1
 gunicorn==20.1.0
 Jinja2==3.0.2
 MarkupSafe==2.0.1
-SQLAlchemy==1.4.26
 numpy
 werkzeug==2.0.1
 keras==2.7.0
