@@ -110,8 +110,8 @@ def upload_file():
             else:
                 answer = Y + per + '%'
             
-            return render_template('index-poc.html', result = answer)
-##       
+            return render_template('index-poc.html', result = answer, filename=filename)
+      
 
 
 def main():
