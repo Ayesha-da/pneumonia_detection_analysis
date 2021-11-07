@@ -161,13 +161,22 @@ In Conventional Programming, decision making is based on IF-ELSE conditions. T
 In deep learning, we will be using a convolutional neural network (CNN/ConvNet), a class of deep neural networks, most commonly applied to analyze visual imagery.We are primarily working with images and we need CNN model to take in these images, process them and give us the desired output by classifying them correctly as “Normal” or “Pneumonia”.
 The [code](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/trainmodel.py) for machine learning is complete.
 - preliminary data preprocessing
-
+ The image is read using cv2 and grayscale and is resized to 150,150 for easy processing.
+ 
 ![preprocessing](https://user-images.githubusercontent.com/84524153/140662909-526848c1-2732-4d86-a31b-3fd976cebf4b.png)
-   The images from the dataset is 
+   
 - preliminary feature engineering and preliminary feature selection
 
+   We also reshape the X_train, X_test arrays and y_train, y_test arrays in order to use in Convolutional Neural Network Layers.
+   
 - Description of how data was split into training and testing sets 
-- Explanation of model choice, limitations and benefits
+
+   Our data is imbalanced. To avoid this and overfitting, we perform data augmentation. The idea of data augmentation is we perform some distortions to our existing data and we    get new various data. For example we apply horizontal flip, random zoom, height and width shift and then we normalize the data so it converges faster.
+   
+- Explanation of model choice, limitations and benefits.
+  
+  
+
 ## Dashboard
 Our final dashboard will include a Google Slides presentation supplemented with images created in Tableau. Our interactive element will be a Heroku website that users can interact with to view visuals and information about our model and our model's output. 
 
