@@ -168,11 +168,11 @@ The [code](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/t
    
 - preliminary feature engineering and preliminary feature selection
 
-   We also reshape the X_train, X_test arrays and y_train, y_test arrays in order to use in Convolutional Neural Network Layers.
+   We also reshaped the X_train, X_test arrays and y_train, y_test arrays in order to use in Convolutional Neural Network Layers.
    
 - Description of how data was split into training and testing sets 
 
-   Our data is imbalanced. To avoid this and overfitting, we perform data augmentation. The idea of data augmentation is we perform some distortions to our existing data and we    get new various data. For example we apply horizontal flip, random zoom, height and width shift and then we normalize the data so it converges faster.
+   Our data is imbalanced. To avoid this and overfitting, we performed data augmentation. The idea of data augmentation is we perform some distortions to our existing data and      we get new various data. For example we apply horizontal flip, random zoom, height and width shift and then we normalize the data so it converges faster.
    
 - Explanation of model choice, limitations and benefits.
   
