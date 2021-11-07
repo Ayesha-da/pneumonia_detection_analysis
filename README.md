@@ -4,14 +4,21 @@ A project by: Ayesha Shaheen, Chelsea Langford, Matthew Breitner, Nidhi Pandya, 
 ## Roles and Responsibilities
 #### GitHub Repository Owner
 Ayesha Shaheen
+
 #### Database Storage and Management
 Matthew Breitner
+
 #### Database ETL and Analysis
 Nidhi Pandya
+
 #### Machine Learning Model
 Ayesha Shaheen
-
 William Johnson
+
+#### JavaScript File
+Nidhi Pandya 
+Ayesha Shaheen
+
 #### Visualizations and Presentation Development
 Chelsea Langford (Dashboard owner, HTML, CSS, JS, and Python)
 
