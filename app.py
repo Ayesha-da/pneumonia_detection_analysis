@@ -77,8 +77,8 @@ def upload_file():
             file.save(filename)
             
             s3A = boto3.resource('s3',
-                        aws_access_key_id='AKIAW5XAT2GRZ2RTZ7GD',
-                        aws_secret_access_key= '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'
+                        aws_access_key_id='AKIAW5XAT2GRQHC3CH7U',
+                        aws_secret_access_key= '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'
                        # aws_session_token='secret token here'
                          )
             s3A.meta.client.upload_file(
