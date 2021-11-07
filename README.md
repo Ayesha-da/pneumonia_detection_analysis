@@ -13,11 +13,12 @@ Ayesha Shaheen
 
 William Johnson
 #### Visualizations and Presentation Development
-Chelsea Langford (Tableau, JavaScript, GitHub project overview)
+Chelsea Langford (Dashboard owner, HTML, CSS, JS, and Python)
 
-Matthew Breitner (Tableau)
+Matthew Breitner (Tableau, Google Slides)
 
-Ayesha Shaheen (HTML)
+William Johnson (Google Slides)
+
 
 ## Communication Protocol 
 To manage team progress throughout the project timeline, our team has established the following communication process:
@@ -73,7 +74,7 @@ Files are divided into 12 different folders with no differentiators in the folde
 #### D. Notes:
 This is the largest of the datasets that we have so far and it also has the most varied assortment of lung images, classifying 14 different diseases. Once we determine how we are building the buckets for our model, we'll need to format the files accordingly. The other concern with this dataset is that unlike the other sets, it was put together using their own NLP program that claims only a 90% accuracy, so while the original files are verified by radiologists, there is a larger margin of error due to the additional step of data mining. 
 
-## Other Datasets considered by not used
+## Other Image Datasets considered but not used
 
 ### RSNA Pneumonia Detection Challenge
 #### A. Source Link: 
@@ -87,7 +88,7 @@ To improve the efficiency and reach of diagnostic services, the Radiological Soc
 The RSNA is an international society of radiologists, medical physicists and other medical professionals with more than 54,000 members from 146 countries across the globe. They see the potential for ML to automate initial detection (imaging screening) of potential pneumonia cases in order to prioritize and expedite their review."
 
 
-### 3. Novel COVID-19 Chestxray Repository  
+### Novel COVID-19 Chestxray Repository  
 #### Source Link: 
 https://www.kaggle.com/tawsifurrahman/covid19-radiography-database
 
@@ -150,24 +151,23 @@ In Conventional Programming, decision making is based on IF-ELSE conditions. T
 
 In deep learning, we will be using a convolutional neural network (CNN/ConvNet), a class of deep neural networks, most commonly applied to analyze visual imagery.We are primarily working with images and we need CNN model to take in these images, process them and give us the desired output by classifying them correctly as “Normal” or “Pneumonia”.
 The [code](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/trainmodel.py) for machine learning is complete.
+
 ## Dashboard
 Our final dashboard will include a Google Slides presentation supplemented with images created in Tableau. Our interactive element will be a Heroku website that users can interact with to view visuals and information about our model and our model's output. 
 
-#### Presentation Roadmap
-<img width="601" alt="Screen Shot 2021-10-24 at 4 01 31 PM" src="https://user-images.githubusercontent.com/84487620/138610782-797cbffc-2e8e-4e52-a964-d33ecfd240a4.png">
-
 #### Presentation
-Google slide link:
+Google slides link:
 
-https://docs.google.com/presentation/d/1M43-xKBi9P2WS048Qo2mI5STj0Y7WPSW0KZxXJepePU/edit#slide=id.g10091034950_2_125
+https://docs.google.com/presentation/d/1M43-xKBi9P2WS048Qo2mI5STj0Y7WPSW0KZxXJepePU/edit?usp=sharing
 
-File is also included as a powerpoint on github here:
 
+#### Heroku
+Heroku Link: https://pneumonia-detection-analysis.herokuapp.com/
 
 #### Dashboard Technologies Used
 - Google Slides
 - Tableau Public
 - Heroku for website hosting
-- VS Code for HTML and JavaScript editing 
+- VS Code for HTML, CSS, JS, and Python editing 
 - Flask for website development
 
