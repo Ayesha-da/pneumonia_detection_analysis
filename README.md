@@ -130,8 +130,45 @@ We will be hosting our data on AWS through the use of the S3 Buckets and the a p
 ## Data ETL
 Our project is to detection pneumonia using chest x-ray images. We use Kaggle [dataset](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia). There are 5000+ x-ray images with 2 categories(Pneumonia/Noraml)
 ![imag1](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/data_ETL/data_ETL/Resources/images/dataprocessing_concept02.png)
-### Database ERD 
 
+## Visualizations
+Looking at data collected by the CDC, NIH, WHO, and other medical research organizations, we have determined that although Pneumonia is a treatable disease, it is still a major problem throughout much of the world and even the United States. 
+
+Looking at the global statistics, we identified that pneumonia majorly effects children under the age of 5 and adults over the age of 70. Pneumonia is especially deadly for these age groups in countries that have a smaller GDP per capita as reference by the below chart. 
+
+https://public.tableau.com/app/profile/matthew.breitner/viz/TotalDeathsperGDP/TotalDeathsperGDP
+
+Because these countries have a lower GDP, they have less resources to combat Pneumonia from becoming a deadly disease. The following two graphics visualize the leading causes of Pneumonia in Children under the age of 5 and adults over the age of 70. 
+
+https://public.tableau.com/app/profile/matthew.breitner/viz/GlobalChildMortalitybyRiskFactor/GlobalChildMortalitybyRiskFactor
+
+https://public.tableau.com/app/profile/matthew.breitner/viz/GlobalMortalityOver70byRiskFactorbyYear/GlobalMortalityOver70byRiskFactorbyYear
+
+Child mortality rates begin to increase in Africa and South/West Asia, which unfortunately follows the lower GDP trend. 
+
+https://public.tableau.com/app/profile/matthew.breitner/viz/ChildMortalityRatesbyCountrybyYear/ChildMortalityRatesbyCountrybyYear
+
+You can see this trend continue when looking at the overal mortality rates across the world. 
+
+https://public.tableau.com/app/profile/matthew.breitner/viz/GlobalMortalityRatebyAge/GlobalMortalityRatebyAge
+
+We then analyzed to see if the same trends could be found in the United States. Although we did not see the same trends in terms of GDP (the largest states still had the highest death rates) we did see a similar trend in higher rates of death in adults over the age of 70. The following graphics outline the amount of deaths by age group and the amount of deaths by state within the US. 
+
+https://public.tableau.com/app/profile/matthew.breitner/viz/PneumoniaDeathsbyAgeGroup/DeathsbyAgeGroup
+https://public.tableau.com/app/profile/matthew.breitner/viz/PneumoniaDeathsbyStatebyAgeGroup/DeathsbyStatebyAgeGroup
+
+Although medical technologies has advanced tenfold over the last 20 years, that has come as both an advantage and disadvantage for medical professionals around the world, specifcially radiologists. According to the Mayo clinic, the number of X-ray scans a radiologist have to anlyze in a given shift has gone from 1 image every 20 seconds to 1 image every 4 seconds. Now it is advantageous to scan so many images quickly but it makes it more difficult to accurately diagnose an image. This is were our model with come into play because it will not only assist in the increased speed of image reading but it can more accurately diagnose the image for pneumonia compared to theh naked eye. 
+
+![Pneumonia_Image_Speed](https://user-images.githubusercontent.com/84791455/140665486-4de6a6d7-d99f-46ab-bb67-96a35ab41ea9.PNG)
+
+
+
+### Database ERD 
+For our pneumonia US and global statistics we will be hosting the data in postgresql tables in PGAdmin. Our RDS is hosted on AWS so ultimately the data will live in the cloud. Please reference the following ERD and queries used to update the database for the global statistics. 
+
+![image](https://user-images.githubusercontent.com/84791455/140665154-49217357-a77b-41eb-ac35-5a1ff0be53c5.png)
+
+https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/data_ETL/ERD/global_statistics_table_queries.sql
 
 We are using two datasets with a possibility of using more in the future.
 
