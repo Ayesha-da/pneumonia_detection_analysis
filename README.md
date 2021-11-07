@@ -16,7 +16,7 @@ Ayesha Shaheen
 
 William Johnson
 
-#### JavaScript File
+#### JavaScript (app.py file)
 Nidhi Pandya 
 
 Ayesha Shaheen
