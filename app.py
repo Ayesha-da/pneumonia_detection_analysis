@@ -125,13 +125,12 @@ def main():
     
     #app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
     app.config['MAX_CONTENT_LENGTH'] = 16*1024*1024 #16MB upload limit
-    app.run()
+    if __name__ == "__main__":
+        app.run(debug=True)
     
 
 
 #Launch everything
 main()
 
-# You need this - this allows you to actually run the app
-#if __name__ == "__main__":
-    #app.run(debug=True)
+
