@@ -13,11 +13,12 @@ Ayesha Shaheen
 
 William Johnson
 #### Visualizations and Presentation Development
-Chelsea Langford (Tableau, JavaScript, GitHub project overview)
+Chelsea Langford (Dashboard owner, HTML, CSS, JS, and Python)
 
-Matthew Breitner (Tableau)
+Matthew Breitner (Tableau, Google Slides)
 
-Ayesha Shaheen (HTML)
+William Johnson (Google Slides)
+
 
 ## Communication Protocol 
 To manage team progress throughout the project timeline, our team has established the following communication process:
@@ -162,11 +163,13 @@ Google slides link:
 https://docs.google.com/presentation/d/1M43-xKBi9P2WS048Qo2mI5STj0Y7WPSW0KZxXJepePU/edit?usp=sharing
 
 
+#### Heroku
+Heroku Link: https://pneumonia-detection-analysis.herokuapp.com/
 
 #### Dashboard Technologies Used
 - Google Slides
 - Tableau Public
 - Heroku for website hosting
-- VS Code for HTML and JavaScript editing 
+- VS Code for HTML, CSS, JS, and Python editing 
 - Flask for website development
 
