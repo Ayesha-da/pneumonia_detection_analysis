@@ -153,8 +153,10 @@ In deep learning, we will be using a convolutional neural network (CNN/ConvNet),
 The [code](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/trainmodel.py) for machine learning is complete.
 - preliminary data preprocessing
 
-
+![preprocessing](https://user-images.githubusercontent.com/84524153/140662909-526848c1-2732-4d86-a31b-3fd976cebf4b.png)
+   The images from the dataset is 
 - preliminary feature engineering and preliminary feature selection
+
 - Description of how data was split into training and testing sets 
 - Explanation of model choice, limitations and benefits
 ## Dashboard
