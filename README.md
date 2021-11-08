@@ -251,19 +251,19 @@ The [code](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/t
   
   Benefits:
   
- ✓ Very High accuracy in image recognition problems.
+   ✓ Very High accuracy in image recognition problems.
  
- ✓ Automatically detects the important features without any human supervision.
+   ✓ Automatically detects the important features without any human supervision.
  
- ✓ Weight sharing.
+   ✓ Weight sharing.
 
- Limitations:
+   Limitations:
 
- ✓ CNN do not encode the position and orientation of object.
+   ✓ CNN do not encode the position and orientation of object.
  
- ✓ Lack of ability to be spatially invariant to the input data.
+   ✓ Lack of ability to be spatially invariant to the input data.
  
- ✓ Lots of training data is required.
+   ✓ Lots of training data is required.
   
 
 ## Dashboard
