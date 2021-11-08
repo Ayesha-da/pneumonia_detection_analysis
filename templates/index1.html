@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sat Nov  6 07:52:12 2021
+Created on Fri Oct 29 13:14:27 2021
 
 @author: ayesh
 """
@@ -47,11 +47,22 @@ Created on Sat Nov  6 07:52:12 2021
                     </form>
                 </div> 
             </div>
-            <div class="row">
-            {{filename}} <br/>
-            {{result}}
+               
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+              
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
-           
+         
+            <hr/>
+            <div class="row">
+            {% if results is defined %}
+                {% for i in range(len-1,-1,-1) %}
+                    {{ results[i]|safe }}
+                {% endfor %}
+            {% endif %}
+            </div>
         </div>
 
     <!-- Optional JavaScript -->
