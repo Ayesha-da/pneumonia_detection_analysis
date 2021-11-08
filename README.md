@@ -246,18 +246,20 @@ The [code](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/t
    Our data is imbalanced. To avoid this and overfitting, we performed data augmentation. The idea of data augmentation is we perform some distortions to our existing data and      we get new various data. For example we apply horizontal flip, random zoom, height and width shift and then we normalize the data so it converges faster.
    
 - Explanation of model choice, limitations and benefits.
+
   Convolutional neural networks (CNN) are used for image classification and recognition because of its high accuracy.It was proposed by computer scientist Yann LeCun in the late   90s, when he was inspired from the human visual perception of recognizing things.They are one of the most popular models used today. This neural network computational model     uses a variation of multilayer perceptrons and contains one or more convolutional layers that can be either entirely connected or pooled. These convolutional layers create        feature maps that record a region of image which is ultimately broken into rectangles and sent out for nonlinear processing.
- Advantages:
- 
-Very High accuracy in image recognition problems.
-Automatically detects the important features without any human supervision.
-Weight sharing.
+  
+  Advantages:
+  
+ ✓ Very High accuracy in image recognition problems.
+ ✓ Automatically detects the important features without any human supervision.
+ ✓ Weight sharing.
 
  Disadvantages:
 
-CNN do not encode the position and orientation of object.
-Lack of ability to be spatially invariant to the input data.
-Lots of training data is required.
+ ✓ CNN do not encode the position and orientation of object.
+ ✓ Lack of ability to be spatially invariant to the input data.
+ ✓ Lots of training data is required.
   
 
 ## Dashboard
