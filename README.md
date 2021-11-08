@@ -59,32 +59,41 @@ Our primary Machine Learning datasets are image libraries sourced from Kaggle. T
 
 #### Datasets Overview
  1) Chest X-Ray Images (Pneumonia)
+  
   A. Source Link: 
    https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
  
   B. Source Format: 
+   
    The dataset was originally organized into 3 folders (train, test, val) and contained subfolders for Pneumonia and Normal. There are 5,863 X-Ray images (JPEG) and 2   categories (Pneumonia/Normal).
   
   C. Source Details: 
+   
    "Chest X-ray images (anterior-posterior) were selected from retrospective cohorts of pediatric patients of one to five years old from Guangzhou Women and Children's Medical Center, Guangzhou. All chest X-ray imaging was performed as part of patients' routine clinical care.
   
    For the analysis of chest x-ray images, all chest radiographs were initially screened for quality control by removing all low quality or unreadable scans. The diagnoses for the images were then graded by two expert physicians before being cleared for training the AI system. In order to account for any grading errors, the evaluation set was also checked by a third expert."
   
   D. Notes: 
+    
     This was our initial dataset and serves as the basis for the intended format for other datasets. This set only identifies normal vs pneumonia, and does not take into account other potential Lung issues that could also show up (cancer, covid, TB, etc) 
 
  2) NIH Chest X-rays
+  
   A. Source Link:
-    https://www.kaggle.com/nih-chest-xrays/data
+  
+  https://www.kaggle.com/nih-chest-xrays/data
   
   B. Source Format: 
-    Files were divided into 12 different folders with no differentiators in the folder or image names. There is a csv file which contains the labels for the images. 
+  
+  Files were divided into 12 different folders with no differentiators in the folder or image names. There is a csv file which contains the labels for the images. 
   
   C. Source Details:
+  
     "This NIH Chest X-ray Dataset is comprised of 112,120 X-ray images with disease labels from 30,805 unique patients. To create these labels, the authors used Natural Language Processing to text-mine disease classifications from the associated radiological reports. The labels are expected to be >90% accurate and suitable for weakly-supervised learning. The original radiology reports are not publicly available but you can find more details on the labeling process in this Open Access paper: "ChestX-ray8: Hospital-scale Chest X-ray Database and Benchmarks on Weakly-Supervised Classification and Localization of Common Thorax Diseases." (Wang et al.)"
   
    D. Notes:
-     This is the largest of the datasets we reviewed and it also has the most varied assortment of lung images, classifying 14 different diseases. Once we determine how we are building the buckets for our model, we'll need to format the files accordingly. The other concern with this dataset is that unlike the other sets, it was put together using their own NLP program that claims only a 90% accuracy, so while the original files are verified by radiologists, there is a larger margin of error due to the additional step of data mining. 
+  
+    This is the largest of the datasets we reviewed and it also has the most varied assortment of lung images, classifying 14 different diseases. Once we determine how we are building the buckets for our model, we'll need to format the files accordingly. The other concern with this dataset is that unlike the other sets, it was put together using their own NLP program that claims only a 90% accuracy, so while the original files are verified by radiologists, there is a larger margin of error due to the additional step of data mining. 
 
  Other Image Datasets considered but not used
 
