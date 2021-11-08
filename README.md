@@ -274,6 +274,9 @@ Google slides link:
 
 https://docs.google.com/presentation/d/1M43-xKBi9P2WS048Qo2mI5STj0Y7WPSW0KZxXJepePU/edit?usp=sharing
 
+Powerpoint backup of slides:
+
+https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/Pneumonia%20Analysis%20Presentation.pptx
 
 #### Heroku
 Heroku Link: https://pneumonia-detection-analysis.herokuapp.com/
