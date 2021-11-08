@@ -123,7 +123,7 @@ https://www.kaggle.com/tawsifurrahman/covid19-radiography-database
 ## Database Set Up
 We will be hosting our data on AWS through the use of the S3 Buckets and the a postgreSQL RDS. Our dataset has over 5,000 images of chest x-rays that will be run through our machine learning model to determine if we can predict whether or not someone has Pneumonia. We chose to use AWS since it can easily store non-text data (images), our data is stored in the cloud so everyone can access it from their local devices, and we can upload our final data into a RDS for future querying and analysis. 
 ### S3 Bucket Links
-
+- https://s3.console.aws.amazon.com/s3/buckets/pneumoniadataset
 ### RDS Endpoint
 - pneumonia-detection-analysis.cyhi4xykqawo.us-east-1.rds.amazonaws.com
 
@@ -151,7 +151,7 @@ we got the 3 buckets (Pneumonia, Normal and Others) from Dataset 2 and we used i
 
 #### Data Extraction and Trasformation: 
 
-we started to extract the data from our s3 bucket and did some trasformation in the Dataset1 images using [project_sample](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/data_ETL/project_sample.ipynb) code.
+we started to extract the data from our [s3 bucket](https://s3.console.aws.amazon.com/s3/buckets/pneumoniadataset?region=us-east-1&prefix=chest_xray/&showversions=false) and did some trasformation in the Dataset1 images using [project_sample](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/data_ETL/project_sample.ipynb) code.
 
 The Dataset's size is bigger and if all members of the team used the cloud images from the S3 bucket, the team would incur possible charges from AWS.  To avoid this, we decided to store the images on our local machines in order to train and test the ML model.
 
