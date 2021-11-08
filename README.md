@@ -247,7 +247,7 @@ The [code](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/t
    
 - Explanation of model choice, limitations and benefits.
 
-  Convolutional neural networks (CNN) are used for image classification and recognition because of its high accuracy.It was proposed by computer scientist Yann LeCun in the late   90s, when he was inspired from the human visual perception of recognizing things.They are one of the most popular models used today. This neural network computational model     uses a variation of multilayer perceptrons and contains one or more convolutional layers that can be either entirely connected or pooled. These convolutional layers create        feature maps that record a region of image which is ultimately broken into rectangles and sent out for nonlinear processing.
+  Convolutional neural networks (CNN) are used for image classification and recognition because of its high accuracy.It was proposed by computer scientist Yann LeCun in the late   90s, when he was inspired from the human visual perception of recognizing things.They are one of the most popular models used today. This neural network computational model     uses a variation of multilayer perceptrons and contains one or more convolutional layers that can be either entirely connected or pooled. These convolutional layers create       feature maps that record a region of image which is ultimately broken into rectangles and sent out for nonlinear processing.
   
   Benefits:
   
