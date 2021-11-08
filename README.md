@@ -22,7 +22,7 @@ Nidhi Pandya
 Ayesha Shaheen
 
 #### Visualizations and Presentation Development
-Chelsea Langford (Dashboard owner, HTML, CSS, JS, and Python)
+Chelsea Langford (Dashboard creation using HTML, CSS, and Python)
 
 Matthew Breitner (Tableau, Google Slides)
 
