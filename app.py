@@ -104,13 +104,13 @@ def upload_file():
             x = result[0][0] * 100
             per = "{:.2f}".format(x)
             #print(per)
-            #image_src = 'https://pneumoniadataset.s3.amazonaws.com'+ filename
+            image_src = 'https://pneumoniadataset.s3.amazonaws.com/'+ filename
             if result[0][0] < 0.5 :
                 answer = X + per + '%'
             else:
                 answer = Y + per + '%'
             
-            return render_template('index-poc.html', result = answer, filename=filename)
+            return render_template('index-poc.html', result = answer, filename=filename, image_src=image_src)
       
 
 
