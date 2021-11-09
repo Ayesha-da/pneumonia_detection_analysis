@@ -20,7 +20,9 @@ yes
 * Can you display graphs for the metrics over the training epochs (train loss, test loss, etc.)? What were the final numbers?
 
 * How long did the training take?
-The training took about 
+
+The training took about an hour for 20 epochs on local machine and google colab-GPU took about 25 min
+For 50 epochs
 
 
 * Note that I deducted a few minor points from the ML grade due to the lack of information on other model hyperparameters that you may have tried and how you ended up with this exact model design.
