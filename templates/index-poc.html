@@ -129,9 +129,20 @@
                     </form>
                 </div> 
             </div>
+                  
+            <div class="row"> {{filename}} </div>
+            <div class="row"> {{result}} </div>
             <div class="row">
-            {{filename}} <br/>
-            {{result}}
+              <img src='{{image_src}}' height="150" alt="User Image" width="150" style="border:0px"/>
+            </div>
+            <div class="row">
+              {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    <ul class=flashes>
+                        <li style="color:red">{{ messages[0] }}</li>
+                    </ul>
+                {% endif %}
+              {% endwith %}
             </div>
 
                   </div>
