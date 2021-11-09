@@ -3,7 +3,7 @@
 * For the training - are you using a GPU or a CPU? Local machine or online 
 resource? Any other details on the hardware or software configuration?
 
-For the model training we used google colab-GPU and local computer
+For the model training we used google colab-GPU to run the model and process the charts. The graphs are not displaying on local machine and the kernel is braeking before it could process the information.
 
 * Did you experience any memory of other difficulties with the image or data size?
 We are working with over 5200 images kernel getting diconnected,restart thye notebook
