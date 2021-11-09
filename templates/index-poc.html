@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link rel="stylesheet" href="static/index-poc/vendor-bundle.min.f1ecf783c14edc00c9320c205831ad8e.css" media="all"
+    onload="this.media=&#39;all&#39;">
+  <link rel="stylesheet" href="static/index-poc/jquery.fancybox.min.css" media="all" onload="this.media='all'">
+  <link rel="stylesheet" href="static/index-poc/academicons.min.css"
+    integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg=="
+    crossorigin="anonymous" media="all" onload="this.media=&#39;all&#39;">
+  <link rel="stylesheet" href="static/index-poc/github.min.css" crossorigin="anonymous" title="hl-light" media="all"
+    onload="this.media=&#39;all&#39;">
+  <link rel="stylesheet" href="static/index-poc/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print"
+    onload="this.media=&#39;all&#39;" disabled="">
+  <link rel="preload" as="style" href="static/index-poc/css2">
+  <link rel="stylesheet" href="static/index-poc/css2" media="all" onload="this.media=&#39;all&#39;">
+  <link rel="stylesheet" href="static/index-poc/wowchemy.481af39c39ffd87b2d14f39943e7c723.css">
+  <script src="static/index-poc/netlify-identity-widget.js.download"></script>
+  <script src="static/index-poc/jquery.fancybox.min.js"></script>
+  <title>Pneumonia Detection Analysis</title>
+  <style type="text/css">
+    .medium-zoom-overlay {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity .3s;
+      will-change: opacity
+    }
+
+    .medium-zoom--opened .medium-zoom-overlay {
+      cursor: pointer;
+      cursor: zoom-out;
+      opacity: 1
+    }
+
+    .medium-zoom-image {
+      cursor: pointer;
+      cursor: zoom-in;
+      transition: transform .3s cubic-bezier(.2, 0, .2, 1) !important
+    }
+
+    .medium-zoom-image--hidden {
+      visibility: hidden
+    }
+
+    .medium-zoom-image--opened {
+      position: relative;
+      cursor: pointer;
+      cursor: zoom-out;
+      will-change: transform
+    }
+  </style>
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="page-wrapper"
+  cz-shortcut-listen="true">
+  <script src="static/index-poc/wowchemy-init.min.8988fb2a4bba758785868cfcb5244555.js.download"></script>
+  <div class="page-header">
+    <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main"
+      style="background-color: teal;">
+      <div class="container-xl">
+        <div class="d-none d-lg-inline-flex">
+          <a class="navbar-brand" href="/">Pneumonia Detection Analysis</a>
+        </div>
+        
+        <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+          <ul class="navbar-nav d-md-inline-flex">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home" data-target="#home"><span>Home</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#problem" data-target="#problem"><span>The Problem</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#solution" data-target="#solution"><span>The Solution</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery" data-target="#gallery"><span>The Gallery</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+  <div class="page-body">
+    <section id="home" class="home-section wg-home">
+      <div class="home-section-bg">
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-4">
+            <div id="profile">
+              <img class="" width="300"
+                src="https://media3.giphy.com/media/7HeN31sikXE76/giphy.gif?cid=ecf05e47tu7gf40bzhwz37vkb4gy17jkgcbyh0fae7nuxe6i&rid=giphy.gif&ct=g"
+                alt="X-Ray">
+            </div>
+          </div>
+          <div class="col-12 col-lg-8">
+            <div class="article-style">
+              <div class="row">
+                <h1>Pneumonia Detection Analysis</h1>
+                <p>This project explores the potential of machine learning as a solution for medical image analysis.</p>
+                <p>X-ray images of pneumonia-infected lungs as well as non-pneumonia-infected lungs were used for
+                  training our model to explore the potential of this machine learning solution.</p>
+                </div>
+                <div style="row">
+                  <h3><b>Pneumonia or not pneumonia?</b></h3>
+                </div>
+                <div style="row"></div>
+                  <p><b>Upload your x-ray image below to see our model in action.</b></p>
+                </div>
+                <div class="col-12 col-lg-10" style="border-style: solid; background-color: #f7f7f7;border-radius: 5px; padding: 20px 0px 40px 80px;">
+                  <div class="article-style">
+                    <div class="row">
+              
+                      Step 1: Upload your x-ray image file.
+                    </div>
+                    <div class="row col-12 col-lg-6">
+                      <input type="file" name="file" id="file">
+                    </div>
+                    <div class="row col-12 col-lg-6">
+                      <button
+                        style="background-color: teal;color: white;padding: 0.5rem; font:kontrapunkt miki regular; border-radius: 0.3rem; cursor: pointer; margin-top: 1rem;"
+                        onclick="doupload()" name="submit"><b>UPLOAD FILE ></b></button>
+                    </div>
+                  </div>
+                  <div class="row"style="padding-top: 20px;">
+                    Step 2: Run the model to receive a diagnosis prediction.
+                  </div>
+                  <div class="row col-12 col-lg-6">
+      
+                    <button
+                        style="background-color: teal;color: white;padding: 0.5rem; font:kontrapunkt miki regular; border-radius: 0.3rem; cursor: pointer;"
+                        type="button">
+                        <b>PREDICT ></b>
+                      </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+    </section>
+
+
+    <section id="problem" class="home-section wg-problem">
+      <div class="home-section-bg">
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-2">
+          </div>
+          <div class="col-12 col-lg-10">
+            <div class="article-style">
+              <div class="row">
+
+                <h1>The Misdiagnosis Problem</h1>
+                <p>According to <a href=https://www.sciencedaily.com/releases/2010/10/101022123749.htm>this article</a>
+                    in ScienceDaily, patients are often "misdiagnosed with pneumonia at an alarming rate," leading to an
+                    overuse of antibiotics and an increase in healthcare costs.</p> <p>Pneumonia is second only to
+                    congestive heart failure "as the reason for readmission within 30 days of a previous
+                    hospitalization," according to researchers led by Henry Ford Infectious Diseases physicians Hiren
+                    Pokharna, M.D., and Norman Markowitz, M.D. This study found that "72 percent of patients were
+                    misdiagnosed with pneumonia upon readmission to the same hospital." Most of these misdiagnoses
+                    happened in the emergency department.</p>
+                <p>Dr. Pokharna noted that this analysis <b>"points to the importance of using X-ray for ruling out
+                    pneumonia."</b></p>
+              </div>
+            </div>
+    </section>
+
+
+    <section id="solution" class="home-section wg-solution">
+      <div class="home-section-bg">
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-2">
+          </div>
+          <div class="col-12 col-lg-10">
+            <div class="article-style">
+              <div class="row">
+
+                <h1>Machine Learning: A Solution for Improving Diagnosis Rates</h1>
+                <p>Imagine a pneumonia prediction tool more accurate than the human eye.</p>
+                <p>A fast and accurate resource for analyzing x-rays has the potential to drastically reduce the rates
+                  of pneumonia misdiagnosis, especially in emergency departments. Machine learning provides a solution
+                  to this problem. A deep learning model is capable of reading x-ray images and classifying them as
+                  pneumonia or not pneumonia. Even better, the accuracy rate of the model can be measured and improved
+                  before releasing it for public use.</p>
+              </div>
+            </div>
+    </section>
+
+    
+    <section id="gallery" class="home-section wg-gallery">
+      <div class="home-section-bg">
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-2">
+          </div>
+          <div class="col-12 col-lg-10">
+            <h1>The Gallery</h1>
+            <div class="gallery">
+              <div class="row">
+                <a href="static/index-poc/ipython-notebook.png">
+                  <img src="static/index-poc/ipython-notebook.png" loading="lazy" alt="theme-1950s.png" width="240">
+                </a>
+                <a href="/media/albums/themes/theme-apogee.png">
+                  <img src="https://www.dataquest.io/wp-content/uploads/2019/01/interface-screenshot.png" loading="lazy"
+                    alt="theme-apogee.png" width="240">
+                </a>
+              </div>
+              <div class="row">
+                <a href="/media/albums/themes/theme-coffee-playfair.png">
+                  <img
+                    src="https://www.researchgate.net/publication/335821527/figure/fig2/AS:803082518667267@1568481201689/Example-Jupyter-Notebook-Screenshot-At-the-top-of-the-page-there-is-the-Jupyter-menu.png"
+                    loading="lazy" alt="theme-coffee-playfair.png" width="240">
+                </a>
+                <a href="/media/albums/themes/theme-dark.png">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Screenshot_of_a_Jupyter_Notebook_with_SPARQL_kernel_after_running_a_query_to_the_Wikidata_Query_Service_as_of_21_September_2020.png"
+                    loading="lazy" alt="theme-dark.png" width="240">
+                </a>
+              </div>
+            </div>
+          </div>
+    </section>
+  </div>
+
+ 
+  <script src="static/index-poc/vendor-bundle.min.b73dfaac3b6499dc997741748a7c3fe2.js.download"></script>
+  <script src="static/index-poc/imagesloaded.pkgd.min.js.download"></script>
+  <script src="static/index-poc/isotope.pkgd.min.js.download" ></script>
+  <script src="static/index-poc/highlight.min.js.download"></script>
+  <script src="static/index-poc/r.min.js.download" crossorigin="anonymous"></script>
+  <script src="static/index-poc/fuse.min.js.download" ></script>
+  <script src="static/index-poc/jquery.mark.min.js.download" ></script>
+  <script src="static/index-poc/wowchemy.min.d68ecd57c0ec1f1f61d65fd568f1c3a0.js.download"></script>
+
+</body>
+
+</html>

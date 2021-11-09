@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # -*- coding: utf-8 -*-
 """
 Created on Sat Nov  6 07:37:08 2021
@@ -132,3 +133,21 @@ def main():
 
 #Launch everything
 main()
+=======
+
+""" Flask application that runs the API and renders the html page(s) """
+from flask import Flask, render_template, jsonify
+# from flask_sqlalchemy import SQLAlchemy
+
+# Spin up flask app
+app = Flask(__name__)
+
+# This route renders the homepage
+@app.route("/")
+def index():
+    return render_template("index-poc.html")
+
+# You need this - this allows you to actually run the app
+if __name__ == "__main__":
+    app.run(debug=True)
+>>>>>>> 03ca53585a25834cff543812bdddb72f7c6bc9e2
