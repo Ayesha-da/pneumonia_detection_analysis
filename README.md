@@ -6,6 +6,7 @@ resource? Any other details on the hardware or software configuration?
 For the model training we used google colab-GPU to run the model and process the charts. The graphs are not displaying on local machine and the kernel is braeking before it could process the information.
 
 * Did you experience any memory of other difficulties with the image or data size?
+
 We are working with over 5200 images kernel getting diconnected,restart thye notebook
 yes very long training time, installing new packages such as cvs and updating version of tensorflow.
 
@@ -15,7 +16,6 @@ We are working on a model that will put all other images in “Other” category
 
 * Did you consider or explore other CNN model architectures and other layers?
 
-yes
 
 * Can you display graphs for the metrics over the training epochs (train loss, test loss, etc.)? What were the final numbers?
 
