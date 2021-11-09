@@ -7,8 +7,8 @@ For the model training we used google colab-GPU to run the model and process the
 
 * Did you experience any memory of other difficulties with the image or data size?
 
-We are working with over 5200 images kernel getting diconnected,restart thye notebook
-yes very long training time, installing new packages such as cvs and updating version of tensorflow.
+We are working with over 5200 images and  kernel is getting diconnected and so we have to restart the notebook.
+ very long training time, installing new packages such as cvs and updating version of tensorflow.
 
 * What does the model do if it receives an image that is not an x-ray (for example, a dog)?
 
