@@ -11,7 +11,7 @@ Note that I deducted a few minor points from the ML grade due to the lack of inf
 # pneumonia_detection_analysis
 * For the training - are you using a GPU or a CPU? Local machine or online 
 resource? Any other details on the hardware or software configuration?
-For the model training we used GPU 
+For the model training we used google colab-GPU 
 * Did you experience any memory of other difficulties with the image or data size?
 Yes 
 * What does the model do if it receives an image that is not an x-ray (for example, a dog)?
