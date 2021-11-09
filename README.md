@@ -3,11 +3,11 @@
 * For the training - are you using a GPU or a CPU? Local machine or online 
 resource? Any other details on the hardware or software configuration?
 
-For the model training we used google colab-GPU 
+For the model training we used google colab-GPU and local computer
 
 * Did you experience any memory of other difficulties with the image or data size?
 
-Yes 
+yes very long training time, installing new packages such as cvs and updating version of tensorflow.
 
 * What does the model do if it receives an image that is not an x-ray (for example, a dog)?
 
