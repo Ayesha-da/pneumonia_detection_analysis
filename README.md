@@ -21,7 +21,8 @@ yes
 
 * How long did the training take?
 
-The training took about an hour for 20 epochs on local machine and google colab-GPU took about 25 min
+The training took about an hour for 20 epochs on local machine and google colab-GPU took about 25 min.
+
 For 50 epochs
 
 
