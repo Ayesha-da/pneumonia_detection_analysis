@@ -13,6 +13,10 @@ from keras.models import Sequential
 from keras.layers import Conv2D, Activation, MaxPooling2D, Flatten, Dense, Dropout,BatchNormalization
 import tensorflow as tf
 from tensorflow.keras import backend as K
+#import numpy as np
+#import cv2
+#import os
+
 
 #Set the image size with are learning from
 IMG_WIDTH, IMG_HEIGHT = 150,150
