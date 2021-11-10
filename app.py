@@ -32,13 +32,12 @@ IMG_WIDTH, IMG_HEIGHT = 150,150
 BUCKET_NAME='pneumoniadataset'
 
 # Read the secret key from environment variables
-#aws_access_key_id = environ.get('ACCESS_KEY') 
-#aws_secret_access_key = environb.get('SECRET_KEY') 
-
+aws_access_key_id = 'AKIAW5XAT2GRQHC3CH7U' #environ.get('ACCESS_KEY') 
+aws_secret_access_key = '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' #environb.get('SECRET_KEY') 
 #create the website object
 app = Flask(__name__)
 #app.debug = True
-app.config.from_pyfile('config.py.Config')  
+#app.config.from_pyfile('config.py.Config')  
 
 def load_model_from_file():
     mySession = tf.compat.v1.Session()
@@ -81,8 +80,8 @@ def upload_file():
             file.save(filename)
             
             s3A = boto3.resource('s3',
-                        aws_access_key_id=app.config['ACCESS_KEY'],
-                        aws_secret_access_key=app.config['SECRET_KEY']
+                        aws_access_key_id=aws_access_key_id, #app.config['ACCESS_KEY'],
+                        aws_secret_access_key=aws_secret_access_key #app.config['SECRET_KEY']
                        # aws_session_token='secret token here'
                          )
             s3A.meta.client.upload_file(
