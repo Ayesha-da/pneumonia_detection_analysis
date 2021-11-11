@@ -12,6 +12,6 @@ from os import environ, path
 #(path.join(basedir, '.env'))
 
 #FLASK_ENV = 'development'
-class Config:
-    ACCESS_KEY = environ.get('ACCESS_KEY')
-    SECRET_KEY = environ.get('SECRET_KEY')
+#class Config:
+ACCESS_KEY = environ.get('ACCESS_KEY')
+SECRET_KEY = environ.get('SECRET_KEY')

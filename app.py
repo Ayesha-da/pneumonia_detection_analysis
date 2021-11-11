@@ -32,12 +32,15 @@ IMG_WIDTH, IMG_HEIGHT = 150,150
 BUCKET_NAME='pneumoniadataset'
 
 # Read the secret key from environment variables
-aws_access_key_id = 'AKIAW5XAT2GRQHC3CH7U' #environ.get('ACCESS_KEY') 
-aws_secret_access_key = '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' #environb.get('SECRET_KEY') 
+#aws_access_key_id = 'AKIAW5XAT2GRQHC3CH7U' #environ.get('ACCESS_KEY') 
+#aws_secret_access_key = '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' #environb.get('SECRET_KEY') 
 #create the website object
 app = Flask(__name__)
 #app.debug = True
-#app.config.from_pyfile('config.py.Config')  
+app.config.from_pyfile('app/config.py')
+#print(app.config)
+aws_access_key_id = app.config['ACCESS_KEY']
+aws_secret_access_key = app.config['SECRET_KEY']
 
 def load_model_from_file():
     mySession = tf.compat.v1.Session()
