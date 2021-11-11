@@ -42,7 +42,7 @@ Our project will use neural networks and deep learning to interpret chest x-ray 
 ### Project Use Case
 - The use case for generating this model is to develop a process to objectively analyze and interpret x-ray images with a rate of accuracy that is potentially better than the human eye.
 - This model could be a valuable resource for doctors and students as another tool for interpreting x-ray images and validating/invalidating their personal diagnoses.
-- Additionally, this model could be futher applied to chest x-rays with diagnoses outside of pneumonia and be adapted to interpret the x-rays of patients with an array of diagnoses. Our goal is to generate a model that can predict the nuances between pneumonia, normal, or other to account that there are many potential diagnoses besides pneumonia to consider.
+- Additionally, this model could be further applied to chest x-rays with diagnoses outside of pneumonia and be adapted to interpret the x-rays of patients with an array of diagnoses. Our goal is to generate a model that can predict the nuances between pneumonia, normal, or other to account that there are many potential diagnoses besides pneumonia to consider.
  ### Questions to Answer
 - Can a machine learning model find distinct differences in chest x-ray images and accurately classify them as pneumonia, normal, or other?
 - What level of accuracy can be achieved by this model? Can it be considered a reliable resource for individuals who are diagnosing patients?
@@ -53,7 +53,7 @@ Our project will use neural networks and deep learning to interpret chest x-ray 
 
 ### Machine Learning Datasets
 
-Our primary Machine Learning datasets are image libraries sourced from Kaggle. The first dataset was originally sourced from [this article](https://www.cell.com/cell/fulltext/S0092-8674(18)30154-5#relatedArticles) in Cell, which conducted an analysis of identifying medical diagnoses using image-based deep learning. The image library consists of chest x-ray images that have been classfied as normal, baterial pneumonia, or viral pneumonia.
+Our primary Machine Learning datasets are image libraries sourced from Kaggle. The first dataset was originally sourced from [this article](https://www.cell.com/cell/fulltext/S0092-8674(18)30154-5#relatedArticles) in Cell, which conducted an analysis of identifying medical diagnoses using image-based deep learning. The image library consists of chest x-ray images that have been classified as normal, bacterial pneumonia, or viral pneumonia.
 
 - Beyond the datasets required to inform our model, we can also introduce demographic data for pneumonia and COVID-19 diagnoses rates by location and patient descriptions. While not essential to the success of our model, this information will allow us to further refine the scope and implications of our model's use case and development long term.
 
@@ -75,7 +75,7 @@ Our primary Machine Learning datasets are image libraries sourced from Kaggle. T
   
   D. Notes: 
     
-    This was our initial dataset and serves as the basis for the intended format for other datasets. This set only identifies normal vs pneumonia, and does not take into account other potential Lung issues that could also show up (cancer, covid, TB, etc) 
+    This was our initial dataset and serves as the basis for the intended format for other datasets. This set only identifies normal vs pneumonia, and does not take into account other potential Lung issues that could also show up (cancer, covid, TB, etc.) 
 
  2) NIH Chest X-rays
   
@@ -93,7 +93,7 @@ Our primary Machine Learning datasets are image libraries sourced from Kaggle. T
   
    D. Notes:
   
-    This is the largest of the datasets we reviewed and it also has the most varied assortment of lung images, classifying 14 different diseases. Once we determine how we are building the buckets for our model, we'll need to format the files accordingly. The other concern with this dataset is that unlike the other sets, it was put together using their own NLP program that claims only a 90% accuracy, so while the original files are verified by radiologists, there is a larger margin of error due to the additional step of data mining. 
+    This is the largest of the datasets we reviewed, and it also has the most varied assortment of lung images, classifying 14 different diseases. Once we determine how we are building the buckets for our model, we'll need to format the files accordingly. The other concern with this dataset is that unlike the other sets, it was put together using their own NLP program that claims only a 90% accuracy, so while the original files are verified by radiologists, there is a larger margin of error due to the additional step of data mining. 
 
  Other Image Datasets considered but not used
 
@@ -110,7 +110,7 @@ Our primary Machine Learning datasets are image libraries sourced from Kaggle. T
     
     The RSNA is an international society of radiologists, medical physicists and other medical professionals with more than 54,000 members from 146 countries across the globe. They see the potential for ML to automate initial detection (imaging screening) of potential pneumonia cases in order to prioritize and expedite their review."
 
-Novel COVID-19 Chestxray Repository  
+Novel COVID-19 Chest Xray Repository  
    
    Source Link: 
     https://www.kaggle.com/tawsifurrahman/covid19-radiography-database
@@ -143,7 +143,7 @@ CDC (US Data): https://wonder.cdc.gov/controller/datarequest/D76;jsessionid=303D
 - Heroku for hosting visualizations
 
 ## Database Set Up
-We will be hosting our data on AWS through the use of the S3 Buckets and the a postgreSQL RDS. Our dataset has over 5,000 images of chest x-rays that will be run through our machine learning model to determine if we can predict whether or not someone has Pneumonia. We chose to use AWS since it can easily store non-text data (images), our data is stored in the cloud so everyone can access it from their local devices, and we can upload our final data into a RDS for future querying and analysis. 
+We will be hosting our data on AWS through the use of the S3 Buckets and a postgreSQL RDS. Our dataset has over 5,000 images of chest x-rays that will be run through our machine learning model to determine if we can predict whether or not someone has Pneumonia. We chose to use AWS since it can easily store non-text data (images), our data is stored in the cloud so everyone can access it from their local devices, and we can upload our final data into a RDS for future querying and analysis. 
 ### S3 Bucket Links
 - https://s3.console.aws.amazon.com/s3/buckets/pneumoniadataset
 ### RDS Endpoint
@@ -171,9 +171,9 @@ This is not a clean dataset. Using [GetImages_fun](https://github.com/Ayesha-da/
 
 we got the 3 buckets (Pneumonia, Normal and Others) from Dataset 2 and we used it in our Machine Learning model.
 
-#### Data Extraction and Trasformation: 
+#### Data Extraction and Transformation: 
 
-we started to extract the data from our [s3 bucket](https://s3.console.aws.amazon.com/s3/buckets/pneumoniadataset?region=us-east-1&prefix=chest_xray/&showversions=false) and did some trasformation in the Dataset1 images using [project_sample](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/data_ETL/project_sample.ipynb) code.
+we started to extract the data from our [s3 bucket](https://s3.console.aws.amazon.com/s3/buckets/pneumoniadataset?region=us-east-1&prefix=chest_xray/&showversions=false) and did some transformation in the Dataset1 images using [project_sample](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/data_ETL/project_sample.ipynb) code.
 
 The Dataset's size is bigger and if all members of the team used the cloud images from the S3 bucket, the team would incur possible charges from AWS.  To avoid this, we decided to store the images on our local machines in order to train and test the ML model.
 
@@ -186,10 +186,10 @@ For the visualization we used different data for analysis. The two datasets that
 
 ![ERD for US](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/data_ETL/Presentation_ERD/ERDiagram.PNG)
 
-we uploaded this data on AWS RDS using pgAdmin dataengine.
+we uploaded this data on AWS RDS using pgAdmin data engine.
 To create the database we used the [sql query](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/data_ETL/Presentation_ERD/presentation_createTable.sql)
 
-This data was then used in tableu for analysis
+This data was then used in Tableau for analysis
 
 * [Deaths_by_age_group](https://public.tableau.com/app/profile/matthew.breitner/viz/PneumoniaDeathsbyAgeGroup/DeathsbyAgeGroup)
 
@@ -223,16 +223,16 @@ Child mortality rates begin to increase in Africa and South/West Asia, which unf
 
 https://public.tableau.com/app/profile/matthew.breitner/viz/ChildMortalityRatesbyCountrybyYear/ChildMortalityRatesbyCountrybyYear
 
-You can see this trend continue when looking at the overal mortality rates across the world. 
+You can see this trend continue when looking at the overall mortality rates across the world. 
 
 https://public.tableau.com/app/profile/matthew.breitner/viz/GlobalMortalityRatebyAge/GlobalMortalityRatebyAge
 
-We then analyzed to see if the same trends could be found in the United States. Although we did not see the same trends in terms of GDP (the largest states still had the highest death rates) we did see a similar trend in higher rates of death in adults over the age of 70. The following graphics outline the amount of deaths by age group and the amount of deaths by state within the US. 
+We then analyzed to see if the same trends could be found in the United States. Although we did not see the same trends in terms of GDP (the largest states still had the highest death rates) we did see a similar trend in higher rates of death in adults over the age of 70. The following graphics outline the number of deaths by age group and the amount of deaths by state within the US. 
 
 https://public.tableau.com/app/profile/matthew.breitner/viz/PneumoniaDeathsbyAgeGroup/DeathsbyAgeGroup
 https://public.tableau.com/app/profile/matthew.breitner/viz/PneumoniaDeathsbyStatebyAgeGroup/DeathsbyStatebyAgeGroup
 
-Although medical technologies has advanced tenfold over the last 20 years, that has come as both an advantage and disadvantage for medical professionals around the world, specifcially radiologists. According to the Mayo clinic, the number of X-ray scans a radiologist have to anlyze in a given shift has gone from 1 image every 20 seconds to 1 image every 4 seconds. Now it is advantageous to scan so many images quickly but it makes it more difficult to accurately diagnose an image. This is were our model with come into play because it will not only assist in the increased speed of image reading but it can more accurately diagnose the image for pneumonia compared to theh naked eye. 
+Although medical technologies have advanced tenfold over the last 20 years, that has come as both an advantage and disadvantage for medical professionals around the world, specifcially radiologists. According to the Mayo clinic, the number of image scans a radiologist has to analyze in a given shift has gone from 1 image every 20 seconds to 1 image every 4 seconds. Now it is advantageous to have so more images available to analyze, but the reduction in time makes it more difficult to accurately diagnose an image. This is were our model with come into play because it will not only assist in the increased speed of image reading but it can more accurately diagnose the image for pneumonia compared to the naked eye. 
 
 ![Pneumonia_Image_Speed](https://user-images.githubusercontent.com/84791455/140665486-4de6a6d7-d99f-46ab-bb67-96a35ab41ea9.PNG)
 
@@ -251,7 +251,7 @@ https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/data_ETL/ERD/glob
 
 In Conventional Programming, decision making is based on IF-ELSE conditions. Therefore, many solutions cannot be modeled with it. One of the main reasons behind this is the variation of the input data variable, which increases the problem’s complexity. On the contrary, machine learning programming solves the problem by modeling the data with train data and test data. Based on these data and statistical models, machine learning predicts the result.
 
-In deep learning, we will be using a convolutional neural network (CNN/ConvNet), a class of deep neural networks, most commonly applied to analyze visual imagery.We are primarily working with images and we need CNN model to take in these images, process them and give us the desired output by classifying them correctly as “Normal” or “Pneumonia”.
+In deep learning, we will be using a convolutional neural network (CNN/ConvNet), a class of deep neural networks, most commonly applied to analyze visual imagery. We are primarily working with images and we need CNN model to take in these images, process them and give us the desired output by classifying them correctly as “Normal” or “Pneumonia”.
 The [code](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/trainmodel.py) for machine learning is complete.
 - preliminary data preprocessing
 
@@ -265,11 +265,11 @@ The [code](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/t
    
 - Description of how data was split into training and testing sets 
 
-   Our data is imbalanced. To avoid this and overfitting, we performed data augmentation. The idea of data augmentation is we perform some distortions to our existing data and      we get new various data. For example we apply horizontal flip, random zoom, height and width shift and then we normalize the data so it converges faster.
+   Our data is imbalanced. To avoid this and overfitting, we performed data augmentation. The idea of data augmentation is to perform distortions to our existing data to decrease unneccesary variations on the data. For example we apply horizontal flip, random zoom, height and width shift to standardize the images for consistency and then we normalize the data so it converges faster.
    
 - Explanation of model choice, limitations and benefits.
 
-  Convolutional neural networks (CNN) are used for image classification and recognition because of its high accuracy.It was proposed by computer scientist Yann LeCun in the late   90s, when he was inspired from the human visual perception of recognizing things.They are one of the most popular models used today. This neural network computational model     uses a variation of multilayer perceptrons and contains one or more convolutional layers that can be either entirely connected or pooled. These convolutional layers create       feature maps that record a region of image which is ultimately broken into rectangles and sent out for nonlinear processing.
+  Convolutional neural networks (CNN) are used for image classification and recognition because of its high accuracy. It was proposed by computer scientist Yann LeCun in the late 90s, when he was inspired from the human visual perception of recognizing things. They are one of the most popular models used today. This neural network computational model uses a variation of multilayer perceptrons and contains one or more convolutional layers that can be either entirely connected or pooled. These convolutional layers create feature maps that record a region of image which is ultimately broken into rectangles and sent out for nonlinear processing.
   
   Benefits:
   
