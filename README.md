@@ -1,7 +1,7 @@
 
 # pneumonia_detection_analysis
 * Hardware or software configuration
-
+   Google Compute Engine backend (GPU)
    For the model training we used google colab-GPU to run the model and process the charts. We encountered few issues while running model on local machine such as shutting down    of kernel due to delayed times.
 
 * Did you experience any memory or other difficulties with the image or data size?
@@ -22,24 +22,17 @@ We are working on a model that will put all other images in “Other” category
 
 
 * How long did the training take?
-
-The training took about 15 min for 50 epochs on local machine and google colab-GPU took about 10 min.
-
+Google colab (GPU) took about 15-20 min to read the images
+The training took about 20 - 25 min for 50 epochs .
 
 Our model had overfitting problem. 
-The early stopping criteria would also help avoid overfitting
+The early stopping criteria would also help avoid overfitting  stop training once the model performance stops improving 
 
- Early stopping is a method that allows you to specify an arbitrary large number of training epochs and stop training once the model performance stops improving on a hold out validation dataset.
- 
- Often, the first sign of no further improvement may not be the best time to stop training. This is because the model may coast into a plateau of no improvement or even get slightly worse before getting much better.
 
-We can account for this by adding a delay to the trigger in terms of the number of epochs on which we would like to see no improvement. This can be done by setting the “patience” argument.
+We can account for this by adding a delay to the trigger in terms of the number of epochs on which we would like to see no improvement. This can be done by setting the “patience” argument. and baseline=0.5
 
 early_stopping = EarlyStopping(monitor='val_accuracy', mode='max') overfitting 0.5 above
- early_stopping = EarlyStopping(monitor='val_loss', mode='min') overfitting 0.5 below class
+early_stopping = EarlyStopping(monitor='val_loss', mode='min') overfitting 0.5 below class
  
- baseline increase normal
- decrease pneumonia
- 
- patience increase pneumonia
- decrease normal
+stop training if performance stays above or below a given threshold or baseline.
+We can account for this by adding a delay to the trigger in terms of the number of epochs on which we would like to see no improvement. This can be done by setting the “patience” argument.
