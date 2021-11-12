@@ -38,9 +38,8 @@ We are also working on applying bias and keras regularizers to our model to impr
 ![roc_curve](https://user-images.githubusercontent.com/84524153/141501497-1faa0665-7e95-4dcf-8d5b-826958bae9ac.png)
 
 * How long did the training take?
-
-Google colab (GPU) took about 15-20 min to read the images
-The training took about 20 - 25 min for 50 epochs .
+  Google colab (GPU) took about 15-20 min to read the images
+  The training took about 20 - 25 min for 50 epochs .
 
 
 
