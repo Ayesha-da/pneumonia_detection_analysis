@@ -22,6 +22,7 @@
   We can account for this by adding a delay to the trigger in terms of the number of epochs on which we would like to see no improvement. This can be done by setting the           “patience” argument. and baseline=0.5
 
   EarlyStopping(monitor='val_accuracy', mode='max') overfitting 0.5 above
+  
   EarlyStopping(monitor='val_loss', mode='min') overfitting 0.5 below class
 
   EarlyStopping(monitor='val_loss', mode='min', baseline=0.5)    baseline= 0.5 and below overfits pneumonia and above 0.5 overfits normal
