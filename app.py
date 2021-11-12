@@ -98,10 +98,10 @@ def upload_file():
             img = object.get()['Body'].read()
             img = cv2.imdecode(np.asarray(bytearray(img)), cv2.IMREAD_GRAYSCALE)
             img = cv2.resize(img, (IMG_WIDTH, IMG_HEIGHT))   
-            img = img.reshape(-1, IMG_WIDTH, IMG_HEIGHT, 1)
-            #img = np.dstack([img, img, img])  #stack 3 times
+            #img = img.reshape(-1, IMG_WIDTH, IMG_HEIGHT, 1)
+            img = np.dstack([img, img, img])  #stack 3 times
             img = img.astype('float32') / 255
-            #img = np.expand_dims(img, axis=0)
+            img = np.expand_dims(img, axis=0)
             mySession,myModel,myGraph= load_model_from_file()
            
             result = myModel.predict(img)
