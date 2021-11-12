@@ -279,7 +279,16 @@ The [code](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/t
    ✓ Lack of ability to be spatially invariant to the input data.
  
    ✓ Lots of training data is required.
-  
+   
+ - Hardware / Software configuration
+
+Google Compute Engine backend (GPU) and python 3.7, spyderIDE(v 5.1.5), flask, bootstrap, keras and tensorflow on local computer.
+
+For the model training we used google colab-GPU to run the model and process the charts. We encountered few issues while running model on local machine such as shutting down of kernel due to delayed times.
+
+Did you experience any memory or other difficulties with the image or data size?
+
+Severe Overfitting, very long training time, installing new packages such as cvs and updating version of tensorflow.
 
 ## Dashboard
 Our final dashboard will include a Google Slides presentation supplemented with images created in Tableau. Our interactive element will be a Heroku website that users can interact with to view visuals and information about our model and our model's output. 
