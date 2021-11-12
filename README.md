@@ -30,12 +30,6 @@
 
 * Can you display graphs for the metrics over the training epochs (train loss, test loss, etc.)? What were the final numbers?
 
-![accuracy](https://user-images.githubusercontent.com/84524153/141501445-dbedd357-2e8b-4db7-8a37-bc012eaaece0.png)
-![loss](https://user-images.githubusercontent.com/84524153/141501481-db970c47-01f1-4991-8312-e38083c04727.png)
-![confusion_matrix](https://user-images.githubusercontent.com/84524153/141501528-ca5d16e5-b9d4-41f6-a4a8-66713b7c7727.png)
-![roc_curve](https://user-images.githubusercontent.com/84524153/141501497-1faa0665-7e95-4dcf-8d5b-826958bae9ac.png)
-<img src= "https://user-images.githubusercontent.com/84524153/141504032-70eb93f8-a604-4671-89d0-5f21af2b51f6.png" width="800" />
-
 * How long did the training take?
 
   Google colab (GPU) took about 10-15 min to read the images
