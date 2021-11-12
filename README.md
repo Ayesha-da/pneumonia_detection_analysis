@@ -31,8 +31,11 @@ EarlyStopping(monitor='val_loss', mode='min', patience=0.17) patience=0.17 and b
 We are also working on applying bias and keras regularizers to our model to improve accuracy. 
 
 * Can you display graphs for the metrics over the training epochs (train loss, test loss, etc.)? What were the final numbers?
-
-
+* 
+![accuracy](https://user-images.githubusercontent.com/84524153/141501445-dbedd357-2e8b-4db7-8a37-bc012eaaece0.png)
+![loss](https://user-images.githubusercontent.com/84524153/141501481-db970c47-01f1-4991-8312-e38083c04727.png)
+![confusion_matrix](https://user-images.githubusercontent.com/84524153/141501528-ca5d16e5-b9d4-41f6-a4a8-66713b7c7727.png)
+![roc_curve](https://user-images.githubusercontent.com/84524153/141501497-1faa0665-7e95-4dcf-8d5b-826958bae9ac.png)
 
 * How long did the training take?
 
