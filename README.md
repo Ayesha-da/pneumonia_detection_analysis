@@ -28,13 +28,14 @@ EarlyStopping(monitor='val_loss', mode='min') overfitting 0.5 below class
 EarlyStopping(monitor='val_loss', mode='min', baseline=0.5)    baseline= 0.5 and below overfits pneumonia and above 0.5 overfits normal
 EarlyStopping(monitor='val_loss', mode='min', patience=0.17) patience=0.17 and below over fits normal, above 0.18 and above overfitting pneumonia
  
-We are also 
+We are also working on applying bias and keras regularizers to our model to improve accuracy. 
 
 * Can you display graphs for the metrics over the training epochs (train loss, test loss, etc.)? What were the final numbers?
 
 
 
 * How long did the training take?
+
 Google colab (GPU) took about 15-20 min to read the images
 The training took about 20 - 25 min for 50 epochs .
 
