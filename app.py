@@ -34,8 +34,8 @@ IMG_WIDTH, IMG_HEIGHT = 150,150
 BUCKET_NAME='pneumoniadataset'
 
 # Read the secret key from environment variables
-aws_access_key_id = 'AKIAW5XAT2GRQHC3CH7U'
-aws_secret_access_key = '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'
+aws_access_key_id = os.environ.get('ACCESS_KEY')
+aws_secret_access_key = os.environ.get('SECRET_KEY')
 
 #create the website object
 app = Flask(__name__)
