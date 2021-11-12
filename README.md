@@ -29,13 +29,6 @@ Matthew Breitner (Tableau, Google Slides)
 William Johnson (Google Slides)
 
 
-## Communication Protocol 
-To manage team progress throughout the project timeline, our team has established the following communication process:
-- Slack group which includes all team members 
-- Daily check-ins on Slack
-- Recurring meeting on Mondays and Wednesdays at 7PM in addition to our Tues/Thurs classes
-- Additional meetings are scheduled as needed based on Slack discussions
-
 ## Project Overview
 ### Selected Topic
 Our project will use neural networks and deep learning to interpret chest x-ray images and classify them as pneumonia, not pneumonia, or other.
