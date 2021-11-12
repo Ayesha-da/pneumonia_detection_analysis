@@ -15,7 +15,7 @@ We are working on a model that will put all other images in “Other” category
 
 * Did you consider or explore other CNN model architectures and other layers?
 
- We tried various hyperparameters such as different activation functions, adding dropout layers, increasing/decreasing nodes .to work with the model
+ We tried various hyperparameters such as different optimizers such as "adam", "rmsprop", variuos activation functions such as sigmoid, relu and adding dropout layers,normalization function, increasing/decreasing nodes ,to work with the model.
  
 * Can you display graphs for the metrics over the training epochs (train loss, test loss, etc.)? What were the final numbers?
 
@@ -26,15 +26,9 @@ We are working on a model that will put all other images in “Other” category
 The training took about 15 min for 50 epochs on local machine and google colab-GPU took about 10 min.
 
 
-* Note that I deducted a few minor points from the ML grade due to the lack of information on other model hyperparameters that you may have tried and how you ended up with this exact model design.
-We tried various hyperparameters such as different activation functions such as "adam", "", adding dropout layers, increasing/decreasing nodes .to work with the model
-
+Our model had overfitting problem. 
 The early stopping criteria would also help avoid overfitting
 
-RMSProp, which stands for Root Mean Square Propagation, is a gradient descent optimization algorithm.
-made sure not to use drop out layer in earlier layers to not drop imoprtant faetures
-Adam, derived from Adaptive Moment Estimation, is an optimization algorithm. The Adam optimizer makes use of a combination of ideas from other optimizers.
-Adam realizes the benefits of both AdaGrad and RMSProp
  Early stopping is a method that allows you to specify an arbitrary large number of training epochs and stop training once the model performance stops improving on a hold out validation dataset.
  
  Often, the first sign of no further improvement may not be the best time to stop training. This is because the model may coast into a plateau of no improvement or even get slightly worse before getting much better.
