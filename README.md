@@ -38,8 +38,8 @@
 
 * How long did the training take?
 
-  Google colab (GPU) took about 15-20 min to read the images
-  The training took about 20 - 25 min for 50 epochs .
+  Google colab (GPU) took about 10-15 min to read the images
+  The training took about 15 - 20 min for 25 epochs .
   
  #### Future work
   
