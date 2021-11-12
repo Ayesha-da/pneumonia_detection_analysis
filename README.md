@@ -318,7 +318,7 @@ The [code](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/t
 
 * How long did the training take?
 
-  Google colab (GPU) took about 10-15 min to read the images
+  Google colab (GPU) took about 10-15 min to read the images.
   The training took about 15 - 20 min for 25 epochs .
   
  #### Future work
