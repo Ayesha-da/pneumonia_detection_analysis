@@ -31,14 +31,12 @@ ALLOWED_EXTENSIONS = {'png', 'jpeg', 'jpg', 'gif'}
 IMG_WIDTH, IMG_HEIGHT = 150,150
 BUCKET_NAME='pneumoniadataset'
 
-# Read the secret key from environment variables
-#aws_access_key_id = 'AKIAW5XAT2GRQHC3CH7U' #environ.get('ACCESS_KEY') 
-#aws_secret_access_key = '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' #environb.get('SECRET_KEY') 
 #create the website object
 app = Flask(__name__)
 #app.debug = True
 app.config.from_pyfile('app/config.py')
 #print(app.config)
+# Read the secret key from environment variables
 aws_access_key_id = app.config['ACCESS_KEY']
 aws_secret_access_key = app.config['SECRET_KEY']
 
@@ -99,24 +97,30 @@ def upload_file():
             
             img = object.get()['Body'].read()
             img = cv2.imdecode(np.asarray(bytearray(img)), cv2.IMREAD_GRAYSCALE)
-            img = cv2.resize(img, (IMG_WIDTH, IMG_HEIGHT))
-            img = np.dstack([img, img, img])  #stack 3 times
+            img = cv2.resize(img, (IMG_WIDTH, IMG_HEIGHT))   
+            img = img.reshape(-1, IMG_WIDTH, IMG_HEIGHT, 1)
+            #img = np.dstack([img, img, img])  #stack 3 times
             img = img.astype('float32') / 255
-            img = np.expand_dims(img, axis=0)
+            #img = np.expand_dims(img, axis=0)
             mySession,myModel,myGraph= load_model_from_file()
            
             result = myModel.predict(img)
             #print(result)
-            x = result[0][0] * 100
+            res_normal = 1 - result[0][0]
+            #print(res_normal)
+            x = result[0][0] * 100 #10000
+            x_normal = res_normal * 100
             per = "{:.2f}".format(x)
+            per_normal = "{:.2f}".format(x_normal)
             #print(per)
+            
             image_src = 'https://pneumoniadataset.s3.amazonaws.com/'+ filename
             if result[0][0] < 0.5 :
-                answer = X + per + '%'
+                answer = 'This x-ray image has a ' + per_normal + '% chance of being normal/non-pneumonia.'
             else:
-                answer = Y + per + '%'
+                answer = 'This image has a ' + per  + '% chance of being positive for pneumonia.'
             
-            return render_template('index-poc.html', result = answer, filename=filename, image_src=image_src)
+            return render_template('index.html', result = answer, filename=filename, image_src=image_src)
       
 
 
