@@ -120,7 +120,7 @@ def upload_file():
             else:
                 answer = 'This image has a ' + per  + '% chance of being positive for pneumonia.'
             
-            return render_template('index.html', result = answer, filename=filename, image_src=image_src)
+            return render_template('index-poc.html', result = answer, filename=filename, image_src=image_src)
       
 
 
