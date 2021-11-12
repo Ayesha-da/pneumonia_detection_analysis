@@ -2,7 +2,7 @@
 # pneumonia_detection_analysis
 * Hardware or software configuration
 
-   Google Compute Engine backend (GPU) and python 3.7, spyder, flask, bootstrap, keras and tensorflow on local computer.
+   Google Compute Engine backend (GPU) and python 3.7, spyderIDE(v 5.1.5), flask, bootstrap, keras and tensorflow on local computer.
    
    For the model training we used google colab-GPU to run the model and process the charts. We encountered few issues while running model on local machine such as shutting down    of kernel due to delayed times.
 
