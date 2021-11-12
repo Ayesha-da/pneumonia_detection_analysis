@@ -42,7 +42,11 @@
 
   Google colab (GPU) took about 15-20 min to read the images
   The training took about 20 - 25 min for 50 epochs .
+  
+  Future work
+  Limitation in our model
 
-
+Our model seems to have high recall and AUC score, but there could still be blindspots due to the limitations of dataset. Given more time and resources, I’d love to explore the following:
+1. Include more diversity in the dataset in terms of patient residence and age
 
 
