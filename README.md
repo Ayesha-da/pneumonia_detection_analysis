@@ -299,10 +299,10 @@ The [code](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/t
 
     EarlyStopping(monitor='val_accuracy', mode='max') overfitting 0.5 above         
     EarlyStopping(monitor='val_loss', mode='min') overfitting 0.5 below class
-
-    EarlyStopping(monitor='val_loss', mode='min', baseline=0.5)    baseline= 0.5 and below overfits pneumonia and above 0.5 overfits normal
+    
     EarlyStopping(monitor='val_loss', mode='min', patience=0.17) patience=0.17 and below over fits normal, above 0.18 and above overfitting pneumonia
-
+    EarlyStopping(monitor='val_loss', mode='min', baseline=0.5)    baseline= 0.5 and below overfits pneumonia and above 0.5 overfits normal
+    
     We are also working on applying bias and keras regularizers to our model to improve accuracy. 
 
 * Can you display graphs for the metrics over the training epochs (train loss, test loss, etc.)? What were the final numbers?
