@@ -295,10 +295,9 @@ The [code](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/t
     We tried various hyperparameters such as different optimizers such as "adam", "rmsprop", variuos activation functions such as sigmoid, relu and adding dropout                   layers,normalization function, increasing/decreasing nodes ,to work with the model.
  
     Our model had overfitting problem. 
-    We used early stopping criteria to stop training once the model performance stopped improving by adding a delay to the trigger in terms of the number of epochs on which we       would like to see no improvement. This was be done by setting the “patience” argument and adjusting "baseline".
+    We used early stopping criteria to stop training once the model performance stopped improving. We also added “patience” argument that adds a delay to the trigger in terms of     the number of epochs on which we would like to see no improvement.We also tried to use early stopping technique by adding and adjusting "baseline".
 
-    EarlyStopping(monitor='val_accuracy', mode='max') overfitting 0.5 above
-
+    EarlyStopping(monitor='val_accuracy', mode='max') overfitting 0.5 above         
     EarlyStopping(monitor='val_loss', mode='min') overfitting 0.5 below class
 
     EarlyStopping(monitor='val_loss', mode='min', baseline=0.5)    baseline= 0.5 and below overfits pneumonia and above 0.5 overfits normal
