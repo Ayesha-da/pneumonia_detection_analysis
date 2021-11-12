@@ -1,6 +1,7 @@
 
 # pneumonia_detection_analysis
 * Hardware or software configuration
+
    Google Compute Engine backend (GPU)
    For the model training we used google colab-GPU to run the model and process the charts. We encountered few issues while running model on local machine such as shutting down    of kernel due to delayed times.
 
@@ -36,7 +37,7 @@
 ![loss](https://user-images.githubusercontent.com/84524153/141501481-db970c47-01f1-4991-8312-e38083c04727.png)
 ![confusion_matrix](https://user-images.githubusercontent.com/84524153/141501528-ca5d16e5-b9d4-41f6-a4a8-66713b7c7727.png)
 ![roc_curve](https://user-images.githubusercontent.com/84524153/141501497-1faa0665-7e95-4dcf-8d5b-826958bae9ac.png)
-<img src= "https://user-images.githubusercontent.com/84524153/141504032-70eb93f8-a604-4671-89d0-5f21af2b51f6.png" width="800" />
+<img src= "https://user-images.githubusercontent.com/84524153/141504032-70eb93f8-a604-4671-89d0-5f21af2b51f6.png" width="700" />
 
 * How long did the training take?
 
