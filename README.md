@@ -290,7 +290,7 @@ The [code](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/t
 
    We are working with over 5,800 images and we encountered very long training time, installation of new packages such as cvs and updating version of tensorflow.We also faced      the problem of overfitting.
 
-* Did you consider or explore other CNN model architectures and other layers?
+* CNN model architectures and layers
 
     We tried various hyperparameters such as different optimizers such as "adam", "rmsprop", variuos activation functions such as sigmoid, relu and adding dropout                   layers,normalization function, increasing/decreasing nodes ,to work with the model.
  
@@ -313,7 +313,7 @@ The [code](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/t
 ![roc_curve](https://user-images.githubusercontent.com/84524153/141501497-1faa0665-7e95-4dcf-8d5b-826958bae9ac.png)
 <img src= "https://user-images.githubusercontent.com/84524153/141504032-70eb93f8-a604-4671-89d0-5f21af2b51f6.png" width="800" />
 
-* How long did the training take?
+* Model's training time 
 
   Google colab (GPU) took about 10-15 min to read the images.
   The training took about 15 - 20 min for 25 epochs .
@@ -322,7 +322,7 @@ The [code](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/t
   
   Limitations in our model
   
-* What does the model do if it receives an image that is not an x-ray (for example, a dog)?
+* What does the model do if it receives an image that is not an x-ray ?
 
    - Given more time and resources, we will work on a model that will put all other images in “Other” category.
    - There could still be blindspots due to the limitations of dataset.
