@@ -305,7 +305,7 @@ The [code](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/t
     
     We are also working on applying bias and keras regularizers to our model to improve accuracy. 
 
-* Graphs for the metrics and training statistics
+* Graphs for the metrics and summary statistics
 
 ![accuracy](https://user-images.githubusercontent.com/84524153/141501445-dbedd357-2e8b-4db7-8a37-bc012eaaece0.png)
 ![loss](https://user-images.githubusercontent.com/84524153/141501481-db970c47-01f1-4991-8312-e38083c04727.png)           
