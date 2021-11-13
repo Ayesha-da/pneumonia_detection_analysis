@@ -286,9 +286,9 @@ The [code](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/t
 
    For the model training we used google colab-GPU to run the model and process the charts. We encountered few issues while running model on local machine such as shutting down     of kernel due to delayed times.
 
-- Did you experience any memory or other difficulties with the image or data size?
+- Difficulties encountered while processing images
 
-   Severe Overfitting, very long training time, installing new packages such as cvs and updating version of tensorflow.
+   We are working with over 5,800 images and we encountered very long training time, installation of new packages such as cvs and updating version of tensorflow.We also faced      the problem of overfitting.
 
 * Did you consider or explore other CNN model architectures and other layers?
 
