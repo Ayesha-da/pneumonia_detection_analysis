@@ -42,18 +42,6 @@ Our project will use neural networks and deep learning to interpret chest x-ray 
 - Long term, how can this model be applied to classifying other diagnoses based on x-ray image analysis?
 - Can this model be generated without introducing bias? 
 
-## Pneumonia Statistics and Visualizations
-
-
-#### Pneumonia Statistics Data Sources
-
-WHO: https://www.who.int/health-topics/pneumonia#tab=tab_1
-Our World In Data: https://ourworldindata.org/pneumonia
-CDC (general Pneumonia): https://www.cdc.gov/dotw/pneumonia/index.html
-CDC (US Data): https://wonder.cdc.gov/controller/datarequest/D76;jsessionid=303DD855FA935405980D61135452
-
-
-
 ## Technologies Used
 ### Database Technologies
 - AWS for data storage
@@ -67,6 +55,17 @@ CDC (US Data): https://wonder.cdc.gov/controller/datarequest/D76;jsessionid=303D
 - hvplot/plotly for visualizing the outputs of our classification model and results of our model
 - Tableau Public for additional visualization support
 - Heroku for hosting visualizations
+
+## Pneumonia Statistics and Visualizations
+
+
+#### Pneumonia Statistics Data Sources
+
+WHO: https://www.who.int/health-topics/pneumonia#tab=tab_1
+Our World In Data: https://ourworldindata.org/pneumonia
+CDC (general Pneumonia): https://www.cdc.gov/dotw/pneumonia/index.html
+CDC (US Data): https://wonder.cdc.gov/controller/datarequest/D76;jsessionid=303DD855FA935405980D61135452
+
 
 
 
