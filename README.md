@@ -315,8 +315,7 @@ The [code](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/t
     
 #### Machine Learning Flowchart
 
-![flow_chart_machine_model](https://user-images.githubusercontent.com/84524153/141702675-10a63565-01c2-4a02-93f0-1ddf4bb2c359.png)
-
+![flow_chart_machine_model1](https://user-images.githubusercontent.com/84524153/141702747-5aafc0df-1446-47ff-8741-be4b38fa44ce.png)
 
 * Graphs for the metrics and summary statistics
 
