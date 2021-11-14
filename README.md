@@ -139,8 +139,6 @@ This data was then used in Tableau for analysis
 * [Deaths_by_state_by_race](https://public.tableau.com/app/profile/matthew.breitner/viz/PneumoniaDeathsbyStatebyRace/DeathbyStatebyRace)
 
 
-## Machine Learning
-
 ### Machine Learning Datasets
 
 Our primary Machine Learning datasets are image libraries sourced from Kaggle. The first dataset was originally sourced from [this article](https://www.cell.com/cell/fulltext/S0092-8674(18)30154-5#relatedArticles) in Cell, which conducted an analysis of identifying medical diagnoses using image-based deep learning. The image library consists of chest x-ray images that have been classified as normal, bacterial pneumonia, or viral pneumonia.
@@ -314,6 +312,11 @@ The [code](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/t
     EarlyStopping(monitor='val_loss', mode='min', baseline=0.5)  baseline <= 0.5 overfit pneumonia class and baseline > 0.5 overfits normal class.
     
     We are also working on applying bias and keras regularizers to our model to improve accuracy. 
+    
+#### Machine Learning Flowchart
+
+![flow_chart_machine_model](https://user-images.githubusercontent.com/84524153/141702675-10a63565-01c2-4a02-93f0-1ddf4bb2c359.png)
+
 
 * Graphs for the metrics and summary statistics
 
