@@ -101,7 +101,7 @@ def upload_file():
             img = img.reshape(-1, IMG_WIDTH, IMG_HEIGHT, 1)
             #img = np.dstack([img, img, img])  #stack 3 times
             img = img.astype('float32') / 255
-            3img = np.expand_dims(img, axis=0)
+            #img = np.expand_dims(img, axis=0)
             mySession,myModel,myGraph= load_model_from_file()
            
             result = myModel.predict(img)
