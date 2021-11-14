@@ -332,8 +332,8 @@ The [code](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/t
   
  ### Updating the model
  
- - Initially our model was not performing well and was overfitting. we added dropout layer and BatchNormalization to fight the issue. We made sure not to add dropout layer in the first layer so our model doesnot loose important features of the image.
- - We still had overfitting issue, then we tried EarlyStopping technique using it 
+ - Initially our model was not performing well and was overfitting. we added dropout layer and BatchNormalization to fight the issue. We made sure not to add dropout layer in      the first layer so our model doesnot loose important features of the image.
+ - We still had overfitting issue, then we tried EarlyStopping technique using EarlyStopping callback  to monitor  the performance measure such as validation_loss,                  validation_accuracy, and once triggered, it will stop the training process
  #### Future work
   
   Limitations in our model
