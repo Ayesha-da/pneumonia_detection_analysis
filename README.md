@@ -308,7 +308,7 @@ The [code](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/t
     EarlyStopping(monitor='val_accuracy', mode='max') overfitting pneumonia class.        
     EarlyStopping(monitor='val_loss', mode='min') overfitting normal class
     
-    EarlyStopping(monitor='val_loss', mode='min', patience=0.17) patience <= 0.17 overfit normal class and    patience > 0.18  overfit pneumonia class.                
+    EarlyStopping(monitor='val_loss', mode='min', patience=0.17) patience <= 0.17 overfit normal class and patience > 0.18  overfit pneumonia class.                
     EarlyStopping(monitor='val_loss', mode='min', baseline=0.5)  baseline <= 0.5 overfit pneumonia class and baseline > 0.5 overfits normal class.
     
     We are also working on applying bias and keras regularizers to our model to improve accuracy. 
