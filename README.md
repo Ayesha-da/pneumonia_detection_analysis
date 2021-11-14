@@ -172,32 +172,7 @@ The Dataset's size is bigger and if all members of the team used the cloud image
 
 Once we got our trained model we created a Flask application and connected it with the model using [app.py](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/app.py) file. In this application when the user uploads an image it will store on [s3 bucket](https://s3.console.aws.amazon.com/s3/buckets/pneumoniadataset) and then it will be used for Prediction.
 
-#### Visualization
-For the visualization we used different data for analysis. The two datasets that we used were US Pneumonia dataset and Global Pneumonia dataset.
-
-##### US Pneumonia dataset
-
-![ERD for US](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/data_ETL/Presentation_ERD/ERDiagram.PNG)
-
-we uploaded this data on AWS RDS using pgAdmin data engine.
-To create the database we used the [sql query](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/data_ETL/Presentation_ERD/presentation_createTable.sql)
-
-This data was then used in Tableau for analysis
-
-* [Deaths_by_age_group](https://public.tableau.com/app/profile/matthew.breitner/viz/PneumoniaDeathsbyAgeGroup/DeathsbyAgeGroup)
-
-* [Deaths_by_gender](https://public.tableau.com/app/profile/matthew.breitner/viz/PneumoniaDeathsbyGender/DeathsbyGender)
-
-* [Deaths_by_month](https://public.tableau.com/app/profile/matthew.breitner/viz/PneumoniaDeathsbyMonth/DeathsbyMonth)
- 
-* [Deaths_by_race](https://public.tableau.com/app/profile/matthew.breitner/viz/PneumoniaDeathsbyRace/DeathsbyRace)
- 
-* [Deaths_by_state_by_age_group](https://public.tableau.com/app/profile/matthew.breitner/viz/PneumoniaDeathsbyStatebyAgeGroup/DeathsbyStatebyAgeGroup)
-
-* [Deaths_by_state_by_gender](https://public.tableau.com/app/profile/matthew.breitner/viz/PneumoniaDeathsbyStatebyGender/DeathsbyStatebyGender)
-
-* [Deaths_by_state_by_race](https://public.tableau.com/app/profile/matthew.breitner/viz/PneumoniaDeathsbyStatebyRace/DeathbyStatebyRace)
-
+#### Data Flow Diagram
 
 ## Visualizations
 According to data collected by the likes of the CDC, NIH, WHO and other medical research organizations, pneumonia is a treatable disease if there is proper access to quick and efficient medical care. Although your chances of survival are incredibly high, we have found that pneumonia remains a major cause of death around the world. 
@@ -236,11 +211,37 @@ https://pubmed.ncbi.nlm.nih.gov/29017956/
 
 
 ### Database ERD 
+
+#### Global Pneumonia Dataset
+
 For our pneumonia US and global statistics we will be hosting the data in postgresql tables in PGAdmin. Our RDS is hosted on AWS so ultimately the data will live in the cloud. Please reference the following ERD and queries used to update the database for the global statistics. 
 
 ![image](https://user-images.githubusercontent.com/84791455/140665154-49217357-a77b-41eb-ac35-5a1ff0be53c5.png)
 
 https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/data_ETL/ERD/global_statistics_table_queries.sql
+
+##### US Pneumonia dataset
+
+![ERD for US](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/data_ETL/Presentation_ERD/ERDiagram.PNG)
+
+we uploaded this data on AWS RDS using pgAdmin data engine.
+To create the database we used the [sql query](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/data_ETL/Presentation_ERD/presentation_createTable.sql)
+
+This data was then used in Tableau for analysis
+
+* [Deaths_by_age_group](https://public.tableau.com/app/profile/matthew.breitner/viz/PneumoniaDeathsbyAgeGroup/DeathsbyAgeGroup)
+
+* [Deaths_by_gender](https://public.tableau.com/app/profile/matthew.breitner/viz/PneumoniaDeathsbyGender/DeathsbyGender)
+
+* [Deaths_by_month](https://public.tableau.com/app/profile/matthew.breitner/viz/PneumoniaDeathsbyMonth/DeathsbyMonth)
+ 
+* [Deaths_by_race](https://public.tableau.com/app/profile/matthew.breitner/viz/PneumoniaDeathsbyRace/DeathsbyRace)
+ 
+* [Deaths_by_state_by_age_group](https://public.tableau.com/app/profile/matthew.breitner/viz/PneumoniaDeathsbyStatebyAgeGroup/DeathsbyStatebyAgeGroup)
+
+* [Deaths_by_state_by_gender](https://public.tableau.com/app/profile/matthew.breitner/viz/PneumoniaDeathsbyStatebyGender/DeathsbyStatebyGender)
+
+* [Deaths_by_state_by_race](https://public.tableau.com/app/profile/matthew.breitner/viz/PneumoniaDeathsbyStatebyRace/DeathbyStatebyRace)
 
 
 ## Machine Learning
