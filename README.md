@@ -42,75 +42,8 @@ Our project will use neural networks and deep learning to interpret chest x-ray 
 - Long term, how can this model be applied to classifying other diagnoses based on x-ray image analysis?
 - Can this model be generated without introducing bias? 
 
-## Dataset Descriptions 
+## Pneumonia Statistics and Visualizations
 
-### Machine Learning Datasets
-
-Our primary Machine Learning datasets are image libraries sourced from Kaggle. The first dataset was originally sourced from [this article](https://www.cell.com/cell/fulltext/S0092-8674(18)30154-5#relatedArticles) in Cell, which conducted an analysis of identifying medical diagnoses using image-based deep learning. The image library consists of chest x-ray images that have been classified as normal, bacterial pneumonia, or viral pneumonia.
-
-- Beyond the datasets required to inform our model, we can also introduce demographic data for pneumonia and COVID-19 diagnoses rates by location and patient descriptions. While not essential to the success of our model, this information will allow us to further refine the scope and implications of our model's use case and development long term.
-
-#### Datasets Overview
- 1) Chest X-Ray Images (Pneumonia)
-  
-  A. Source Link: 
-   https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
- 
-  B. Source Format: 
-   
-   The dataset was originally organized into 3 folders (train, test, val) and contained subfolders for Pneumonia and Normal. There are 5,863 X-Ray images (JPEG) and 2   categories (Pneumonia/Normal).
-  
-  C. Source Details: 
-   
-   "Chest X-ray images (anterior-posterior) were selected from retrospective cohorts of pediatric patients of one to five years old from Guangzhou Women and Children's Medical Center, Guangzhou. All chest X-ray imaging was performed as part of patients' routine clinical care.
-  
-   For the analysis of chest x-ray images, all chest radiographs were initially screened for quality control by removing all low quality or unreadable scans. The diagnoses for the images were then graded by two expert physicians before being cleared for training the AI system. In order to account for any grading errors, the evaluation set was also checked by a third expert."
-  
-  D. Notes: 
-    
-    This was our initial dataset and serves as the basis for the intended format for other datasets. This set only identifies normal vs pneumonia, and does not take into account other potential Lung issues that could also show up (cancer, covid, TB, etc.) 
-
- 2) NIH Chest X-rays
-  
-  A. Source Link:
-  
-  https://www.kaggle.com/nih-chest-xrays/data
-  
-  B. Source Format: 
-  
-  Files were divided into 12 different folders with no differentiators in the folder or image names. There is a csv file which contains the labels for the images. 
-  
-  C. Source Details:
-  
-    "This NIH Chest X-ray Dataset is comprised of 112,120 X-ray images with disease labels from 30,805 unique patients. To create these labels, the authors used Natural Language Processing to text-mine disease classifications from the associated radiological reports. The labels are expected to be >90% accurate and suitable for weakly-supervised learning. The original radiology reports are not publicly available but you can find more details on the labeling process in this Open Access paper: "ChestX-ray8: Hospital-scale Chest X-ray Database and Benchmarks on Weakly-Supervised Classification and Localization of Common Thorax Diseases." (Wang et al.)"
-  
-   D. Notes:
-  
-    This is the largest of the datasets we reviewed, and it also has the most varied assortment of lung images, classifying 14 different diseases. Once we determine how we are building the buckets for our model, we'll need to format the files accordingly. The other concern with this dataset is that unlike the other sets, it was put together using their own NLP program that claims only a 90% accuracy, so while the original files are verified by radiologists, there is a larger margin of error due to the additional step of data mining. 
-
- Other Image Datasets considered but not used
-
- RSNA Pneumonia Detection Challenge
-  
-  Source Link: 
-   https://www.kaggle.com/c/rsna-pneumonia-detection-challenge/overview
-  
-  Source Details:  
-  
-   "Chest X-Rays are the most commonly performed diagnostic imaging study. A number of factors such as positioning of the patient and depth of inspiration can alter the appearance of the CXR [4], complicating interpretation further. In addition, clinicians are faced with reading high volumes of images every shift.
-   
-    To improve the efficiency and reach of diagnostic services, the Radiological Society of North America has reached out to Kaggle's machine learning community and collaborated with the US National Institutes of Health, The Society of Thoracic Radiology, and MD.ai to develop a rich dataset for this challenge.
-    
-    The RSNA is an international society of radiologists, medical physicists and other medical professionals with more than 54,000 members from 146 countries across the globe. They see the potential for ML to automate initial detection (imaging screening) of potential pneumonia cases in order to prioritize and expedite their review."
-
-Novel COVID-19 Chest Xray Repository  
-   
-   Source Link: 
-    https://www.kaggle.com/tawsifurrahman/covid19-radiography-database
-   
-   Source Details: 
-    
-    "A team of researchers from Qatar University, Doha, Qatar, and the University of Dhaka, Bangladesh along with their collaborators from Pakistan and Malaysia in collaboration with medical doctors have created a database of chest X-ray images for COVID-19 positive cases along with Normal and Viral Pneumonia images. This COVID-19, normal, and other lung infection dataset is released in stages. In the first release, we have released 219 COVID-19, 1341 normal, and 1345 viral pneumonia chest X-ray (CXR) images. In the first update, we have increased the COVID-19 class to 1200 CXR images. In the 2nd update, we have increased the database to 3616 COVID-19 positive cases along with 10,192 Normal, 6012 Lung Opacity (Non-COVID lung infection), and 1345 Viral Pneumonia images. We will continue to update this database as soon as we have new x-ray images for COVID-19 pneumonia patients."  
 
 #### Pneumonia Statistics Data Sources
 
@@ -135,44 +68,7 @@ CDC (US Data): https://wonder.cdc.gov/controller/datarequest/D76;jsessionid=303D
 - Tableau Public for additional visualization support
 - Heroku for hosting visualizations
 
-## Database Set Up
-We will be hosting our data on AWS through the use of the S3 Buckets and a postgreSQL RDS. Our dataset has over 5,000 images of chest x-rays that will be run through our machine learning model to determine if we can predict whether or not someone has Pneumonia. We chose to use AWS since it can easily store non-text data (images), our data is stored in the cloud so everyone can access it from their local devices, and we can upload our final data into a RDS for future querying and analysis. 
-### S3 Bucket Links
-- https://s3.console.aws.amazon.com/s3/buckets/pneumoniadataset
-### RDS Endpoint
-- pneumonia-detection-analysis.cyhi4xykqawo.us-east-1.rds.amazonaws.com
 
-## Data ETL
-Our project is to detection pneumonia using chest x-ray images. We use Kaggle [dataset](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia). There are 5000+ x-ray images with 2 categories(Pneumonia/Normal)
-
-![imag1](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/data_ETL/data_ETL/Resources/images/dataprocessing_concept02.png)
-We are using two datasets with the possibility of using more in the future.
-
-1. Dataset1 - source from [Kaggle](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia)
-
-This is a clean dataset with a folder structure:
- * train
-   * Pneumonia
-   * Normal
- * test
-   * Pneumonia
-   * Normal
-  
-2. Dataset2  - source from [Kaggle](https://www.kaggle.com/ingusterbets/nih-chest-x-rays-analysis) 
-
-This is not a clean dataset. Using [GetImages_fun](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/data_ETL/GetImages_Fun.ipynb) code, we are getting images that mimic Dataset1's folder structure. We decided to use 3 buckets (Pneumonia, Normal and Others) in dataset2, the code needs to be updated in the file to get the third bucket.(In progress)
-
-we got the 3 buckets (Pneumonia, Normal and Others) from Dataset 2 and we used it in our Machine Learning model.
-
-#### Data Extraction and Transformation: 
-
-we started to extract the data from our [s3 bucket](https://s3.console.aws.amazon.com/s3/buckets/pneumoniadataset?region=us-east-1&prefix=chest_xray/&showversions=false) and did some transformation in the Dataset1 images using [project_sample](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/data_ETL/project_sample.ipynb) code.
-
-The Dataset's size is bigger and if all members of the team used the cloud images from the S3 bucket, the team would incur possible charges from AWS.  To avoid this, we decided to store the images on our local machines in order to train and test the ML model.
-
-Once we got our trained model we created a Flask application and connected it with the model using [app.py](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/app.py) file. In this application when the user uploads an image it will store on [s3 bucket](https://s3.console.aws.amazon.com/s3/buckets/pneumoniadataset) and then it will be used for Prediction.
-
-#### Data Flow Diagram
 
 ## Visualizations
 According to data collected by the likes of the CDC, NIH, WHO and other medical research organizations, pneumonia is a treatable disease if there is proper access to quick and efficient medical care. Although your chances of survival are incredibly high, we have found that pneumonia remains a major cause of death around the world. 
@@ -245,6 +141,116 @@ This data was then used in Tableau for analysis
 
 
 ## Machine Learning
+
+### Machine Learning Datasets
+
+Our primary Machine Learning datasets are image libraries sourced from Kaggle. The first dataset was originally sourced from [this article](https://www.cell.com/cell/fulltext/S0092-8674(18)30154-5#relatedArticles) in Cell, which conducted an analysis of identifying medical diagnoses using image-based deep learning. The image library consists of chest x-ray images that have been classified as normal, bacterial pneumonia, or viral pneumonia.
+
+- Beyond the datasets required to inform our model, we can also introduce demographic data for pneumonia and COVID-19 diagnoses rates by location and patient descriptions. While not essential to the success of our model, this information will allow us to further refine the scope and implications of our model's use case and development long term.
+
+#### Datasets Overview
+ 1) Chest X-Ray Images (Pneumonia)
+  
+  A. Source Link: 
+   https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+ 
+  B. Source Format: 
+   
+   The dataset was originally organized into 3 folders (train, test, val) and contained subfolders for Pneumonia and Normal. There are 5,863 X-Ray images (JPEG) and 2   categories (Pneumonia/Normal).
+  
+  C. Source Details: 
+   
+   "Chest X-ray images (anterior-posterior) were selected from retrospective cohorts of pediatric patients of one to five years old from Guangzhou Women and Children's Medical Center, Guangzhou. All chest X-ray imaging was performed as part of patients' routine clinical care.
+  
+   For the analysis of chest x-ray images, all chest radiographs were initially screened for quality control by removing all low quality or unreadable scans. The diagnoses for the images were then graded by two expert physicians before being cleared for training the AI system. In order to account for any grading errors, the evaluation set was also checked by a third expert."
+  
+  D. Notes: 
+    
+    This was our initial dataset and serves as the basis for the intended format for other datasets. This set only identifies normal vs pneumonia, and does not take into account other potential Lung issues that could also show up (cancer, covid, TB, etc.) 
+
+ 2) NIH Chest X-rays
+  
+  A. Source Link:
+  
+  https://www.kaggle.com/nih-chest-xrays/data
+  
+  B. Source Format: 
+  
+  Files were divided into 12 different folders with no differentiators in the folder or image names. There is a csv file which contains the labels for the images. 
+  
+  C. Source Details:
+  
+    "This NIH Chest X-ray Dataset is comprised of 112,120 X-ray images with disease labels from 30,805 unique patients. To create these labels, the authors used Natural Language Processing to text-mine disease classifications from the associated radiological reports. The labels are expected to be >90% accurate and suitable for weakly-supervised learning. The original radiology reports are not publicly available but you can find more details on the labeling process in this Open Access paper: "ChestX-ray8: Hospital-scale Chest X-ray Database and Benchmarks on Weakly-Supervised Classification and Localization of Common Thorax Diseases." (Wang et al.)"
+  
+   D. Notes:
+  
+    This is the largest of the datasets we reviewed, and it also has the most varied assortment of lung images, classifying 14 different diseases. Once we determine how we are building the buckets for our model, we'll need to format the files accordingly. The other concern with this dataset is that unlike the other sets, it was put together using their own NLP program that claims only a 90% accuracy, so while the original files are verified by radiologists, there is a larger margin of error due to the additional step of data mining. 
+
+ Other Image Datasets considered but not used
+
+ RSNA Pneumonia Detection Challenge
+  
+  Source Link: 
+   https://www.kaggle.com/c/rsna-pneumonia-detection-challenge/overview
+  
+  Source Details:  
+  
+   "Chest X-Rays are the most commonly performed diagnostic imaging study. A number of factors such as positioning of the patient and depth of inspiration can alter the appearance of the CXR [4], complicating interpretation further. In addition, clinicians are faced with reading high volumes of images every shift.
+   
+    To improve the efficiency and reach of diagnostic services, the Radiological Society of North America has reached out to Kaggle's machine learning community and collaborated with the US National Institutes of Health, The Society of Thoracic Radiology, and MD.ai to develop a rich dataset for this challenge.
+    
+    The RSNA is an international society of radiologists, medical physicists and other medical professionals with more than 54,000 members from 146 countries across the globe. They see the potential for ML to automate initial detection (imaging screening) of potential pneumonia cases in order to prioritize and expedite their review."
+
+Novel COVID-19 Chest Xray Repository  
+   
+   Source Link: 
+    https://www.kaggle.com/tawsifurrahman/covid19-radiography-database
+   
+   Source Details: 
+    
+    "A team of researchers from Qatar University, Doha, Qatar, and the University of Dhaka, Bangladesh along with their collaborators from Pakistan and Malaysia in collaboration with medical doctors have created a database of chest X-ray images for COVID-19 positive cases along with Normal and Viral Pneumonia images. This COVID-19, normal, and other lung infection dataset is released in stages. In the first release, we have released 219 COVID-19, 1341 normal, and 1345 viral pneumonia chest X-ray (CXR) images. In the first update, we have increased the COVID-19 class to 1200 CXR images. In the 2nd update, we have increased the database to 3616 COVID-19 positive cases along with 10,192 Normal, 6012 Lung Opacity (Non-COVID lung infection), and 1345 Viral Pneumonia images. We will continue to update this database as soon as we have new x-ray images for COVID-19 pneumonia patients."  
+
+## Database Set Up
+We will be hosting our data on AWS through the use of the S3 Buckets and a postgreSQL RDS. Our dataset has over 5,000 images of chest x-rays that will be run through our machine learning model to determine if we can predict whether or not someone has Pneumonia. We chose to use AWS since it can easily store non-text data (images), our data is stored in the cloud so everyone can access it from their local devices, and we can upload our final data into a RDS for future querying and analysis. 
+### S3 Bucket Links
+- https://s3.console.aws.amazon.com/s3/buckets/pneumoniadataset
+### RDS Endpoint
+- pneumonia-detection-analysis.cyhi4xykqawo.us-east-1.rds.amazonaws.com
+
+## Data ETL
+Our project is to detection pneumonia using chest x-ray images. We use Kaggle [dataset](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia). There are 5000+ x-ray images with 2 categories(Pneumonia/Normal)
+
+![imag1](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/data_ETL/data_ETL/Resources/images/dataprocessing_concept02.png)
+We are using two datasets with the possibility of using more in the future.
+
+1. Dataset1 - source from [Kaggle](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia)
+
+This is a clean dataset with a folder structure:
+ * train
+   * Pneumonia
+   * Normal
+ * test
+   * Pneumonia
+   * Normal
+  
+2. Dataset2  - source from [Kaggle](https://www.kaggle.com/ingusterbets/nih-chest-x-rays-analysis) 
+
+This is not a clean dataset. Using [GetImages_fun](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/data_ETL/GetImages_Fun.ipynb) code, we are getting images that mimic Dataset1's folder structure. We decided to use 3 buckets (Pneumonia, Normal and Others) in dataset2, the code needs to be updated in the file to get the third bucket.(In progress)
+
+we got the 3 buckets (Pneumonia, Normal and Others) from Dataset 2 and we used it in our Machine Learning model.
+
+#### Data Extraction and Transformation: 
+
+we started to extract the data from our [s3 bucket](https://s3.console.aws.amazon.com/s3/buckets/pneumoniadataset?region=us-east-1&prefix=chest_xray/&showversions=false) and did some transformation in the Dataset1 images using [project_sample](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/data_ETL/project_sample.ipynb) code.
+
+The Dataset's size is bigger and if all members of the team used the cloud images from the S3 bucket, the team would incur possible charges from AWS.  To avoid this, we decided to store the images on our local machines in order to train and test the ML model.
+
+Once we got our trained model we created a Flask application and connected it with the model using [app.py](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/app.py) file. In this application when the user uploads an image it will store on [s3 bucket](https://s3.console.aws.amazon.com/s3/buckets/pneumoniadataset) and then it will be used for Prediction.
+
+#### Data Flow Diagram
+
+#### Machine Learning Model
+
 ![Conventional-machine-learning-vs-deep-learning](https://user-images.githubusercontent.com/84524153/138568406-ea33abaa-3e03-4d22-90e8-64034431f6df.png)
 
 In Conventional Programming, decision making is based on IF-ELSE conditions. Therefore, many solutions cannot be modeled with it. One of the main reasons behind this is the variation of the input data variable, which increases the problem’s complexity. On the contrary, machine learning programming solves the problem by modeling the data with train data and test data. Based on these data and statistical models, machine learning predicts the result.
