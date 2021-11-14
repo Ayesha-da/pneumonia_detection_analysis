@@ -248,7 +248,7 @@ Once we got our trained model we created a Flask application and connected it wi
 
 ![img1](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/DataFlowDiagram.png)
 
-#### Machine Learning Model
+### Machine Learning Model
 
 ![Conventional-machine-learning-vs-deep-learning](https://user-images.githubusercontent.com/84524153/138568406-ea33abaa-3e03-4d22-90e8-64034431f6df.png)
 
