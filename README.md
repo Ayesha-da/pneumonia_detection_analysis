@@ -246,7 +246,6 @@ The Dataset's size is bigger and if all members of the team used the cloud image
 
 Once we got our trained model we created a Flask application and connected it with the model using [app.py](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/app.py) file. In this application when the user uploads an image it will store on [s3 bucket](https://s3.console.aws.amazon.com/s3/buckets/pneumoniadataset) and then it will be used for Prediction.
 
-#### FlowChart
 ![img1](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/DataFlowDiagram.png)
 
 #### Machine Learning Model
