@@ -330,6 +330,10 @@ The [code](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/t
   Google colab (GPU) took about 10-15 min to read the images.
   The training took about 15 - 20 min for 25 epochs .
   
+ ### Updating the model
+ 
+ - Initially our model was not performing well and was overfitting. we added dropout layer and BatchNormalization to fight the issue. We made sure not to add dropout layer in the first layer so our model doesnot loose important features of the image.
+ - We still had overfitting issue, then we tried EarlyStopping technique using it 
  #### Future work
   
   Limitations in our model
