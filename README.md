@@ -200,35 +200,39 @@ This data was then used in Tableau for analysis
 
 
 ## Visualizations
-Looking at data collected by the CDC, NIH, WHO, and other medical research organizations, we have determined that although Pneumonia is a treatable disease, it is still a major problem throughout much of the world and even the United States. 
+According to data collected by the likes of the CDC, NIH, WHO and other medical research organizations, pneumonia is a treatable disease if there is proper access to quick and efficient medical care. Although your chances of survival are incredibly high, we have found that pneumonia remains a major cause of death around the world. 
+Looking at global statistics, pneumonia is especially deadly in countries with a low GDP per capita. This is likely due to not having the proper medical resources to avoid getting sick in the first place and the tools necessary for effective treatment. The following graph highlights the clear correlation between having a lower GDP and higher amount of pneumonia deaths. 
+*This data was collected from Bernadeta Dadonaite and Max Roser (2018) - "Pneumonia". Published online at OurWorldInData.org. Retrieved from: 'https://ourworldindata.org/pneumonia' [Online Resource]
+* Date Range: 1990-2018
+https://public.tableau.com/app/profile/matthew.breitner/viz/DeathTotalsbyGDPperCapita/TotalDeathsperGDP2
 
-Looking at the global statistics, we identified that pneumonia majorly effects children under the age of 5 and adults over the age of 70. Pneumonia is especially deadly for these age groups in countries that have a smaller GDP per capita as reference by the below chart. 
-
-https://public.tableau.com/app/profile/matthew.breitner/viz/TotalDeathsperGDP/TotalDeathsperGDP
-
-Because these countries have a lower GDP, they have less resources to combat Pneumonia from becoming a deadly disease. The following two graphics visualize the leading causes of Pneumonia in Children under the age of 5 and adults over the age of 70. 
-
-https://public.tableau.com/app/profile/matthew.breitner/viz/GlobalChildMortalitybyRiskFactor/GlobalChildMortalitybyRiskFactor
-
-https://public.tableau.com/app/profile/matthew.breitner/viz/GlobalMortalityOver70byRiskFactorbyYear/GlobalMortalityOver70byRiskFactorbyYear
-
-Child mortality rates begin to increase in Africa and South/West Asia, which unfortunately follows the lower GDP trend. 
-
-https://public.tableau.com/app/profile/matthew.breitner/viz/ChildMortalityRatesbyCountrybyYear/ChildMortalityRatesbyCountrybyYear
-
-You can see this trend continue when looking at the overall mortality rates across the world. 
-
+The following graph shows the trends in number of deaths in each country around the world. You can see that the countries with lower GDP, specifically in Central Africa and South/West Asia, follow the trend of lower GDP and higher deaths due to pneumonia.
+*This data was collected from Bernadeta Dadonaite and Max Roser (2018) - "Pneumonia". Published online at OurWorldInData.org. Retrieved from: 'https://ourworldindata.org/pneumonia' [Online Resource]
+*Date Range: 1990-2018
 https://public.tableau.com/app/profile/matthew.breitner/viz/GlobalMortalityRatebyAge/GlobalMortalityRatebyAge
 
-We then analyzed to see if the same trends could be found in the United States. Although we did not see the same trends in terms of GDP (the largest states still had the highest death rates) we did see a similar trend in higher rates of death in adults over the age of 70. The following graphics outline the number of deaths by age group and the amount of deaths by state within the US. 
+Pneumonia is especially deadly in children under the age of five in underdeveloped nations or countries with lower GDP. The below chart showcases the same global trends for the total # of deaths in children under five years old. 
+*This data was collected from Bernadeta Dadonaite and Max Roser (2018) - "Pneumonia". Published online at OurWorldInData.org. Retrieved from: 'https://ourworldindata.org/pneumonia' [Online Resource]
+*Date Range: 1990-2018
+https://public.tableau.com/app/profile/matthew.breitner/viz/TotalChildDeathsbyCountryOverTime/ChildMortalityRatesbyCountrybyYear
 
-https://public.tableau.com/app/profile/matthew.breitner/viz/PneumoniaDeathsbyAgeGroup/DeathsbyAgeGroup
-https://public.tableau.com/app/profile/matthew.breitner/viz/PneumoniaDeathsbyStatebyAgeGroup/DeathsbyStatebyAgeGroup
+Child wasting, a child who is too thin for their height, is the number one cause of pneumonia in children under five years old. Household pollution (eg. Non-proper ventilation, cleaning pollutants, smoke from cooking) is another major cause of pneumonia in children around the world. 
+*This data was collected from Bernadeta Dadonaite and Max Roser (2018) - "Pneumonia". Published online at OurWorldInData.org. Retrieved from: 'https://ourworldindata.org/pneumonia' [Online Resource]
+*Date Range: 1990-2018
+https://public.tableau.com/app/profile/matthew.breitner/viz/CausesofPneumoniainChildrenUnderFiveYearsOld/GlobalChildMortalitybyRiskFactor2?publish=yes
 
-Although medical technologies have advanced tenfold over the last 20 years, that has come as both an advantage and disadvantage for medical professionals around the world, specifically radiologists. According to the Mayo clinic, the number of image scans a radiologist has to analyze in a given shift has gone from 1 image every 20 seconds to 1 image every 4 seconds. Now it is advantageous to have so more images available to analyze, but the reduction in time makes it more difficult to accurately diagnose an image. This is were our model with come into play because it will not only assist in the increased speed of image reading but it can more accurately diagnose the image for pneumonia compared to the naked eye. 
+Globally, adults over the age of 70 years are also at a significantly higher risk of death from pneumonia in countries with lower GDP. The major causes of pneumonia in this demographic are not having proper access to handwashing facilities, pollution, smoking, and secondhand smoke. The following graph shows how these four causes have worsened for older adults in recent years. 
+*This data was collected from Bernadeta Dadonaite and Max Roser (2018) - "Pneumonia". Published online at OurWorldInData.org. Retrieved from: 'https://ourworldindata.org/pneumonia' [Online Resource]
+*Date Range: 1990-2018
+https://public.tableau.com/app/profile/matthew.breitner/viz/GlobalMortalityOver70byRiskFactorbyYear/GlobalMortalityOver70byRiskFactorbyYear
 
-![Pneumonia_Image_Speed](https://user-images.githubusercontent.com/84791455/140665486-4de6a6d7-d99f-46ab-bb67-96a35ab41ea9.PNG)
-
+*Other data sources used for other analysis and visualizations not listed on the site. 
+1. Pneumonia Death Stats Source: 
+https://wonder.cdc.gov/controller/datarequest/D76;jsessionid=303DD855FA935405980D61135452
+2. Vaccination Stats:
+https://www.kff.org/statedata/custom-state-report/?view=3&i=32739~32172~444199&g=us~al~ak~az~ar~ca~co~ct~de~dc~fl~ga~hi~id~il~in~ia~ks~ky~la~me~md~ma~mi~mn~ms~mo~mt~ne~nv~nh~nj~nm~ny~nc~nd~oh~ok~or~pa~ri~sc~sd~tn~tx~ut~vt~va~wa~wv~wi~wy
+3. Hospitalization Rates:
+https://pubmed.ncbi.nlm.nih.gov/29017956/
 
 
 ### Database ERD 
