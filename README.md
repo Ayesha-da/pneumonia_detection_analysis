@@ -341,7 +341,7 @@ In deep learning, we will be using a convolutional neural network (CNN/ConvNet),
  - We trained our model using only few images of both the classes from the dataset and that gave us few accurate results but they were many wrong predictions too.
  - Finally we realized that our model is too complex and it is not able to process new images and so we took out all the layers and started building the basic model of cnn and      adding layers until we see the accuracy stopped improving. Now we have a model that gives over 95% accurate results.
  
- The [code]() for machine learning is complete.
+ The [code](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/trainmodel5.py) for machine learning model is complete.
  #### Future work
   
   Limitations in our model
