@@ -44,7 +44,7 @@ Our project will use neural networks and deep learning to interpret chest x-ray 
 
 ### Project Use Case
 
-- The use case for generating this model is to develop a process to objectively analyze and interpret x-ray images with a rate of accuracy that is potentially better than the human eye.
+- The use case for generating this model is to develop a process to objectively analyze and interpret x-ray images with a rate of speed and accuracy that is potentially better than the human eye.
 - This model could be a valuable resource for doctors and students as another tool for interpreting x-ray images and validating/invalidating their personal diagnoses.
 - Additionally, this model could be further applied to chest x-rays with diagnoses outside of pneumonia and be adapted to interpret the x-rays of patients with an array of diagnoses. Our goal is to generate a model that can predict the nuances between pneumonia, normal, or other to account that there are many potential diagnoses besides pneumonia to consider.
 
