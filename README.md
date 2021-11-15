@@ -113,13 +113,13 @@ Globally, adults over the age of 70 years are also at a significantly higher ris
 
 For our pneumonia US and global statistics, we will be hosting the data in PostgreSQL tables in PGAdmin. Our RDS is hosted on AWS so ultimately the data will live in the cloud. Please reference the following ERD and queries used to update the database for the global statistics.
 
-[![](RackMultipart20211115-4-1ebuf5t_html_74101bf39b34cf09.png)](https://user-images.githubusercontent.com/84791455/140665154-49217357-a77b-41eb-ac35-5a1ff0be53c5.png)
+![image](https://user-images.githubusercontent.com/84791455/140665154-49217357-a77b-41eb-ac35-5a1ff0be53c5.png)
 
 [https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/data_ETL/ERD/global_statistics_table_queries.sql](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/data_ETL/ERD/global_statistics_table_queries.sql)
 
 #### US Pneumonia dataset
 
-[![](RackMultipart20211115-4-1ebuf5t_html_9b92fb62f077b750.png)](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/data_ETL/Presentation_ERD/ERDiagram.PNG)
+![ERD for US](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/data_ETL/Presentation_ERD/ERDiagram.PNG)
 
 we uploaded this data on AWS RDS using PGAdmin data engine. To create the database we used the [sql query](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/data_ETL/Presentation_ERD/presentation_createTable.sql)
 
