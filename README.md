@@ -290,8 +290,11 @@ We are also working on applying bias and keras regulizers to our model to improv
 
 - Graphs for the metrics and summary statistics
 
-[![](RackMultipart20211115-4-1ebuf5t_html_93af43571d3c765.png)](https://user-images.githubusercontent.com/84524153/141501445-dbedd357-2e8b-4db7-8a37-bc012eaaece0.png) [![](RackMultipart20211115-4-1ebuf5t_html_3201d28eb420e239.png)](https://user-images.githubusercontent.com/84524153/141501481-db970c47-01f1-4991-8312-e38083c04727.png)
-[![](RackMultipart20211115-4-1ebuf5t_html_aa19beeae5a9a489.png)](https://user-images.githubusercontent.com/84524153/141501528-ca5d16e5-b9d4-41f6-a4a8-66713b7c7727.png) [![](RackMultipart20211115-4-1ebuf5t_html_f12192b89dba3001.png)](https://user-images.githubusercontent.com/84524153/141501497-1faa0665-7e95-4dcf-8d5b-826958bae9ac.png) [![](RackMultipart20211115-4-1ebuf5t_html_d8c0ea5121ed2ced.png)](https://user-images.githubusercontent.com/84524153/141504032-70eb93f8-a604-4671-89d0-5f21af2b51f6.png)
+![accuracy](https://user-images.githubusercontent.com/84524153/141501445-dbedd357-2e8b-4db7-8a37-bc012eaaece0.png)
+![loss](https://user-images.githubusercontent.com/84524153/141501481-db970c47-01f1-4991-8312-e38083c04727.png)           
+![confusion_matrix](https://user-images.githubusercontent.com/84524153/141501528-ca5d16e5-b9d4-41f6-a4a8-66713b7c7727.png)
+![roc_curve](https://user-images.githubusercontent.com/84524153/141501497-1faa0665-7e95-4dcf-8d5b-826958bae9ac.png)
+<img src= "https://user-images.githubusercontent.com/84524153/141504032-70eb93f8-a604-4671-89d0-5f21af2b51f6.png" width="800" />
 
 - Model's training time
 
@@ -340,7 +343,7 @@ Interactive elements:
 - View popups on visualizations for more details on data
 - Select specific sections of the website to view based on homepage directory
 
-### Dashboard Technologies Used
+### Presentation and Dashboard Technologies Used
 
 - Google Slides
 - Tableau Public
