@@ -312,7 +312,7 @@ The [code](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/t
 
 #### Other Model Options Considered
 
-##### Pneumonia vs Other
+#### Pneumonia vs Other
 
 - Would analyze all images solely on whether they contained Pneumonia
 - Would group “Normal” images with results that contained “Other Diseases”
