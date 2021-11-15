@@ -8,7 +8,7 @@ Created on Sat Nov 13 11:33:43 2021
 from keras.preprocessing.image import ImageDataGenerator
 #from multiprocessing import Pool
 from keras.models import Sequential
-from keras.layers import Conv2D, Activation, MaxPooling2D, Flatten, Dense
+from keras.layers import Conv2D, Activation, MaxPooling2D, Flatten, Dense, Dropout,BatchNormalization
 import tensorflow as tf
 import matplotlib.pyplot as plt
 from tensorflow.keras import datasets, layers, models
@@ -106,6 +106,6 @@ model.add(layers.Dense(1,activation = "sigmoid"))
 
 model.compile(optimizer = "adam", loss = "binary_crossentropy", metrics = ["accuracy"])
 
-history = model.fit(datagen.flow(X_train, y_train, batch_size = 32), epochs = 20, validation_data = datagen.flow(X_val, y_val))
+history = model.fit(datagen.flow(X_train, y_train, batch_size = 32), epochs = 50, validation_data = datagen.flow(X_val, y_val))
 
-model.save( 'saved_model7.h5')
+model.save( 'saved_model8.h5')
