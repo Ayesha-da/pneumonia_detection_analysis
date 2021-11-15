@@ -315,9 +315,9 @@ The [code](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/t
 Limitations in our model
 
 - What does the model do if it receives an image that is not an x-ray ?
-- Given more time and resources, we will work on a model that will put all other images in "Other" category.
+  Given more time and resources, we will work on a model that will put all other images in "Other" category.
 - There could still be blind spots due to the limitations of dataset.
-- Building the ability to upload and analyze multi images at a time
+- Building the ability to upload and analyze multiple images at a time
 
 #### Other Model Options Considered
 
