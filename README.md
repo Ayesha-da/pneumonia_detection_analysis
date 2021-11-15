@@ -319,13 +319,13 @@ The [code](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/t
 
 #### Other Model Options Considered
 
-#### Pneumonia vs Other
+##### Pneumonia vs Other
 
 - Would analyze all images solely on whether they contained Pneumonia
 - Would group “Normal” images with results that contained “Other Diseases”
 - Major issue was that because Pneumonia images would fall somewhere between “normal” and “other” the model was skewing everything into “other” 
 
-#### Normal vs Pneumonia vs Other (2 model option)
+##### Normal vs Pneumonia vs Other (2 model option)
 
 - Images would potentially be ran through two different models using an if function
 - First model compared Normal vs everything
