@@ -310,6 +310,15 @@ Google colab (GPU) took about 10-15 min to read the images. The training took ab
 
 The [code](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/trainmodel5.py) for machine learning model is complete.
 
+#### Future work
+
+Limitations in our model
+
+- What does the model do if it receives an image that is not an x-ray ?
+- Given more time and resources, we will work on a model that will put all other images in "Other" category.
+- There could still be blind spots due to the limitations of dataset.
+- Building the ability to upload and analyze multi images at a time
+
 #### Other Model Options Considered
 
 #### Pneumonia vs Other
@@ -325,16 +334,6 @@ The [code](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/t
 - If classified to Normal, would return “Normal” otherwise would push to second model
 - Second model would compare Pneumonia to Other diseases
 - This model showed promise with preliminary results above 95%, however connection issues with our html/heroku and time constraints prevented it from being fully tested/deployed
-
-#### Future work
-
-Limitations in our model
-
-- What does the model do if it receives an image that is not an x-ray ?
-- Given more time and resources, we will work on a model that will put all other images in "Other" category.
-- There could still be blind spots due to the limitations of dataset.
-- Building the ability to upload and analyze multi images at a time
-
 
 ## Dashboard and Presentation
 
