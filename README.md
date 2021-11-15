@@ -334,6 +334,10 @@ The [code](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/t
  
  - Initially our model was not performing well and was overfitting. we added dropout layer and BatchNormalization to fight the issue. We made sure not to add dropout layer in      the first layer so our model doesnot loose important features of the image.
  - We still had overfitting issue, then we tried EarlyStopping technique using EarlyStopping callback  to monitor  the performance measure such as validation_loss,                  validation_accuracy, and once triggered, it will stop the training process
+ - EarlyStopping didn't help and we  still had overfitting issues, the model was overfitting each class based on the argument such as setting patience to 0.17 and below fits one    class and more will overfit another class.
+ - We trained our model using only few images of both the classes from the dataset and that gave us few accurate results but they were many wrong predictions too.
+ - Finally we realized that our model is too complex and it is not able to process new images and so we took out all the layers and started building the basic model of cnn and      adding layers until we see the accuracy stopped improving. Now we have a model that gives over 95% accurate results.
+ 
  #### Future work
   
   Limitations in our model
