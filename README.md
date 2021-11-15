@@ -62,8 +62,11 @@ Our project will use neural networks and deep learning to interpret chest x-ray 
 #### Pneumonia Statistics Data Sources
 
 WHO: https://www.who.int/health-topics/pneumonia#tab=tab_1
+
 Our World In Data: https://ourworldindata.org/pneumonia
+
 CDC (general Pneumonia): https://www.cdc.gov/dotw/pneumonia/index.html
+
 CDC (US Data): https://wonder.cdc.gov/controller/datarequest/D76;jsessionid=303DD855FA935405980D61135452
 
 
