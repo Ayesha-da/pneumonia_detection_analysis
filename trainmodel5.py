@@ -8,7 +8,7 @@ Created on Sat Nov 13 11:33:43 2021
 from keras.preprocessing.image import ImageDataGenerator
 #from multiprocessing import Pool
 from keras.models import Sequential
-from keras.layers import Conv2D, Activation, MaxPooling2D, Flatten, Dense, Dropout,BatchNormalization
+from keras.layers import Conv2D, Activation, MaxPooling2D, Flatten, Dense
 import tensorflow as tf
 import matplotlib.pyplot as plt
 from tensorflow.keras import datasets, layers, models
