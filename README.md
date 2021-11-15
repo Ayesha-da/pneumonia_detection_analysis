@@ -212,7 +212,8 @@ We will be hosting our data on AWS using the S3 Buckets and a PostgreSQL RDS. Ou
 
 Our project is to detection pneumonia using chest x-ray images. We use Kaggle [dataset](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia). There are 5000+ x-ray images with 2 categories(Pneumonia/Normal)
 
-[![](RackMultipart20211115-4-1ebuf5t_html_46e000c12777fcf9.png)](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/data_ETL/data_ETL/Resources/images/dataprocessing_concept02.png) We are using two datasets with the possibility of using more in the future.
+![imag1](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/data_ETL/data_ETL/Resources/images/dataprocessing_concept02.png) 
+We are using two datasets with the possibility of using more in the future.
 
 1. Dataset1 - source from [Kaggle](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia)
 
@@ -239,11 +240,11 @@ The Dataset's size is bigger and if all members of the team used the cloud image
 
 Once we got our trained model, we created a Flask application and connected it with the model using [app.py](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/app.py) file. In this application when the user uploads an image it will store on [s3 bucket](https://s3.console.aws.amazon.com/s3/buckets/pneumoniadataset) and then it will be used for Prediction.
 
-[![](RackMultipart20211115-4-1ebuf5t_html_c199448418e84845.png)](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/DataFlowDiagram.png)
+![img1](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/DataFlowDiagram.png)
 
 ### Machine Learning Model
 
-[![](RackMultipart20211115-4-1ebuf5t_html_40b968b0468a5996.png)](https://user-images.githubusercontent.com/84524153/138568406-ea33abaa-3e03-4d22-90e8-64034431f6df.png)
+![Conventional-machine-learning-vs-deep-learning](https://user-images.githubusercontent.com/84524153/138568406-ea33abaa-3e03-4d22-90e8-64034431f6df.png)
 
 In Conventional Programming, decision making is based on IF-ELSE conditions. Therefore, many solutions cannot be modeled with it. One of the main reasons behind this is the variation of the input data variable, which increases the problem's complexity. On the contrary, machine learning programming solves the problem by modeling the data with train data and test data. Based on these data and statistical models, machine learning predicts the result.
 
@@ -253,7 +254,7 @@ In deep learning, we will be using a convolutional neural network (CNN/ConvNet),
 
 The image is read using cv2 and grayscale and is resized to 150,150 for easy processing.
 
-[![](RackMultipart20211115-4-1ebuf5t_html_41775facb2f7b2d7.png)](https://user-images.githubusercontent.com/84524153/140662909-526848c1-2732-4d86-a31b-3fd976cebf4b.png)
+![preprocessing](https://user-images.githubusercontent.com/84524153/140662909-526848c1-2732-4d86-a31b-3fd976cebf4b.png)
 
 - preliminary feature engineering
 
@@ -309,7 +310,7 @@ We are also working on applying bias and keras regulizers to our model to improv
 
 #### Machine Learning Flowchart
 
-[![](RackMultipart20211115-4-1ebuf5t_html_b68695117f1b1170.png)](https://user-images.githubusercontent.com/84524153/141702747-5aafc0df-1446-47ff-8741-be4b38fa44ce.png)
+![flow_chart_machine_model1](https://user-images.githubusercontent.com/84524153/141702747-5aafc0df-1446-47ff-8741-be4b38fa44ce.png)
 
 - Graphs for the metrics and summary statistics
 
