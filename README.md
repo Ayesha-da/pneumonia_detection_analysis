@@ -299,7 +299,7 @@ We are also working on applying bias and keras regulizers to our model to improv
 
 - Model's training time
 
-Google colab (GPU) took about 10-15 min to read the images. The training took about 15 - 20 min for 25 epochs .
+Google colab (GPU) took about 12 - 15 min to read the images. The training took about 20 - 25 min for 50 epochs .
 
 #### Updating the model
 
@@ -307,7 +307,7 @@ Google colab (GPU) took about 10-15 min to read the images. The training took ab
 - We still had overfitting issue, then we tried EarlyStopping technique using EarlyStopping callback to monitor the performance measure such as validation_loss, validation_accuracy, and once triggered, it will stop the training process
 - EarlyStopping didn't help and we still had overfitting issues, the model was overfitting each class based on the argument such as setting patience to 0.17 and below, fits one   class and above 0.17 will overfit another class.
 - We trained our model using only few images of both the classes from the dataset and that gave us few accurate results, but they were many wrong predictions too.
-- Finally, we realized that our model is too complex, and it is not able to process new images and so we took out all the layers and started building the basic model of CNN and adding layers until we see the accuracy stopped improving. Now we have a model that gives over 95% accurate results.
+- Finally, we realized that our model is too complex, and it is not able to process new images and so we took out all the layers and started building the basic model of CNN and   adding layers until we see the accuracy stopped improving. We tested our model on validation set of images that the model has never seen before and now we have a model that     gives about 90% accurate results.
 
 The [code](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/trainmodel5.py) for machine learning model is complete.
 
