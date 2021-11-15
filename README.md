@@ -290,11 +290,12 @@ We are also working on applying bias and keras regulizers to our model to improv
 
 - Graphs for the metrics and summary statistics
 
-![accuracy](https://user-images.githubusercontent.com/84524153/141501445-dbedd357-2e8b-4db7-8a37-bc012eaaece0.png)
-![loss](https://user-images.githubusercontent.com/84524153/141501481-db970c47-01f1-4991-8312-e38083c04727.png)           
-![confusion_matrix](https://user-images.githubusercontent.com/84524153/141501528-ca5d16e5-b9d4-41f6-a4a8-66713b7c7727.png)
-![roc_curve](https://user-images.githubusercontent.com/84524153/141501497-1faa0665-7e95-4dcf-8d5b-826958bae9ac.png)
-<img src= "https://user-images.githubusercontent.com/84524153/141504032-70eb93f8-a604-4671-89d0-5f21af2b51f6.png" width="800" />
+![accuracy](https://user-images.githubusercontent.com/84524153/141858509-480abdb0-123c-407d-92a8-b48e77d74349.png)
+![loss](https://user-images.githubusercontent.com/84524153/141858541-757a5ffd-1d27-47c7-a40a-a9c8e29abe45.png)
+![confusion_matrix](https://user-images.githubusercontent.com/84524153/141858561-9e2a6d57-a9ce-4cc3-a738-f874bb03e8c8.png)
+![roc_curve](https://user-images.githubusercontent.com/84524153/141858576-d90047c8-3e25-46f6-a14f-79ebeb56201a.png)
+
+<img src= "https://user-images.githubusercontent.com/84524153/141858623-d04e4d03-e50d-4289-a2bb-809ba02a1483.png" width="800" />
 
 - Model's training time
 
