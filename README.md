@@ -256,7 +256,7 @@ Once we got our trained model we created a Flask application and connected it wi
 In Conventional Programming, decision making is based on IF-ELSE conditions. Therefore, many solutions cannot be modeled with it. One of the main reasons behind this is the variation of the input data variable, which increases the problem’s complexity. On the contrary, machine learning programming solves the problem by modeling the data with train data and test data. Based on these data and statistical models, machine learning predicts the result.
 
 In deep learning, we will be using a convolutional neural network (CNN/ConvNet), a class of deep neural networks, most commonly applied to analyze visual imagery. We are primarily working with images and we need CNN model to take in these images, process them and give us the desired output by classifying them correctly as “Normal” or “Pneumonia”.
-The [code](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/trainmodel.py) for machine learning is complete.
+
 - preliminary data preprocessing
 
   The image is read using cv2 and grayscale and is resized to 150,150 for easy processing.
@@ -341,6 +341,7 @@ The [code](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/t
  - We trained our model using only few images of both the classes from the dataset and that gave us few accurate results but they were many wrong predictions too.
  - Finally we realized that our model is too complex and it is not able to process new images and so we took out all the layers and started building the basic model of cnn and      adding layers until we see the accuracy stopped improving. Now we have a model that gives over 95% accurate results.
  
+ The [code]() for machine learning is complete.
  #### Future work
   
   Limitations in our model
