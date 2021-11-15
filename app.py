@@ -43,7 +43,7 @@ aws_secret_access_key = app.config['SECRET_KEY']
 def load_model_from_file():
     mySession = tf.compat.v1.Session()
     set_session(mySession)
-    myModal = load_model('saved_model7.h5')
+    myModal = load_model('saved_model8.h5')
     #myGraph = tf.get_default_graph()
     myGraph = tf.compat.v1.get_default_graph()
     return (mySession, myModal, myGraph)
