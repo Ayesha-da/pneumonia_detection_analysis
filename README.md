@@ -291,7 +291,7 @@ We are also working on applying bias and keras regulizers to our model to improv
 - Graphs for the metrics and summary statistics
 
 ![accuracy](https://user-images.githubusercontent.com/84524153/141858509-480abdb0-123c-407d-92a8-b48e77d74349.png)
-![loss](https://user-images.githubusercontent.com/84524153/141858541-757a5ffd-1d27-47c7-a40a-a9c8e29abe45.png)
+![loss](https://user-images.githubusercontent.com/84524153/141858541-757a5ffd-1d27-47c7-a40a-a9c8e29abe45.png)       
 ![confusion_matrix](https://user-images.githubusercontent.com/84524153/141858561-9e2a6d57-a9ce-4cc3-a738-f874bb03e8c8.png)
 ![roc_curve](https://user-images.githubusercontent.com/84524153/141858576-d90047c8-3e25-46f6-a14f-79ebeb56201a.png)
 
