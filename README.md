@@ -307,8 +307,10 @@ Google colab (GPU) took about 12 - 15 min to read the images. The training took 
 - We still had overfitting issue, then we tried EarlyStopping technique using EarlyStopping callback to monitor the performance measure such as validation_loss, validation_accuracy, and once triggered, it will stop the training process
 - EarlyStopping didn't help and we still had overfitting issues, the model was overfitting each class based on the argument such as setting patience to 0.17 and below, fits one   class and above 0.17 will overfit another class.
 - We trained our model using only few images of both the classes from the dataset and that gave us few accurate results, but they were many wrong predictions too.
-- Finally, we realized that our model is too complex, and it is not able to process new images and so we took out all the layers and started building the basic model of CNN and   adding layers until we see the accuracy stopped improving. We tested our model on validation set of images that the model has never seen before and now we have a model that     gives about 90% accurate results.
-
+- Finally, we realized that our model is too complex, and it is not able to process new images and so we took out all the layers and started building the basic model of CNN and   adding layers until we see the accuracy stopped improving. We tested our model on validation set of images that the model has never seen before and now we have a model that     gives about 84% accurate results.
+#### Updating the model from segment 3 to segment 4
+  We trained the model to improve accuracy, we started with 25 epochs, the accuracy was 84% and then we trained the model for 50 epochs , we saw the accuracy improved           significantly and then we trained the model for 100 epochs and we saw the accuracy dropped and we realized the model started overfitting and so we went back to 50 epochs
+ and now we have a model with accuracy of almost 90%.
 The [code](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/trainmodel5.py) for machine learning model is complete.
 
 #### Limitations in our model
