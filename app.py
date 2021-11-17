@@ -80,47 +80,70 @@ def upload_file():
             #print(filename)
             file.save(filename)
             
-            s3A = boto3.resource('s3',
-                        aws_access_key_id=aws_access_key_id, #app.config['ACCESS_KEY'],
-                        aws_secret_access_key=aws_secret_access_key #app.config['SECRET_KEY']
-                       # aws_session_token='secret token here'
-                         )
-            s3A.meta.client.upload_file(
-                    Bucket = BUCKET_NAME,
-                    Filename=filename,
-                    Key = filename
-                )
-            #msg = "file is uploaded! "
+            image = cv2.imread(filename) #image.ndim
+            #print(image)
+            #print(image.ndim)
+            ### splitting b,g,r channels
+            b,g,r=cv2.split(image)
+
+            ### getting differences between (b,g), (r,g), (b,r) channel pixels
+            r_g=np.count_nonzero(abs(r-g))
+            r_b=np.count_nonzero(abs(r-b))
+            g_b=np.count_nonzero(abs(g-b))
+
+            ### sum of differences
+            diff_sum=float(r_g+r_b+g_b)
+
+            ### finding ratio of diff_sum with respect to size of image
+            ratio=diff_sum/image.size
+            #print(ratio)
+            if ratio>0.0:
+                #print("image is color")
+                flash('App only accept greyscale image')
+                return redirect(request.url)
             
-            # get the image 
-            object = s3A.Object(BUCKET_NAME, filename)
-            
-            img = object.get()['Body'].read()
-            img = cv2.imdecode(np.asarray(bytearray(img)), cv2.IMREAD_GRAYSCALE)
-            img = cv2.resize(img, (IMG_WIDTH, IMG_HEIGHT))   
-            img = img.reshape(-1, IMG_WIDTH, IMG_HEIGHT, 1)
-            #img = np.dstack([img, img, img])  #stack 3 times
-            img = img.astype('float32') / 255
-            #img = np.expand_dims(img, axis=0)
-            mySession,myModel,myGraph= load_model_from_file()
-           
-            result = myModel.predict(img)
-            #print(result)
-            res_normal = 1 - result[0][0]
-            #print(res_normal)
-            x = result[0][0] * 100 #10000
-            x_normal = res_normal * 100
-            per = "{:.2f}".format(x)
-            per_normal = "{:.2f}".format(x_normal)
-            #print(per)
-            
-            image_src = 'https://pneumoniadataset.s3.amazonaws.com/'+ filename
-            if result[0][0] < 0.5 :
-                answer = 'This x-ray image has a ' + per_normal + '% chance of being normal/non-pneumonia.'
             else:
-                answer = 'This image has a ' + per  + '% chance of being positive for pneumonia.'
-            
-            return render_template('index-poc.html', result = answer, filename=filename, image_src=image_src)
+                s3A = boto3.resource('s3',
+                            aws_access_key_id=aws_access_key_id, #app.config['ACCESS_KEY'],
+                            aws_secret_access_key=aws_secret_access_key #app.config['SECRET_KEY']
+                           # aws_session_token='secret token here'
+                             )
+                s3A.meta.client.upload_file(
+                        Bucket = BUCKET_NAME,
+                        Filename=filename,
+                        Key = filename
+                    )
+                #msg = "file is uploaded! "
+
+                # get the image 
+                object = s3A.Object(BUCKET_NAME, filename)
+
+                img = object.get()['Body'].read()
+                img = cv2.imdecode(np.asarray(bytearray(img)), cv2.IMREAD_GRAYSCALE)
+                img = cv2.resize(img, (IMG_WIDTH, IMG_HEIGHT))   
+                img = img.reshape(-1, IMG_WIDTH, IMG_HEIGHT, 1)
+                #img = np.dstack([img, img, img])  #stack 3 times
+                img = img.astype('float32') / 255
+                #img = np.expand_dims(img, axis=0)
+                mySession,myModel,myGraph= load_model_from_file()
+
+                result = myModel.predict(img)
+                #print(result)
+                res_normal = 1 - result[0][0]
+                #print(res_normal)
+                x = result[0][0] * 100 #10000
+                x_normal = res_normal * 100
+                per = "{:.2f}".format(x)
+                per_normal = "{:.2f}".format(x_normal)
+                #print(per)
+
+                image_src = 'https://pneumoniadataset.s3.amazonaws.com/'+ filename
+                if result[0][0] < 0.5 :
+                    answer = 'This x-ray image has a ' + per_normal + '% chance of being normal/non-pneumonia.'
+                else:
+                    answer = 'This image has a ' + per  + '% chance of being positive for pneumonia.'
+
+                return render_template('index-poc.html', result = answer, filename=filename, image_src=image_src)
       
 
 
