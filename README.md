@@ -334,7 +334,7 @@ The [code](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/t
 - First model would compare Normal vs Everything Else.
 - If classified as Normal, the model would return “Normal." Otherwise, it would push to the second model.
 - The second model would compare Pneumonia to Other diseases.
-- This model showed promise with preliminary results above 95%, however connection issues with our html/heroku and time constraints prevented it from being fully tested/deployed.
+- This model showed promise with preliminary results above 95%, however connection issues with running the model on our app locally and time constraints prevented it from being fully tested/deployed.
 
 ## Dashboard and Presentation
 
