@@ -308,7 +308,7 @@ Google colab (GPU) took about 12 - 15 min to read the images. The training took 
 - We trained our model using only a few images of both the classes from the dataset and that gave us few accurate results, but they were many wrong predictions too.
 - Finally, we realized that our model is too complex, and it was not able to process new images. So we took out all the layers and started building the basic model of CNN and added layers until we observed the accuracy improvements level out. We tested our model on a validation set of images that the model had never seen before and now we have a model that gives about 84% accurate results.
 
-#### Updating the Model From Segment 3 to Segment 4
+#### Updating the Model From segment 3 to segment 4 to improve Accuracy.
   We trained the model to improve accuracy. We started with 25 epochs and the accuracy was 84%. Then we trained the model for 50 epochs, and we saw the accuracy improve significantly. When we trained the model for 100 epochs, we saw the accuracy drop. This made us realize the model started overfitting and so we went back to 50 epochs and now we have a model with accuracy of almost 90%.
   
 The [code](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/trainmodel5.py) for the machine learning model is complete.
