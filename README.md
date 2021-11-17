@@ -226,27 +226,27 @@ In Conventional Programming, decision making is based on IF-ELSE conditions. The
 
 In deep learning, we will be using a convolutional neural network (CNN/ConvNet), a class of deep neural networks, most commonly applied to analyze visual imagery. We are primarily working with images, and we need CNN model to take in these images, process them and give us the desired output by classifying them correctly as "Normal" or "Pneumonia".
 
-- preliminary data preprocessing
+- Preliminary Data Preprocessing
 
 The image is read using cv2 and grayscale and is resized to 150,150 for easy processing.
 
 ![preprocessing](https://user-images.githubusercontent.com/84524153/140662909-526848c1-2732-4d86-a31b-3fd976cebf4b.png)
 
-- preliminary feature engineering
+- Preliminary Feature Engineering
 
 We also reshaped the X_train, X_test arrays and y_train, y_test arrays to use in Convolutional Neural Network Layers.
 
-- Description of how data was split into training and testing sets
+- Splitting Data Into Training and Testing Sets
 
 Our data is imbalanced. To avoid this and overfitting, we performed data augmentation. The idea of data augmentation is to perform distortions to our existing data to decrease unnecessary variations on the data. For example, we apply horizontal flip, random zoom, height, and width shift to standardize the images for consistency and then we normalize the data, so it converges faster.
 
-- Explanation of model choice, limitations, and benefits.
+- Model choice, Limitations, and Benefits
 
 Convolutional neural networks (CNN) are used for image classification and recognition because of its high accuracy. It was proposed by computer scientist Yann LeCun in the late 90s, when he was inspired from the human visual perception of recognizing things. They are one of the most popular models used today. This neural network computational model uses a variation of multilayer perceptrons and contains one or more convolutional layers that can be either entirely connected or pooled. These convolutional layers create feature maps that record a region of image which is ultimately broken into rectangles and sent out for nonlinear processing.
 
 Benefits:
 
-✓Very High accuracy in image recognition problems.
+✓Very high accuracy in image recognition problems.
 
 ✓Automatically detects the important features without any human supervision.
 
@@ -254,7 +254,7 @@ Benefits:
 
 Limitations:
 
-✓CNN do not encode the position and orientation of object.
+✓CNN does not encode the position and orientation of object.
 
 ✓Lack of ability to be spatially invariant to the input data.
 
@@ -266,15 +266,15 @@ Google Compute Engine backend (GPU) and python 3.7, Spyder IDE(v 5.1.5), keras a
 
 For the model training we used google colab-GPU to run the model and process the charts. We encountered few issues while running model on local machine such as shutting down of kernel due to delayed times.
 
-- Difficulties encountered while processing images
+- Difficulties Encountered While Processing Images
 
-We are working with over 5,800 images and we encountered very long training time, installation of new packages such as cvs and updating version of TensorFlow. We also faced the problem of overfitting.
+We worked with over 5,800 images and encountered a very long training time, installation of new packages such as cvs and updating the version of TensorFlow. We also faced the problem of overfitting.
 
-- CNN model architectures and layers
+- CNN Model Architectures and Layers
 
-We tried various hyperparameters such as different optimizers such as "adam", "rmsprop", various activation functions such as sigmoid, relu and adding dropout layers, normalization function, increasing/decreasing nodes ,to work with the model.
+We tried various hyperparameters such as different optimizers like "adam", "rmsprop", various activation functions such as sigmoid, relu and adding dropout layers, normalization function, and increasing/decreasing nodes.
 
-Our model had overfitting problem. We used early stopping criteria to stop training once the model performance stopped improving. We also added "patience" argument that adds a delay to the trigger in terms of the number of epochs on which we would like to see no improvement. We also tried to use early stopping technique by adding and adjusting "baseline".
+Our model had an overfitting problem. We used early stopping criteria to stop training once the model performance stopped improving. We also added a "patience" argument that adds a delay to the trigger in terms of the number of epochs on which we would like to see no improvement. We also tried to use the early stopping technique by adding and adjusting "baseline".
 
 EarlyStopping(monitor='val_accuracy', mode='max') overfitting pneumonia class.
  EarlyStopping(monitor='val_loss', mode='min') overfitting normal class
@@ -297,44 +297,44 @@ We are also working on applying bias and keras regulizers to our model to improv
 
 <img src= "https://user-images.githubusercontent.com/84524153/141858623-d04e4d03-e50d-4289-a2bb-809ba02a1483.png" width="800" />
 
-- Model's training time
+- Model's Training Time
 
-Google colab (GPU) took about 12 - 15 min to read the images. The training took about 20 - 25 min for 50 epochs .
+Google colab (GPU) took about 12 - 15 min to read the images. The training took about 20 - 25 min for 50 epochs.
 
-#### Updating the model
+#### Updating the Model
+- Initially, our model was not performing well and was overfitting. We added a dropout layer and Batch Normalization to fight the issue. We made sure not to add a dropout layer in the first layer, in order to prevent our model from losing important features of the image.
+- We still had an overfitting issue, so we tried the EarlyStopping technique using EarlyStopping callback to monitor performance measurements including validation_loss and validation_accuracy. Once triggered, the training process is stopped.
+- EarlyStopping didn't help and we still had overfitting issues. The model was overfitting each class based on arguments such as setting patience to 0.17 and below fitting one class and setting patience above 0.17 overfitting another class.
+- We trained our model using only a few images of both the classes from the dataset and that gave us few accurate results, but they were many wrong predictions too.
+- Finally, we realized that our model is too complex, and it was not able to process new images. So we took out all the layers and started building the basic model of CNN and added layers until we observed the accuracy improvements level out. We tested our model on a validation set of images that the model had never seen before and now we have a model that gives about 84% accurate results.
 
-- Initially our model was not performing well and was overfitting. we added dropout layer and Batch Normalization to fight the issue. We made sure not to add dropout layer in the first layer, so our model does not loose important features of the image.
-- We still had overfitting issue, then we tried EarlyStopping technique using EarlyStopping callback to monitor the performance measure such as validation_loss, validation_accuracy, and once triggered, it will stop the training process
-- EarlyStopping didn't help and we still had overfitting issues, the model was overfitting each class based on the argument such as setting patience to 0.17 and below, fits one   class and above 0.17 will overfit another class.
-- We trained our model using only few images of both the classes from the dataset and that gave us few accurate results, but they were many wrong predictions too.
-- Finally, we realized that our model is too complex, and it is not able to process new images and so we took out all the layers and started building the basic model of CNN and   adding layers until we see the accuracy stopped improving. We tested our model on validation set of images that the model has never seen before and now we have a model that     gives about 84% accurate results.
-#### Updating the model from segment 3 to segment 4
-  We trained the model to improve accuracy, we started with 25 epochs, the accuracy was 84% and then we trained the model for 50 epochs , we saw the accuracy improved           significantly and then we trained the model for 100 epochs and we saw the accuracy dropped and we realized the model started overfitting and so we went back to 50 epochs
- and now we have a model with accuracy of almost 90%.
-The [code](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/trainmodel5.py) for machine learning model is complete.
+#### Updating the Model From Segment 3 to Segment 4
+  We trained the model to improve accuracy. We started with 25 epochs and the accuracy was 84%. Then we trained the model for 50 epochs, and we saw the accuracy improve significantly. When we trained the model for 100 epochs, we saw the accuracy drop. This made us realize the model started overfitting and so we went back to 50 epochs and now we have a model with accuracy of almost 90%.
+  
+The [code](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/trainmodel5.py) for the machine learning model is complete.
 
-#### Limitations in our model
+#### Limitations to Our Model
 
-- What does the model do if it receives an image that is not an x-ray ?                
-  Given more time and resources, we will work on a model that will put all other images in "Other" category.
-- There could still be blind spots due to the limitations of dataset.
-- Building the ability to upload and analyze multiple images at a time
+- What does the model do if it receives an image that is not an x-ray?                
+  - Given more time and resources, we would work on a model that puts all other images in "Other" category.
+- There could still be blind spots due to the limitations of our dataset.
+- We could improve the model's output with the ability to upload and analyze multiple images at a time.
 
 #### Other Model Options Considered
 
 ##### Pneumonia vs Other
 
-- Would analyze all images solely on whether they contained Pneumonia
-- Would group “Normal” images with results that contained “Other Diseases”
-- Major issue was that because Pneumonia images would fall somewhere between “normal” and “other” the model was skewing everything into “other” 
+- This model would analyze all images solely on whether they contained Pneumonia.
+- It would group “Normal” images with results that contained “Other Diseases.”
+- The major issue with this approach was that Pneumonia images would fall somewhere between “normal” and “other” and caused the model to skew everything into “Other” category.
 
 ##### Normal vs Pneumonia vs Other (2 model option)
 
-- Images would potentially be ran through two different models using an if function
-- First model compared Normal vs everything
-- If classified to Normal, would return “Normal” otherwise would push to second model
-- Second model would compare Pneumonia to Other diseases
-- This model showed promise with preliminary results above 95%, however connection issues with our html/heroku and time constraints prevented it from being fully tested/deployed
+- With this model, images would potentially be run through two different models using an If function.
+- First model would compare Normal vs Everything Else.
+- If classified as Normal, the model would return “Normal." Otherwise, it would push to the second model.
+- The second model would compare Pneumonia to Other diseases.
+- This model showed promise with preliminary results above 95%, however connection issues with our html/heroku and time constraints prevented it from being fully tested/deployed.
 
 ## Dashboard and Presentation
 
