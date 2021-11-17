@@ -121,7 +121,7 @@ For our pneumonia US and global statistics, we will be hosting the data in Postg
 
 ![ERD for US](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/data_ETL/Presentation_ERD/ERDiagram.PNG)
 
-We uploaded this data on AWS RDS using PGAdmin data engine. To create the database we used the [sql query](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/data_ETL/Presentation_ERD/presentation_createTable.sql)
+We uploaded this data on AWS RDS using PGAdmin data engine. To create the database we used this [sql query](https://github.com/Ayesha-da/pneumonia_detection_analysis/blob/main/data_ETL/Presentation_ERD/presentation_createTable.sql).
 
 This data was then used in Tableau for analysis
 
