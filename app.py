@@ -104,12 +104,12 @@ def upload_file():
             
             else:
                 s3A = boto3.resource('s3',
-                            aws_access_key_id=aws_access_key_id, #app.config['ACCESS_KEY'],
-                            aws_secret_access_key=aws_secret_access_key #app.config['SECRET_KEY']
+                            aws_access_key_id=AKIA5LKCNF7QO45X2IMX, #app.config['ACCESS_KEY'],
+                            aws_secret_access_key=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 #app.config['SECRET_KEY']
                            # aws_session_token='secret token here'
                              )
                 s3A.meta.client.upload_file(
-                        Bucket = BUCKET_NAME,
+                        Bucket = ayesha-pneumonia,
                         Filename=filename,
                         Key = filename
                     )
