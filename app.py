@@ -40,6 +40,9 @@ app.config.from_pyfile('app/config.py')
 aws_access_key_id = app.config['ACCESS_KEY']
 aws_secret_access_key = app.config['SECRET_KEY']
 
+from boto.s3.connection import S3Connection
+s3 = S3Connection(os.environ['S3_KEY'], os.environ['S3_SECRET'])
+
 def load_model_from_file():
     mySession = tf.compat.v1.Session()
     set_session(mySession)
