@@ -13,5 +13,5 @@ from os import environ, path
 
 #FLASK_ENV = 'development'
 #class Config:
-ACCESS_KEY = environ.get('AKIA5LKCNF7QO45X2IMX')
-SECRET_KEY = environ.get('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')
+ACCESS_KEY = environ.get('AKIA6GCQIYPPEOTVTYV6')
+SECRET_KEY = environ.get('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')
