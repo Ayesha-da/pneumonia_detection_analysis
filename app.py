@@ -29,7 +29,7 @@ Y="Pneumonia"
 
 ALLOWED_EXTENSIONS = {'png', 'jpeg', 'jpg', 'gif'}
 IMG_WIDTH, IMG_HEIGHT = 150,150
-BUCKET_NAME= ayesha-pneumonia
+BUCKET_NAME='pneumoniadatasetdemo'
 
 #create the website object
 app = Flask(__name__)
@@ -37,11 +37,11 @@ app = Flask(__name__)
 app.config.from_pyfile('app/config.py')
 #print(app.config)
 # Read the secret key from environment variables
-aws_access_key_id = app.config['ACCESS_KEY']
-aws_secret_access_key = app.config['SECRET_KEY']
+# aws_access_key_id = app.config['ACCESS_KEY']
+# aws_secret_access_key = app.config['SECRET_KEY']
 
-from boto.s3.connection import S3Connection
-s3 = S3Connection(os.environ['S3_KEY'], os.environ['S3_SECRET'])
+# from boto.s3.connection import S3Connection
+# s3 = S3Connection(os.environ['S3_KEY'], os.environ['S3_SECRET'])
 
 def load_model_from_file():
     mySession = tf.compat.v1.Session()
@@ -119,7 +119,7 @@ def upload_file():
                 #msg = "file is uploaded! "
 
                 # get the image 
-                object = s3A.Object(ayesha-pneumonia, filename)
+                object = s3A.Object(BUCKET_NAME, filename)
 
                 img = object.get()['Body'].read()
                 img = cv2.imdecode(np.asarray(bytearray(img)), cv2.IMREAD_GRAYSCALE)
@@ -140,7 +140,9 @@ def upload_file():
                 per_normal = "{:.2f}".format(x_normal)
                 #print(per)
 
-                image_src = 'https://ayesha-pneumonia.s3.amazonaws.com/'+ filename
+                # image_src = 'https://.s3.amazonaws.com/'+ filename
+                image_src = 'https://pneumoniadatasetdemo.s3.amazonaws.com/'+ filename
+
                 if result[0][0] < 0.5 :
                     answer = 'This x-ray image has a ' + per_normal + '% chance of being normal/non-pneumonia.'
                 else:
