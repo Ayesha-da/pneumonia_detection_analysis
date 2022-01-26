@@ -20,8 +20,6 @@ Nidhi Pandya
 
 Ayesha Shaheen
 
-William Johnson
-
 ### JavaScript File
 
 Nidhi Pandya
