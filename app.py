@@ -29,7 +29,7 @@ Y="Pneumonia"
 
 ALLOWED_EXTENSIONS = {'png', 'jpeg', 'jpg', 'gif'}
 IMG_WIDTH, IMG_HEIGHT = 150,150
-BUCKET_NAME='ayesha-pneumonia'
+BUCKET_NAME= ayesha-pneumonia
 
 #create the website object
 app = Flask(__name__)
@@ -119,7 +119,7 @@ def upload_file():
                 #msg = "file is uploaded! "
 
                 # get the image 
-                object = s3A.Object(BUCKET_NAME, filename)
+                object = s3A.Object(ayesha-pneumonia, filename)
 
                 img = object.get()['Body'].read()
                 img = cv2.imdecode(np.asarray(bytearray(img)), cv2.IMREAD_GRAYSCALE)
