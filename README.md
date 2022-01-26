@@ -359,7 +359,7 @@ PowerPoint backup of slides:
 
 ### Heroku
 
-Heroku Link: [https://pneumonia-detection-analysis.herokuapp.com/](https://pneumonia-detection-analysis.herokuapp.com/)
+Heroku Link: [https://pneumonia-1.herokuapp.com/](https://pneumonia-1.herokuapp.com/)
 
 Interactive elements:
 
