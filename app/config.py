@@ -13,5 +13,5 @@ from os import environ, path
 
 #FLASK_ENV = 'development'
 #class Config:
-ACCESS_KEY = environ.get('AKIA5LKCNF7QO45X2IMX')
-SECRET_KEY = environ.get('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')
+ACCESS_KEY = environ.get('AWS_ACCESS_KEY_ID')
+SECRET_KEY = environ.get('AWS_SECRET_ACCESS_KEY')
