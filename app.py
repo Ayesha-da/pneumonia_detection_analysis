@@ -29,7 +29,7 @@ Y="Pneumonia"
 
 ALLOWED_EXTENSIONS = {'png', 'jpeg', 'jpg', 'gif'}
 IMG_WIDTH, IMG_HEIGHT = 150,150
-BUCKET_NAME= 'pneumoniadatasetdemo'
+BUCKET_NAME= 'pneumonia-1'
 
 #create the website object
 app = Flask(__name__)
@@ -141,7 +141,7 @@ def upload_file():
                 #print(per)
 
 
-                image_src = 'https://pneumoniadatasetdemo.s3.amazonaws.com/'+ filename
+                image_src = 'https://pneumonia-1.s3.amazonaws.com/'+ filename
 
                 if result[0][0] < 0.5 :
                     answer = 'This x-ray image has a ' + per_normal + '% chance of being normal/non-pneumonia.'
